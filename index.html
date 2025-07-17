@@ -646,6 +646,28 @@
               list.appendChild(li)
             })
           })
+          .catch(() => {
+            const li = document.createElement('li')
+              li.classList.add('flex','flex-col','border','rounded-lg','p-4')
+              const headingWrapper = document.createElement('div');
+              headingWrapper.classList.add('flex','justify-between')
+              const h3 = document.createElement('h3')
+              //h3.classList.add('flex' ,'flex-row')
+              const h4 = document.createElement('h4')
+              h4.classList.add('flex', 'flex-row')
+              const p = document.createElement('p')
+              p.classList.add('text-left')
+
+              h3.textContent = "Fulan"
+              h4.textContent = "2025-06-02"
+              p.textContent = "Lorem Ipsum manufaktur higuain messi ronaldo romario"
+
+              headingWrapper.appendChild(h3)
+              headingWrapper.appendChild(h4)
+              li.appendChild(headingWrapper)
+              li.appendChild(p)
+              list.appendChild(li)
+          })
         </script>
 
         <!-- section animations -->
