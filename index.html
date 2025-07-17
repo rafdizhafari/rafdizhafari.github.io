@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=no"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cookie&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Countdown/themes/default.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Invitation</title>
+        <!-- <xml version="1.0" encoding="iso-8859-1"> -->
+        <!--Simply COuntdown-->
+        
+        
+    </head>
+    <body>
+        <section id="hero" class="hero w-full h-full p-3 mx-auto text-center flex justify-center items-center text-white opacity-0 transition-all">
+            <main>
+                <h4>Kepada <span></span></h4>
+                <h1>Bride <br>&<br> Groom</h1>
+                <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+                <div class="my-countdown simply-countdown mt-2"></div>
+                <a href="#home" class="hero-button mt-4 inline-block rounded py-2 px-4" onclick="enableScroll()">Lihat undangan</a>
+            </main>
+        </section>
+
+        <!-- Navbar -->
+        <nav class="sticky top-0 z-40 mynavbar">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+              <div class="flex-shrink-0">
+                <a href="#home" class="z-50 navbar-brand ml-4 mb-2">Logo</a>
+              </div>
+              <!-- Toggle button (hamburger) -->
+              <div class="md:hidden">
+                <button id="navbarToggle" class="text-black focus:outline-none">
+                  <svg class="w-8 h-8" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+              <!-- Desktop Links -->
+              <div class="hidden md:flex md:items-center md:space-x-6">
+                <a href="#home" class="text-gray hover:text-blue-600">Home</a>
+                <a href="#info" class="text-gray hover:text-blue-600">Info</a>
+                <a href="#story" class="text-gray hover:text-blue-600">Story</a>
+                <a href="#gallery" class="text-gray hover:text-blue-600">Gallery</a>
+                <a href="#rsvp" class="text-gray hover:text-blue-600">RSVP</a>
+                <a href="#gifts" class="text-gray hover:text-blue-600">Gifts</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Off-canvas Menu -->
+          <div id="offcanvasMenu"
+            class="fixed top-0 right-0 h-full w-64 transform translate-x-full transition-transform duration-300 ease-in-out z-30 md:hidden">
+            <div class="OCM p-6 flex flex-col space-y-4 shadow">
+              <div class="flex justify-between items-center">
+                <h5 class="offcanvas-title">Wedding</h5>
+                <button id="closeOffcanvas" class="text-gray-500 hidden">
+                  <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg> -->
+                </button>
+              </div>
+              <div class="flex-col flex p-6 space-y-4 nav-link">
+                <a href="#home" class="text-gray-700 font-semibold">Home</a>
+                <a href="#info" class="text-gray-700 hover:text-blue-600">Info</a>
+                <a href="#story" class="text-gray-700 hover:text-blue-600">Story</a>
+                <a href="#gallery" class="text-gray-700 hover:text-blue-600">Gallery</a>
+                <a href="#rsvp" class="text-gray-700 hover:text-blue-600">RSVP</a>
+                <a href="#gifts" class="text-gray-700 hover:text-blue-600">Gifts</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </nav>
+        <!-- Optional Backdrop -->
+        <div id="offcanvasBackdrop"
+          class="fixed inset-0 hidden z-30 md:hidden"></div>
+          
+        <section id="home" class="home min-h-screen flex justify-center pt-10 z-50">
+          <div class="container text-center p-4">
+            <div class="relative w-0 h-0 -top-10 left-50 opacity-5 z-0">
+              <svg version="1.1" class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 461.602 461.602" width="120" height="120"><path d="M117.3 28.488c-2.088 -2.772 -5.364 -4.656 -9.588 -5.532 -0.096 -3.792 -1.488 -6.252 -3.048 -7.8 -1.56 -1.56 -4.008 -2.952 -7.8 -3.048 -0.876 -4.224 -2.76 -7.5 -5.532 -9.588C88.344 0.276 84.48 -0.492 80.16 0.3 70.692 2.04 58.872 11.484 51.42 23.268c-5.976 9.468 -5.532 17.928 -4.104 23.364a30 30 0 0 0 7.092 12.708L1.524 112.236a4.548 4.548 0 0 0 6.432 6.432l19.464 -19.464a36.6 36.6 0 0 0 22.692 7.788c9.864 0 19.128 -3.84 26.1 -10.812a4.56 4.56 0 0 0 0 -6.432 36.72 36.72 0 0 0 -26.1 -10.812q-1.26 0 -2.508 0.084L60.864 65.76c3.504 3.168 7.788 5.544 12.3 6.732a27.6 27.6 0 0 0 7.02 0.912c4.692 0 10.32 -1.2 16.344 -5.016 11.784 -7.452 21.228 -19.272 22.968 -28.74 0.792 -4.32 0.036 -8.184 -2.208 -11.16m-51.36 64.488c-4.62 3.204 -10.092 4.932 -15.828 4.932s-11.208 -1.728 -15.828 -4.932c4.62 -3.204 10.092 -4.932 15.828 -4.932s11.208 1.728 15.828 4.932m30.372 -61.248a66 66 0 0 1 -13.08 18.552c-4.728 4.728 -9.072 7.488 -12.576 7.98 -2.484 0.348 -4.596 -0.432 -6.624 -2.46s-2.82 -4.14 -2.46 -6.624c0.492 -3.504 3.252 -7.86 7.98 -12.576 5.388 -5.388 12.324 -10.284 18.552 -13.08 3.96 -1.776 6.756 -2.304 8.412 -2.304 0.948 0 1.524 0.168 1.728 0.384 0.564 0.564 0.876 3.912 -1.92 10.14m-37.2 -3.576c6 -9.492 15.756 -17.616 22.692 -18.888q2.7 -0.48 4.056 0.54c0.936 0.708 1.644 2.088 2.052 3.984a48 48 0 0 0 -3.552 1.428 74.4 74.4 0 0 0 -21.252 14.94q-4.956 4.956 -7.596 9.564 -0.036 -5.796 3.6 -11.568m51.444 9.864c-1.272 6.936 -9.396 16.692 -18.888 22.692q-5.772 3.636 -11.568 3.6 4.608 -2.64 9.564 -7.596a74.4 74.4 0 0 0 14.94 -21.252 48 48 0 0 0 1.428 -3.552c1.896 0.408 3.276 1.116 3.984 2.052q1.02 1.38 0.54 4.056"/></svg>
+            </div>
+            <h2 class="text-4xl z-40">Acara Pernikahan</h2>
+            <h3 class="text-3xl">Diselenggarakan pada 2 juli 2025 di Jakarta.</h3>
+            <p class="text-base md:text-sm">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+            <div class="flex flex-col lg:flex-row items-center couple md:mt-3 gap-4">
+            <!--div class=""-->
+              <div class="lg:w-1/2">
+                <div class="flex flex-col sm:flex-row justify-center items-center">
+                  
+                  <div class="sm:w-2/3 sm:text-right mt-1 sm:mt-0 sm:pl-4 md:pr-4 justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-2">Groom</h3>
+                    <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit suscipit placeat repellendus porro ullam rerum.</p>
+                    <p>putra dari fulan <br> dan <br> ibu fulanah</p>
+                  </div>
+                  <div class="w-24 sm:w-1/3 mt-2 ">
+                    <img src="Image/9202.jpg" alt="Foto pengantin pria" class="w-full rounded-full object-cover">
+                  </div>
+                </div>
+              </div>
+            <!--/div-->
+            <!--div class="flex justify-end flex-col lg:flex-row items-center couple mt-5"-->
+              <div class="lg:w-1/2">
+                <div class="flex justify-end flex-col sm:flex-row items-center">
+                  <div class="w-24 sm:w-1/3">
+                    <img src="Image/front-view-woman-holding-flowers-bouquet.jpg" alt="Foto pengantin wanita" class="w-full rounded-full object-cover">
+                  </div>
+                  <div class="sm:w-2/3 sm:text-left mt-4 sm:mt-0 sm:pl-4">
+                    <h3 class="text-xl font-semibold mb-2">Bride</h3>
+                    <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit suscipit placeat repellendus porro ullam rerum.</p>
+                    <p>putri dari bapak fulan <br> dan <br> ibu fulanah</p>
+                  </div>
+                  
+                </div>
+              </div>
+            <!--/div-->
+            </div>
+          </div>
+        </section>
+
+        <section id="info" class="info">
+          
+          <div class="flex flex-col text-center items-center">
+            <h2>Informasi Acara<br></h2>
+            <p class="address mb-2">Alamat: Sevastopol<br></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.3111958035097!2d33.49201709999999!3d44.6111119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40953b48f681fdfb%3A0x31e6e5d8d14c99ac!2sThe%20Museum%20of%20Chersonesos!5e0!3m2!1sid!2sid!4v1752147328027!5m2!1sid!2sid" class="lg:w-180 lg:h-80 mx-auto mb-2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://g.co/kgs/ya9HtGB" target="_blank" class="inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-3 mt-2">Klik untuk membuka peta</a>
+            <p class="description mx-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia pariatur magni hic! Nisi, eveniet. ipsum dolor, sit amet consectetur adipisicing elit. Nam, totam. ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row justify-center items-center mt-7 gap-6">
+            <div class="cardAkad max-w-sm w-120 rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
+              <p class="text-white mb-4 text-center">
+                Akad Nikah
+              </p>
+              <div class="flex flex-col flex-row gap-5 items-center justify-center ml-4">
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <p class="text-left text-white">08.00 - 11.00</p>
+                </div>
+                <div class="flex flex-col items-center justify-end">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                  </svg>
+                  <p class="text-left text-white">Rabu, 2 Juli 2025</p>
+                </div>
+              </div>
+              <p class="text-white mt-4 mb-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio est quae.</p>
+            </div>
+            <div class="cardResepsi max-w-sm bg-white rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
+              <p class="text-white mb-4 text-center">
+                Resepsi
+              </p>
+              <div class="flex flex-col flex-row gap-5 items-center justify-center ml-4">
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <p class="text-left text-white">11.00 - selesai</p>
+                </div>
+                <div class="flex flex-col items-center justify-end">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                  </svg>
+                  <p class="text-left text-white">Rabu, 2 Juli 2025</p>
+                </div>
+              </div>
+              <p class="text-white mt-4 mb-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio est quae.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="story" class="story z-50">
+          <div class="flex flex-col text-center items-center z-40">
+            <span>our memory</span> 
+            <h2>Cerita kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate.</p>
+
+          </div>
+          <div class="relative w-0 h-0 opacity-5 z-0 -top-25">
+            <svg version="1.1" class="absolute" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320 320" style="enable-background:new 0 0 511.998 511.998;" xml:space="preserve" width="320" height="320"><g><g><path d="M140.679 144.288a4.76 4.76 0 0 0 -6.579 1.404 557.333 557.333 0 0 0 -9.316 14.884c-1.357 2.248 -0.528 5.005 1.612 6.531 2.285 1.627 5.637 -0.132 6.531 -1.612a548 548 0 0 1 9.156 -14.629 4.756 4.756 0 0 0 -1.404 -6.579"/></g></g><g><g><path d="M273.965 54.117a4.756 4.756 0 0 0 -6.719 0.313 42.667 42.667 0 0 1 -4.944 4.629c-2.055 1.637 -2.203 4.491 -0.757 6.683 2.051 3.113 5.808 1.455 6.683 0.757a52 52 0 0 0 6.051 -5.664 4.756 4.756 0 0 0 -0.313 -6.719"/></g></g><g><g><path d="M276.608 0.456c-1.676 -0.219 -16.828 -1.992 -32.756 3.357 -6.955 2.336 -16.901 7.1 -24.792 16.537 -7.767 9.289 -12.003 21.152 -12.66 35.323 -0.075 0.067 -0.151 0.131 -0.221 0.203 -11.248 11.381 -22.256 23.596 -32.836 36.392 0 0 4.959 -51.473 -56.555 -57.508 -8.144 -0.799 -15.861 4.248 -17.649 12.237 -0.369 1.649 -3.493 16.587 0.403 32.924 1.701 7.137 5.555 17.471 14.247 26.176 9.032 9.048 21.276 14.433 36.423 16.069a572 572 0 0 0 -5.891 8.308 4.756 4.756 0 0 0 1.191 6.62c0.828 0.575 4.572 1.677 6.62 -1.191 7.009 -9.815 14.205 -19.736 21.759 -29.228 10.743 -13.499 22.005 -26.4 33.552 -38.449a15.707 15.707 0 0 0 6.068 7.455 544 544 0 0 0 -32.539 37.372c-32.665 41.135 -75.952 108.095 -96.656 193.487 -0.519 2.141 -2.508 4.136 -5.741 3.501 -2.573 -0.505 -4.12 -3.195 -3.501 -5.743 9.351 -38.567 23.949 -76.685 43.387 -113.292a528 528 0 0 1 5.297 -9.727 4.756 4.756 0 0 0 -8.305 -4.636 541.333 541.333 0 0 0 -4.621 8.469c-0.867 -3.973 -7.671 -49.039 -66.143 -45.707 -8.173 0.467 -15.081 7.103 -15.081 15.288 0 68.1 62.292 64.589 64.615 64.392 -12.071 27.156 -21.593 54.941 -28.391 82.969 -1.853 7.645 2.952 15.024 10.508 17.229 10.335 3.016 15.668 -4.083 17.225 -10.505 6.464 -26.661 15.181 -51.493 25.096 -74.267 32.063 49.315 74.484 24.908 87.664 16.431 6.884 -4.428 9.264 -13.556 5.417 -20.781 -0.793 -1.491 -8.151 -14.856 -21.757 -24.716 -10.291 -7.459 -29.92 -16.839 -54.621 -5.54 11.397 -21.464 23.491 -40.529 35.075 -56.928 23.091 60.629 82.592 33.383 84.089 32.681 7.413 -3.471 10.991 -12.199 8.141 -19.872 -5.643 -15.201 -13.825 -26.705 -24.317 -34.196 -8.911 -6.36 -19.165 -9.68 -30.479 -9.869h-0.043c-5.401 -0.077 -10.411 0.568 -14.787 1.511a530.667 530.667 0 0 1 30.875 -34.625c14.844 3.352 27.972 -3.248 28.181 -3.353 2.349 -1.175 3.035 -3.916 2.127 -6.381 -1.408 -3.823 -5.707 -2.401 -5.707 -2.401l-0.111 0.037c-13.981 4.989 -26.589 2.291 -27.377 2.141a6.307 6.307 0 0 1 -5.157 -5.993c-1.193 -32.175 16.205 -44.855 31.011 -49.827 13.903 -4.668 27.039 -3.133 28.492 -2.943 3.245 0.425 5.664 3.32 5.507 6.589 -0.449 9.321 -2.196 17.611 -5.191 24.64a4.756 4.756 0 0 0 2.511 6.24 4.755 4.755 0 0 0 6.24 -2.511c3.439 -8.069 5.437 -17.46 5.941 -27.912 0.396 -8.176 -5.653 -15.415 -13.771 -16.479m-113.847 104.976a572 572 0 0 0 -5.796 7.569c-0.437 0.071 -38.435 -0.707 -48.175 -35.287 -3.975 -14.111 -0.693 -27.211 -0.373 -28.64 0.716 -3.195 3.815 -5.344 7.057 -4.893 14.141 1.965 25.439 6.68 33.577 14.013 6.625 5.971 11.092 13.567 13.279 22.576l0.047 0.199c2.444 10.251 1.323 19.611 0.384 24.463m-117.995 77.668c-6.392 -13.207 -5.712 -26.613 -5.663 -28.079 0.112 -3.271 2.761 -5.957 6.031 -6.113 14.255 -0.681 26.233 1.861 35.589 7.564 7.671 4.676 13.492 11.375 17.307 19.915l0.028 0.06c4.369 9.819 4.9 19.545 4.873 24.007a521.333 521.333 0 0 0 -3.993 8.293c-0.509 0.213 -38.908 5.889 -54.173 -25.648m139.627 30.051c11.431 9.188 18.255 20.192 18.943 21.484 1.539 2.891 0.588 6.54 -2.165 8.311 -12.009 7.723 -23.672 11.661 -34.603 11.244 -29.329 -1.116 -42.892 -30.303 -42.983 -30.632a490.667 490.667 0 0 1 3.809 -8.004c0.257 -0.12 30.931 -23.355 57 -2.401m23.312 -91.915h0.025c9.34 0.16 17.781 2.885 25.088 8.1 8.917 6.365 15.957 16.38 20.927 29.764 1.14 3.069 -0.291 6.56 -3.255 7.945 -1.328 0.621 -13.397 5.993 -28.048 5.813 -37.007 -0.455 -44.856 -39.209 -44.86 -39.765a529.333 529.333 0 0 1 4.764 -6.331c3.373 -1.585 13.383 -5.743 25.36 -5.527"/></g></g></svg>
+          </div>
+          <div class="flex flex-col ml-12 mr-12 z-10">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/310/400/533);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>first met</h3>
+                    <span>2 Juli 2025</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime saepe magni error illo natus? Est! Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/314/400/533);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Engagement</h3>
+                    <span>2 Juli 2025</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/312/400/533);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>first met</h3>
+                    <span>2 Juli 2025</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+          <div class="flex flex-col text-center items-center">
+            <span>Our Memory</span>
+            <h2>Galeri<br></h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 justify-center place-items-center ml-4 mr-4 mt-3">
+              <a href="https://picsum.photos/id/433/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/433/1200/768')">
+                <img src="https://picsum.photos/id/433/400/533">
+              </a>
+              <a href="https://picsum.photos/id/434/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/434/1200/768')">
+                <img src="https://picsum.photos/id/434/400/533">
+              </a>
+              <a href="https://picsum.photos/id/435/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/435/1200/768')">
+                <img src="https://picsum.photos/id/435/400/533">
+              </a>
+              <a href="https://picsum.photos/id/436/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/436/1200/768')">
+                <img src="https://picsum.photos/id/436/400/533">
+              </a>
+              <a href="https://picsum.photos/id/437/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/437/1200/768')">
+                <img src="https://picsum.photos/id/437/400/533">
+              </a>    
+          </div>
+        </section>
+        
+        <div id="lightbox" class="lightbox fixed inset-0 flex items-center justify-center z-50 transition-opacity duration-300 opacity-0 hidden">
+          <div class="relative transform transition-transform duration-300 scale-95" id="lightboxInner">
+            <button onclick="closeLightbox()" id="lightboxclosebtn" class="absolute top-2 right-2 text-white text-2xl hidden">
+              &times;
+            </button>
+            <img id="lightboxImage" src="" class="max-w-full max-h-[90vh] rounded shadow-xl">
+            </div>
+          </div>
+        </div>
+
+        <section id="rsvp" class="rsvp">
+          <div class="flex flex-col text-center items-center">
+            <h2>Konfirmasi Kehadiran<br></h2>
+            <p>Isi form di bawah ini untuk konfirmasi kehadiran.</p>
+          </div>
+          <div class="flex justify-center items-center mt-7 mb-7">
+            <form autocomplete="off" id="rsvp-form" class="rsvp-form flex flex-col md:flex-row justify-center items-center sm:space-x-2 space-y-2 sm:space-y-0 gap-6 md:w-220 md:h-120 w-105 h-145 rounded-lg"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbwiX_OqN8qqNHe4RGxWF_MG64gR26xOEJFgx-Fgx8YF0ZMs6GlghJ65qfyye7iACJm7ug/exec">
+              <div class="nameInput flex flex-col">
+                <label for="name" class="text-white text-left items-left">NAMA</label>
+                <input 
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="px-4 py-2 border border-gray-300 rounded-lg bg-white w-48 lg:w-48 items-center justify-center"
+                  readonly
+                />
+              </div>
+              <div class="guestAmount flex flex-col">
+                <label for="amount" class="text-white text-left items-left">JUMLAH TAMU</label>
+                <input 
+                  type="number"
+                  id="amount"
+                  name="amount"
+                  class="px-4 py-2 border border-gray-300 rounded-lg bg-white w-48 lg=w-32 items-center justify-center"
+                  min="1" max="3" length="1" value="1"
+                />
+              </div>
+              <div class="guestStatus flex flex-col">
+                <label for="status" class="text-white text-left items-left">KONFIRMASI</label>
+                <select name="status" id="status" class="status px-4 py-2 w-48 h-12 mt-1 bg-white rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                  <option selected>Pilih salah satu</option>
+                  <option value="1">Hadir</option>
+                  <option value="0">Tidak hadir</option>
+                </select>
+              </div>
+              <button type="submit" class="rsvpBtn rounded py-2 px-4 h-11 mt-7.5">
+                Kirim
+              </button>
+            </form>
+          </div>
+          <div class="comment-section flex flex-col md:flex-row justify-center items-center mt-4 mb-4 gap-5">
+            <input type="text" name="guestName" id="guestName" class="hidden guestName">
+            <textarea name="comment-input" class="flex comment-input resize-none rounded-lg bg-white px-2 py-4 mt-4 w-105 h-32" placeholder="Tulis pesan anda di sini..."></textarea>
+            <button type="submit" onclick="submitForm()" name="comment-submit" class="comment-submit flex rounded py-2 px-4 h-11 mt-5 mb-7">Kirim</button>
+          </div>
+          <div class="wishes-section flex justify-center items-center text-center">
+            <div class="relative comment-list-section bg-white w-115 h-145 sm:w-170 sm:h-145 justify-center rounded-lg items-center text-center mt-8 mb-4 pt-2">
+              <div class="rotating-box absolute top-1 right-1">
+                <svg class="opacity-50" height="45px" width="45px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28.8 28.8" xml:space="preserve"><style type="text/css">.st0{fill:#000000;}</style><g><path class="st0" d="M27.846 11.194a5.809 5.809 0 0 0 -1.674 -1.672 5.727 5.727 0 0 0 0.124 -1.172 5.834 5.834 0 0 0 -1.714 -4.132 5.834 5.834 0 0 0 -4.129 -1.714 5.727 5.727 0 0 0 -1.174 0.124 5.809 5.809 0 0 0 -1.672 -1.673A5.834 5.834 0 0 0 14.401 0a5.834 5.834 0 0 0 -3.206 0.954 5.809 5.809 0 0 0 -1.673 1.673 5.727 5.727 0 0 0 -1.173 -0.124 5.834 5.834 0 0 0 -4.129 1.714 5.834 5.834 0 0 0 -1.714 4.131c0 0.394 0.044 0.785 0.124 1.173a5.809 5.809 0 0 0 -1.674 1.672A5.834 5.834 0 0 0 0 14.399a5.834 5.834 0 0 0 0.954 3.206 5.809 5.809 0 0 0 1.674 1.673 5.727 5.727 0 0 0 -0.124 1.173 5.825 5.825 0 0 0 1.714 4.129 5.834 5.834 0 0 0 4.131 1.715c0.393 0 0.785 -0.045 1.172 -0.124a5.809 5.809 0 0 0 1.672 1.673A5.834 5.834 0 0 0 14.4 28.8a5.834 5.834 0 0 0 3.206 -0.955 5.809 5.809 0 0 0 1.673 -1.673c0.387 0.079 0.779 0.124 1.172 0.124a5.834 5.834 0 0 0 4.13 -1.715 5.825 5.825 0 0 0 1.714 -4.131q-0.002 -0.591 -0.124 -1.172a5.809 5.809 0 0 0 1.674 -1.672 5.834 5.834 0 0 0 0.953 -3.206 5.809 5.809 0 0 0 -0.954 -3.206m-1.74 5.272a3.731 3.731 0 0 1 -1.583 1.356l-0.893 0.402 0.347 0.916a3.764 3.764 0 0 1 0.239 1.312 3.747 3.747 0 0 1 -1.105 2.659 3.747 3.747 0 0 1 -2.659 1.105 3.764 3.764 0 0 1 -1.313 -0.239l-0.915 -0.346 -0.403 0.893a3.723 3.723 0 0 1 -1.356 1.583 3.764 3.764 0 0 1 -2.066 0.614 3.747 3.747 0 0 1 -3.422 -2.197l-0.403 -0.893 -0.916 0.346a3.764 3.764 0 0 1 -1.312 0.239 3.747 3.747 0 0 1 -2.66 -1.105 3.747 3.747 0 0 1 -1.105 -2.658 3.764 3.764 0 0 1 0.239 -1.313l0.347 -0.916 -0.893 -0.402a3.739 3.739 0 0 1 -1.584 -1.357 3.764 3.764 0 0 1 -0.614 -2.065 3.764 3.764 0 0 1 0.614 -2.064 3.739 3.739 0 0 1 1.584 -1.357l0.893 -0.402 -0.347 -0.916a3.764 3.764 0 0 1 -0.239 -1.313 3.755 3.755 0 0 1 1.105 -2.66 3.747 3.747 0 0 1 2.657 -1.105 3.682 3.682 0 0 1 1.313 0.24l0.915 0.347 0.403 -0.893a3.731 3.731 0 0 1 1.357 -1.584 3.764 3.764 0 0 1 2.068 -0.611 3.764 3.764 0 0 1 2.065 0.614 3.731 3.731 0 0 1 1.357 1.584l0.403 0.893 0.915 -0.347a3.764 3.764 0 0 1 1.314 -0.24 3.747 3.747 0 0 1 2.657 1.105 3.764 3.764 0 0 1 1.105 2.66 3.764 3.764 0 0 1 -0.239 1.313l-0.347 0.916 0.893 0.402a3.723 3.723 0 0 1 1.583 1.356 3.764 3.764 0 0 1 0.614 2.065 3.764 3.764 0 0 1 -0.614 2.067"/><path class="st0" d="M14.334 10.104a11.455 11.455 0 0 0 0.191 -0.457c0.581 -1.477 0.775 -2.15 0.039 -2.826a10.636 10.636 0 0 1 -0.305 -0.268 7.364 7.364 0 0 1 -0.292 0.281c-0.708 0.706 -0.484 1.37 0.158 2.819q0.077 0.177 0.209 0.452"/><path class="st0" d="M10.816 11.272c0.116 0.045 0.275 0.103 0.466 0.169a14.727 14.727 0 0 0 -0.188 -0.457c-0.633 -1.453 -0.97 -2.068 -1.969 -2.025q-0.203 0.019 -0.404 0.025a11.455 11.455 0 0 1 -0.01 0.407c-0.001 1.001 0.628 1.312 2.106 1.883"/><path class="st0" d="M10.102 14.467a13.091 13.091 0 0 0 -0.456 -0.19c-1.476 -0.583 -2.149 -0.776 -2.826 -0.042a9 9 0 0 1 -0.268 0.307 6.545 6.545 0 0 1 0.281 0.292c0.704 0.706 1.37 0.484 2.82 -0.158a18.818 18.818 0 0 0 0.448 -0.209"/><path class="st0" d="M8.958 19.676q0.02 0.202 0.025 0.403 0.203 0.001 0.407 0.01c1 0 1.312 -0.627 1.884 -2.106 0.046 -0.117 0.105 -0.277 0.17 -0.468a18.818 18.818 0 0 0 -0.46 0.191c-1.453 0.632 -2.068 0.97 -2.025 1.969"/><path class="st0" d="M14.467 18.695a12.273 12.273 0 0 0 -0.191 0.458c-0.58 1.477 -0.775 2.149 -0.038 2.826a10.636 10.636 0 0 1 0.305 0.268 6.545 6.545 0 0 1 0.292 -0.281c0.707 -0.706 0.484 -1.37 -0.158 -2.819a16.364 16.364 0 0 0 -0.209 -0.452"/><path class="st0" d="M14.401 12.466a1.934 1.934 0 1 0 -0.001 3.868 1.934 1.934 0 0 0 0.001 -3.868"/><path class="st0" d="M19.842 9.124a6.545 6.545 0 0 1 -0.025 -0.404q-0.203 -0.002 -0.407 -0.01c-0.999 0 -1.31 0.627 -1.884 2.107a11.455 11.455 0 0 0 -0.169 0.466 14.727 14.727 0 0 0 0.46 -0.19c1.453 -0.632 2.067 -0.97 2.025 -1.968"/><path class="st0" d="M17.984 17.526a13.091 13.091 0 0 0 -0.466 -0.169c0.074 0.187 0.139 0.344 0.191 0.46 0.632 1.453 0.97 2.068 1.969 2.025q0.203 -0.019 0.404 -0.025 0.001 -0.202 0.011 -0.407c-0.001 -0.999 -0.628 -1.312 -2.107 -1.883"/><path class="st0" d="M19.148 14.123c-0.117 0.05 -0.27 0.122 -0.45 0.209a11.455 11.455 0 0 0 0.457 0.191c1.475 0.583 2.149 0.776 2.825 0.04q0.131 -0.156 0.268 -0.306a6.545 6.545 0 0 1 -0.281 -0.291c-0.704 -0.707 -1.37 -0.484 -2.819 0.157"/></g></svg>
+              </div>
+              <div class="cls-head flex flex-row justify-center items-center text-center gap-4 h-17">
+                <svg version="1.1" id="Capa_1" class="" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" style="enable-background:new 0 0 404 404;" xml:space="preserve" width="28" height="28"><g><path d="m27.848 10.628 -1.647 -1.246 0.135 -0.369a0.381 0.381 0 0 0 -0.226 -0.488l-2.018 -0.737L14.229 0.338a0.373 0.373 0 0 0 -0.46 0L10.481 2.823 5.99 1.185a0.381 0.381 0 0 0 -0.488 0.226L2.893 8.556 0.152 10.628a0.373 0.373 0 0 0 -0.152 0.306v16.424a0.381 0.381 0 0 0 0.38 0.38h27.237a0.381 0.381 0 0 0 0.38 -0.38V10.934a0.373 0.373 0 0 0 -0.152 -0.303m-26.327 0.684h0.369l-0.079 0.219zm0.649 -0.763h-0.649l0.894 -0.677zm8.451 8.594L0.763 26.593V11.699zm3.383 -1.601 12.483 9.434h-24.967zm3.383 1.601 9.851 -7.446v14.894zm8.111 -7.831h0.987l-1.363 1.029zm0.987 -0.763h-0.709l0.154 -0.42zM14 1.12l7.644 5.777 -10.311 -3.761zM6.088 2.03l19.402 7.079 -1.489 4.081L16.753 18.667l-2.522 -1.906a0.373 0.373 0 0 0 -0.46 0L11.249 18.667 2.443 12.012z"/><path d="m6.643 7.324 0.989 0.362 -1.02 0.474a0.38 0.38 0 0 0 0.322 0.691l1.71 -0.796 0.303 0.11 -0.11 0.303 -1.71 0.796a0.38 0.38 0 0 0 0.322 0.691l1.02 -0.474 -0.362 0.989a0.381 0.381 0 0 0 0.357 0.511 0.373 0.373 0 0 0 0.357 -0.25l0.362 -0.989 0.474 1.02a0.381 0.381 0 0 0 0.506 0.184 0.381 0.381 0 0 0 0.184 -0.506l-0.796 -1.71 0.11 -0.303 0.303 0.11 0.796 1.71a0.38 0.38 0 1 0 0.691 -0.322l-0.474 -1.02 0.989 0.362a0.38 0.38 0 0 0 0.261 -0.716l-0.989 -0.362 1.02 -0.474a0.38 0.38 0 0 0 -0.322 -0.691l-1.71 0.796 -0.303 -0.11 0.11 -0.303 1.71 -0.796a0.38 0.38 0 0 0 -0.322 -0.691l-1.02 0.474 0.362 -0.989a0.381 0.381 0 0 0 -0.226 -0.488 0.381 0.381 0 0 0 -0.488 0.226l-0.359 0.992 -0.474 -1.02a0.38 0.38 0 0 0 -0.691 0.322l0.796 1.71 -0.11 0.303 -0.303 -0.11 -0.796 -1.71a0.38 0.38 0 0 0 -0.691 0.322l0.474 1.02 -0.989 -0.362a0.381 0.381 0 0 0 -0.488 0.226 0.381 0.381 0 0 0 0.226 0.49"/><path d="m16.823 8.493 6.153 2.245a0.38 0.38 0 0 0 0.261 -0.716l-6.153 -2.245a0.38 0.38 0 1 0 -0.261 0.716"/><path d="m16.165 10.299 6.151 2.247a0.38 0.38 0 0 0 0.261 -0.716l-6.153 -2.245a0.38 0.38 0 0 0 -0.261 0.716"/><path d="m15.505 12.108 6.153 2.245a0.38 0.38 0 0 0 0.261 -0.716l-6.153 -2.245a0.38 0.38 0 0 0 -0.261 0.716"/></g></svg>
+                <span class="-translate-y-5">Doa & Harapan</span>
+              </div>
+              <ul class="comment-list z-50 bg-white border items-center border-black mx-auto mt-1 rounded-lg w-95 h-120 sm:w-150 sm:h-120 px-4 py-6 space-y-4 overflow-y-auto"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="gifts" class="gifts">
+          <div class="flex flex-col text-center items-center">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim hadiah<br></h2>
+            <p>Isi form di bawah ini untuk konfirmasi kehadiran.</p>
+          </div>
+          <div class="flex flex-col justify-center text-center">
+            <ul class="max-w-md mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow-md space-y-4">
+              <li class="py-2 px-4 hover:bg-gray-100 transition-colors">
+                <div class="font-bold">Bank A</div>
+                09027498 - KOKO JUJUM
+              </li>
+              <li class="py-2 px-4 hover:bg-gray-100 transition-colors">
+                <div class="font-bold">Bank B</div>
+                07023498 - KOKO JUJUM
+              </li>
+              <li class="py-2 px-4 hover:bg-gray-100 transition-colors items-center justify-center">
+                <div class="font-bold">QRIS</div>
+                <img src="Image/barcode.gif" alt="QRIS" class="ml-3.5 w-48 rounded border border-gray-300 p-1 shadow-sm justify-center items-center">
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <footer>
+          <div class="flex flex-col justify-center text-center">
+            <small class="block">&copy; 2025 Prasida Informatic, All Rights Reserved.</small>
+            <small class="block">Design by <a href="https://www.instagram.com/rrzhafari/"> @prasida_informatic</a>.</small>
+            <ul class="flex space-x-4 justify-center place-items-center mt-2">
+              <li class=""><a href="">
+                <svg class="w-6 h-6 hover:white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </footer>
+
+        <div id="audio-holder">
+          <audio id="audio" autoplay loop>
+            <source src="audio/wedding-day-318423.mp3" type="audio/mp3">
+          </audio>
+          <div class="audio-icon-wrapper justify-center items-center flex scale-95 transition-all duration-300" style="display: none;">
+            <svg class="play-btn w-10 h-10 justify-center items-center hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z" clip-rule="evenodd"/>
+            </svg>
+            <svg class=" pause-btn w-10 h-10 justify-center items-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M8 5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H8Zm7 0a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1Z" clip-rule="evenodd"/>
+            </svg>
+
+          </div>
+
+        </div>
+
+        <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+        
+        <!-- Offcanvas & Gallery lightbox -->
+        <script>
+          const stickyTop = document.querySelector('.sticky');
+          const toggle = document.getElementById('navbarToggle');
+          const offcanvas = document.getElementById('offcanvasMenu');
+          const closeBtn = document.getElementById('closeOffcanvas');
+          const backdrop = document.getElementById('offcanvasBackdrop');
+          const hero = document.getElementById('hero')
+          const lightbox = document.getElementById('lightbox')
+          const lightboxImage = document.getElementById('lightboxImage')
+          const lightboxclosebtn = document.getElementById('lightboxclosebtn')
+          const lightboxInner = document.getElementById("lightboxInner");
+
+          toggle.addEventListener('click', () => {
+            offcanvas.classList.remove('translate-x-full');
+            offcanvas.classList.add('translate-x-0');
+            stickyTop.style.overflow = 'visible';
+            //hero.classList.add("opacity-50");
+            backdrop.classList.remove('hidden');
+            document.querySelector('.offcanvas-title').classList.remove('hidden')
+          });
+
+          closeBtn.addEventListener('click', () => {
+            offcanvas.classList.add('translate-x-full');
+            offcanvas.classList.remove('translate-x-0');
+            //hero.classList.remove('opacity-50')
+            stickyTop.style.overflow = 'hidden';
+            backdrop.classList.add('hidden');
+            document.querySelector('.offcanvas-title').classList.add('hidden')
+          });
+
+          backdrop.addEventListener('click', () => {
+            offcanvas.classList.add('translate-x-full');
+            offcanvas.classList.remove('translate-x-0');
+            backdrop.classList.add('hidden');
+            stickyTop.style.overflow = 'hidden';
+            document.querySelector('.offcanvas-title').classList.add('hidden')
+          });
+
+          function openLightbox(event,src){
+            event.preventDefault();
+            lightboxImage.src = src;
+            lightbox.classList.remove('hidden');
+            lightboxclosebtn.classList.remove('hidden');
+            //document.body.style.overflow="hidden";
+            //display change before transition
+            requestAnimationFrame(()=>{
+              lightbox.classList.add('opacity-100')
+              lightbox.classList.remove('opacity-0')
+              lightbox.classList.add('scale-100')
+              lightbox.classList.remove('scale-95')
+            })
+          }
+          function closeLightbox(){
+            lightbox.classList.remove('opacity-100')
+            lightbox.classList.add('opacity-0')
+            lightbox.classList.remove('scale-100')
+            lightbox.classList.add('scale-95')
+            //after transition ends, hide modal
+            setTimeout(()=>{
+              lightbox.classList.add('hidden')
+              lightboxImage.src = ""
+              //document.body.style.overflow="visible";
+              lightboxclosebtn.classList.add('hidden')
+            },300);
+          }
+          lightbox.addEventListener('click',function(e){
+            if(e.target === this){
+              closeLightbox();
+            }
+          })
+        </script>
+        
+        <!-- Audio & Scroll Enabler -->
+        <script>
+          const rootElement = document.querySelector(":root")
+          const audiowrapper = document.querySelector(".audio-icon-wrapper");
+          const song = document.querySelector('#audio');
+          const playbtn = document.querySelector('.play-btn');
+          const pausebtn = document.querySelector('.pause-btn');
+          let isPlaying = false;
+          function disableScroll(){
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function(){
+              window.scrollTo(scrollTop,scrollLeft)
+            }
+
+            
+            rootElement.style.scrollBehavior = 'auto'
+          }
+          function enableScroll(){ 
+            document.querySelector('.hero-button').classList.add('opacity-0','scale-0','transition-all','duration-500')
+            document.querySelector('.hero-button').addEventListener('transitionend',()=>{
+              document.querySelector('.hero-button').remove()
+            },{once:true})
+            window.onscroll = function(){ }          
+            rootElement.style.scrollBehavior = 'smooth'
+            playAudio();
+            isPlaying = true;
+              //localStorage.setItem('opened','true');
+          }
+          //if(!localStorage.getItem('opened')){
+          disableScroll();
+          //}
+          function playAudio(){
+            song.volume = 0.2;
+            song.play();
+            audiowrapper.style.display = 'flex';
+          }
+
+          audiowrapper.onclick = function(){
+            if(isPlaying){
+              song.pause();
+              playbtn.classList.remove('hidden')
+              pausebtn.classList.add('hidden')
+              isPlaying = false
+              console.log(isPlaying)
+            }else{
+              song.play();
+              playbtn.classList.add('hidden')
+              pausebtn.classList.remove('hidden')
+              isPlaying = true
+              console.log(isPlaying)
+            }
+            //isPlaying = !isPlaying;
+          }
+
+          var inactivityTimeout;
+          //var i = 0;
+          document.addEventListener('visibilitychange',()=>{
+             if(document.hidden && isPlaying){
+              inactivityTimeout = setTimeout(()=>{  
+                song.pause();
+                playbtn.classList.remove('hidden')
+                pausebtn.classList.add('hidden')
+              },500)
+              isPlaying = false
+              console.log(isPlaying)
+            }else{
+              clearTimeout(inactivityTimeout)
+              //isPlaying = true
+              console.log(isPlaying)
+            }
+            //isPlaying = !isPlaying;
+          })
+        </script>
+
+        <script src="Countdown/simplyCountdown.umd.js"></script>
+        
+        <!-- Countdown -->
+        <script>
+            simplyCountdown('.my-countdown',{
+                year:2025,
+                month:7,
+                day:2,
+                words: { // Custom labels, with lambda for plurals
+                    days: { root: 'hari', lambda: (root, n) => n > 1 ? root: root },
+                    hours: { root: 'jam', lambda: (root, n) => n > 1 ? root: root },
+                    minutes: { root: 'menit', lambda: (root, n) => n > 1 ? root: root },
+                    seconds: { root: 'detik', lambda: (root, n) => n > 1 ? root: root }
+                },
+                plural: false,
+            });
+        </script>
+
+        <!-- Guest Confirmation -->
+        <script>
+          window.addEventListener("load", function() {
+            const form = document.getElementById('rsvp-form');
+            form.addEventListener("submit", function(e) {
+              e.preventDefault();
+              const data = new FormData(form);
+              const action = e.target.action;
+              fetch(action, {
+                method: 'POST',
+                body: data,
+              })
+              .then(() => {
+                alert("Kehadiran anda sudah terkonfirmasi, Terima kasih.");
+              })
+            });
+          });
+        </script>
+        
+        <!-- Guest Name in link -->
+        <script>
+          const urlParams = new URLSearchParams(window.location.search);
+          const guest = urlParams.get('g') || "";
+          //console.log(guest)
+
+          const pronoun = urlParams.get('p') || "Bapak/Ibu/Saudara/i";
+
+          const nameContainer = document.querySelector(".hero h4 span")
+          nameContainer.innerHTML = `${pronoun} ${guest}.`.replace(/ ,$/, ',')
+
+          document.querySelector('#name').value = guest;
+          document.querySelector('#guestName').value = guest;
+        </script>
+
+        <!-- Post message from Database -->
+        <script>
+          function submitForm(){
+            const commentForm = document.querySelector('.comment-section')
+            const message = document.querySelector('.comment-input')
+            const guestName = document.querySelector('.guestName')
+            const commentList = document.querySelector('.comment-list')
+
+            fetch('http://localhost:8000/submit/',{
+              method: 'POST',
+              headers:{
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                guestName:guestName.value,
+                message:message.value
+              })
+            })
+            .then(response => response.json())
+            .then(data =>{
+              alert(data.status || data.error);
+            })
+            .catch(err => console.error(err));
+
+            console.log("sending request", guestName.value, message.value)
+          }
+         
+        </script>
+
+        <!-- Create message list -->
+        <script>
+          //let currentPage = 1
+          fetch('http://192.168.1.41:8000/show/')
+          .then(res => res.json())
+          .then(data =>{
+            const list = document.querySelector('.comment-list');
+            data.forEach(data =>{
+              const li = document.createElement('li')
+              li.classList.add('flex','flex-col','border','rounded-lg','p-4')
+              const headingWrapper = document.createElement('div');
+              headingWrapper.classList.add('flex','justify-between')
+              const h3 = document.createElement('h3')
+              //h3.classList.add('flex' ,'flex-row')
+              const h4 = document.createElement('h4')
+              h4.classList.add('flex', 'flex-row')
+              const p = document.createElement('p')
+              p.classList.add('text-left')
+
+              h3.textContent = data.name
+              h4.textContent = data.created_at
+              p.textContent = data.message
+
+              //li.innerHTML = `<strong>${h3.textContent = data.name}</strong> ${h4.textContent = data.created_at} <br> ${p.textContent = data.message}`
+              //li.innerHTML = `${data.message}`
+
+              headingWrapper.appendChild(h3)
+              headingWrapper.appendChild(h4)
+              li.appendChild(headingWrapper)
+              li.appendChild(p)
+              list.appendChild(li)
+            })
+          })
+        </script>
+
+        <!-- section animations -->
+         <script>
+          const hero_section = document.getElementById('hero');
+
+          window.addEventListener('DOMContentLoaded',()=>{
+            hero_section.classList.add('animate-zoom')
+          })
+         </script>
+    </body>
+</html>
+
+<script>
+  //link sheet
+  //https://script.google.com/macros/s/AKfycbwiX_OqN8qqNHe4RGxWF_MG64gR26xOEJFgx-Fgx8YF0ZMs6GlghJ65qfyye7iACJm7ug/exec
+</script>

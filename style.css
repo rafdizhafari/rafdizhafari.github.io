@@ -1,0 +1,518 @@
+:root{
+    --gold: #ffd11a;
+    --bg: #263300;
+    --shadow : 0 2px 2px rgba(0,0,0,0.5);
+    --earth: #cc9900;
+    --pink: #ffcccc;
+    scroll-behavior: smooth;
+    --c1: #F8F0E5;
+    --c2: #EADBC8;
+    --c3: #DAC0A3;
+    --c4: #102C57;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Outfit",sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Image/groom-putting-ring-bride-s-finger.jpg);
+    /* background-color: var(--c1); */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1 .hero p .hero h4{
+    text-shadow: var(--shadow);
+}
+.hero h1{
+    font-family: "Sacramento", cursive;
+    font-size: 4.8rem;
+    font-style: italic;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a{
+    color: var(--gold);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--gold);
+    color: white;
+}
+
+.mynavbar{
+    background-color: rgba(218,192,163,0.4);
+    backdrop-filter: blur(2px);
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: "Sacramento", cursive;
+    font-size: 2.7rem;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.OCM{
+    background-color: var(--c3);
+}
+.home{
+    /* background-image: url(Image/41314.jpg); */
+    background-color: var(--c1);
+    background-size: cover;
+    margin-top: -4rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+.home h2{
+    color: var(--earth);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+.home h3{
+    color: #111109;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.home p{
+    font-size: 1.1rem;
+    
+}
+.home .couple{
+    margin-top: 100px;
+}
+.home .couple h3{
+    font-family: "Sacramento";
+    font-size: 2.4rem;
+    color: #111109;
+}
+.info{
+    background-color: var(--c4);
+    color: whitesmoke;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2{
+    color: var(--earth);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info p{
+    font-size: 1.1rem;
+}
+.info .description{
+    font-size: 1rem;
+    font-size: 400;
+}
+.info .cardAkad{
+    background-color: rgba(255,255,255,0.2);
+}
+.info .cardResepsi{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.story,
+.gallery,
+.rsvp,
+.gifts{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.story{
+    background-color: var(--c2);
+}
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2{
+    color: var(--earth);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+.story span,
+.gallery span,
+.gifts span{
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: block;
+}
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.timeline{
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+.timeline::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
+
+}
+.timeline li::before,
+.timeline li::after{
+    content: "";
+    display: table;
+}
+.timeline li::after{
+    clear: both;
+}
+.timeline li .timeline-image{
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.timeline li .timeline-panel{
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--c1);
+}
+/* .timeline li .timeline-panel::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top:15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    right: -14px;
+    top:65px;
+} */
+/* .timeline li .timeline-panel::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    right: -13px;
+    top:66px;
+} */
+/* .timeline li.timeline-inverted .timeline-panel::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top:15px solid transparent;
+    border-right: 15px solid #ccc;
+    border-left: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    left: -14px;
+    right: auto;
+    top:65px;
+}
+.timeline li.timeline-inverted .timeline-panel::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-right: 14px solid #fff;
+    border-left: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    left: -13px;
+    right: auto;
+    top:66px;
+} */
+.timeline li.timeline-inverted .timeline-panel{
+    float: right;
+}
+/*buat foto
+1200 x 768 photo
+400 x 533 thumbnail (potrait)*/
+.gallery{
+    background-color: var(--c1);
+}
+.lightbox{
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+}
+.rsvp{
+    background-color: var(--c4);
+}
+.rsvp p{
+    color: #f5f5f5;
+}
+.rsvp button{
+    background-color: #ffd11a;
+}
+
+.rsvp-form{
+    background-color: rgba(218,192,163,0.4);
+}
+
+.rsvp form .nameInput input,
+.rsvp form .guestAmount input,
+.rsvp form .guestStatus select,
+.rsvp .comment-section textarea,
+.rsvp .comment-list-section ul
+{
+    background-color: var(--c2);
+}
+.rsvp .comment-list-section{
+    background-color: var(--c3);
+}
+.rsvp .comment-list-section ul li{
+    background-color: var(--c1);
+}
+.gifts{
+    background-color: var(--c1);
+}
+footer{
+    padding: 3rem;
+    background-color: var(--c3);
+    color: #f5f5f5;
+}
+footer a{
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: bold; 
+}
+footer a:hover{
+    color: #f5f5f5;
+}
+
+.audio-icon-wrapper{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 25rem;
+    right: 0rem;
+    cursor: pointer;
+    color: black;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    background-color: rosybrown;
+}
+.comment-list-section span{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    margin-top: 3rem;
+    color: var(--c4);
+}
+.comment-list-section .comment-list li h3{
+    color: black;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-optical-sizing: auto;
+}
+.comment-list-section .comment-list li h4{
+    text-align: right;
+    padding-right: 1rem;
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+}
+.comment-list-section .comment-list li p{
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-optical-sizing: auto;
+}
+.cls-head svg{
+    color: var(--c4);
+}
+.cls-head span{
+  font-family: "Cookie", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: x-large;
+}
+.rotating-box {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  animation: rotate360 17s linear infinite;
+}
+@keyframes rotate360 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animate-zoom{
+    animation: zoomIn 0.6s ease-out forwards;
+}
+/*media query */
+/* laptop */
+@media screen and (max-width:992px){
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown > simply-section{
+        padding:70px;
+    }
+    .timeline::before{
+        left: 60px;
+    }
+    .timeline li .timeline-image{
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+    .timeline li .timeline-panel{
+        width: calc((100% - 200px));
+        float: right;
+    }
+    .timeline li .timeline-panel::before{
+        border-right-width: 15px;
+        border-left-width: 0;
+        left: -15px;
+        right: auto;
+        top: 40% !important;
+    }
+    .timeline li .timeline-panel::after{
+        border-right-width: 14px;
+        border-left-width: 0;
+        left: -13px;
+        right: auto;
+        top:41% !important;
+    }
+    .timeline li .timeline-image{
+        width: 120px;
+        height: 120px;
+    }
+}
+/*
+.audio-icon-wrapper .play-btn{
+    animation: rotating 4s linear infinite;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+/* Tablet */
+@media screen and (max-width:768px){
+    html{
+        font-size: 70%;
+    }
+    .simply-countdown > simply-section{
+        padding:60px;
+        margin: 5px;
+    }
+
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sticky{
+        overflow: hidden;
+    }
+
+    .timeline li .timeline-image{
+        width: 100px;
+        height: 100px;
+    }
+    .timeline li .timeline-panel{
+        width: 56%;
+        transform: translateX(-90px);
+        margin-top: 1rem;
+    }
+    .timeline li .timeline-panel::before{
+        top: 30% !important;
+    }
+    .timeline li .timeline-panel::after{
+        top: 31% !important;
+    }
+    .home .couple{
+        margin-top: 60px;
+    }
+}
+/* Mobile phone */
+@media screen and (max-width:576px){
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown > simply-section{
+        padding:45px;
+        margin: 3px;
+    }
+    .timeline li .timeline-panel{
+        width: 65%;
+        transform: translateX(20px);
+        margin-top: 1rem;
+    }
+}
