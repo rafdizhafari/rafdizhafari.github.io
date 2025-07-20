@@ -120,12 +120,12 @@ body{
     padding-bottom: 8rem;
 }
 
-.info h2{
+/* .info h2{
     color: var(--earth);
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
-}
+} */
 
 .info p{
     font-size: 1.1rem;
@@ -151,6 +151,7 @@ body{
 .story{
     background-color: var(--c2);
 }
+.info h2,
 .story h2,
 .gallery h2,
 .rsvp h2,
@@ -159,6 +160,8 @@ body{
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .story span,
 .gallery span,
@@ -304,6 +307,7 @@ body{
 .rsvp form .guestAmount input,
 .rsvp form .guestStatus select,
 .rsvp .comment-section textarea,
+.rsvp .comment-section input,
 .rsvp .comment-list-section ul
 {
     background-color: var(--c2);
@@ -363,13 +367,14 @@ footer a:hover{
     padding-right: 1rem;
     color: black;
     font-family: "Nunito", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: small;
     font-optical-sizing: auto;
 }
 .comment-list-section .comment-list li p{
     color: black;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0.90rem;
+    margin-bottom: 0.5rem;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-optical-sizing: auto;
@@ -408,6 +413,22 @@ footer a:hover{
 }
 .animate-zoom{
     animation: zoomIn 0.6s ease-out forwards;
+}
+@layer utilities{
+    .custom-scrollbar::-webkit-scrollbar{
+        width: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track{
+        background: var(--c2);
+        border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb{
+        background: var(--c3);
+        border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover{
+        background: var(--c3);
+    }
 }
 /*media query */
 /* laptop */
