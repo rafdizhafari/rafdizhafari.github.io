@@ -3,12 +3,12 @@
     <head>
         <meta charset=""UTF-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=no"/>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cookie&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Countdown/themes/default.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/src/output.css">
         <title>Invitation</title>
         <!-- <xml version="1.0" encoding="iso-8859-1"> -->
         <!--Simply COuntdown-->
@@ -130,11 +130,11 @@
           
           <div class="flex flex-col text-center items-center">
             <h2>Informasi Acara<br></h2>
-            <p class="description address i5 mb-2">Alamat: Sevastopol<br></p>
+            <p class="description address i5 mb-2 px-14">Alamat: Sevastopol<br></p>
             <!-- for iframe -> class = "i6-1 lg:w-180 lg:h-80 mx-auto mb-2" -->
             <div class="i6-1"></div>
             <a href="https://g.co/kgs/ya9HtGB" target="_blank" class="i6-2 inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-3 mt-2">Klik untuk membuka peta</a>
-            <p class="description mx-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia pariatur magni hic! Nisi, eveniet. ipsum dolor, sit amet consectetur adipisicing elit. Nam, totam. ipsum dolor sit amet consectetur.</p>
+            <p class="description px-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia pariatur magni hic! Nisi, eveniet. ipsum dolor, sit amet consectetur adipisicing elit. Nam, totam. ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="flex flex-col sm:flex-row justify-center items-center mt-7 gap-6">
             <div class="cardAkad max-w-sm w-120 rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
@@ -274,6 +274,7 @@
           </div>
           <div class="flex justify-center items-center mt-7 mb-5">
             <form autocomplete="off" id="rsvp-form" class="rsvp-form flex flex-col md:flex-row justify-center items-center sm:space-x-2 space-y-2 sm:space-y-0 gap-6 md:w-220 md:h-120 w-105 h-145 rounded-lg"
+            name="rsvp-form"
             method="POST"
             action="https://script.google.com/macros/s/AKfycbwiX_OqN8qqNHe4RGxWF_MG64gR26xOEJFgx-Fgx8YF0ZMs6GlghJ65qfyye7iACJm7ug/exec">
               <div class="nameInput flex flex-col">
@@ -316,7 +317,7 @@
                 <span class="-translate-y-5">Doa & Harapan</span>
               </div>
               <div class="comment-section flex flex-col justify-center items-center mt-7 mb-2 gap-1">
-                <input type="text" name="guestName" id="guestName" class="guestName bg-white rounded-lg h-15 w-95 px-2 py-4" placeholder="Tulis nama pengirim di sini...">
+                <input autocomplete="off" type="text" name="guestName" id="guestName" class="guestName bg-white rounded-lg h-15 w-95 px-2 py-4" placeholder="Tulis nama pengirim di sini...">
                 <textarea name="comment-input" class="flex comment-input resize-none rounded-lg bg-white px-2 py-4 mt-0 w-95 h-32" placeholder="Tulis pesan anda di sini..."></textarea>
                 <button type="submit" onclick="submitForm()" name="comment-submit" class="comment-submit flex rounded py-2 px-4 h-11 mt-5 mb-3">Kirim</button>
               </div>
@@ -385,6 +386,8 @@
           </div>
 
         </div>
+
+        <div id="alertMessage" class="alertMessage opacity-0 -translate-x-1/2 transition-all duration-500 ease-in-out z-50"></div>
 
         <!-- <script src="https://unpkg.com/feather-icons"></script> -->
         
@@ -567,8 +570,27 @@
                 method: 'POST',
                 body: data,
               })
-              .then(() => {
-                alert("Kehadiran anda sudah terkonfirmasi, Terima kasih.");
+              .then(res =>{
+                if(res.status==200){
+                  const alert = document.getElementById('alertMessage')
+                  alert.textContent = "Konfirmasi anda berhasil"
+                  alert.classList.remove('opacity-0','-translate-x-1/2')
+                  alert.classList.add('opacity-100','translate-x-0')
+                  setTimeout(()=>{
+                    alert.classList.add('opacity-0','-translate-x-1/2')
+                    alert.classList.remove('opacity-100','translate-x-0')
+                  },3000)
+                }
+              })
+              .catch(err =>{
+                const alert = document.getElementById('alertMessage')
+                  alert.textContent = `Konfirmasi anda gagal ${err.message}`
+                  alert.classList.remove('opacity-0','-translate-x-1/2')
+                  alert.classList.add('opacity-100','translate-x-0')
+                  setTimeout(()=>{
+                    alert.classList.add('opacity-0','-translate-x-1/2')
+                    alert.classList.remove('opacity-100','translate-x-0')
+                  },3000)
               })
             });
           });
@@ -609,10 +631,23 @@
             })
             .then(response => response.json())
             .then(data =>{
+              const alert = document.getElementById('alertMessage')
               if(data.status=='success'){
-                alert("Pesan anda terkirim");
+                alert.textContent = "Pesan anda sudah terkirim."
+                alert.classList.remove('opacity-0','-translate-x-1/2')
+                alert.classList.add('opacity-100','translate-x-0')
+                setTimeout(()=>{
+                  alert.classList.add('opacity-0','-translate-x-1/2')
+                  alert.classList.remove('opacity-100','translate-x-0')
+                },3000)
               }else{
-                alert("Pesan anda gagal terkirim")
+                alert.textContent = "Pesan anda gagal terkirim."
+                alert.classList.remove('opacity-0','-translate-x-1/2')
+                alert.classList.add('opacity-100','translate-x-0')
+                setTimeout(()=>{
+                  alert.classList.add('opacity-0','-translate-x-1/2')
+                  alert.classList.remove('opacity-100','translate-x-0')
+                },3000)
               }
               
             })
@@ -764,8 +799,3 @@
           </script>
     </body>
 </html>
-
-<script>
-  //link sheet
-  //https://script.google.com/macros/s/AKfycbwiX_OqN8qqNHe4RGxWF_MG64gR26xOEJFgx-Fgx8YF0ZMs6GlghJ65qfyye7iACJm7ug/exec
-</script>
