@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from telegram import Update
 
 #BOT_TOKEN = os.environ.get('BOT_TOKEN')
-BOT_TOKEN = "8168266978:AAH_QMWVTVH0RJdZIWiSnXUjkymQv9EfH9o"
+BOT_TOKEN = ""
 bot = telebot.TeleBot(BOT_TOKEN)
 
 user_data={}
