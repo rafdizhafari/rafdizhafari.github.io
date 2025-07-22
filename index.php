@@ -9,6 +9,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cookie&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Countdown/themes/default.css">
         <link rel="stylesheet" href="/src/output.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <title>Invitation</title>
         <!-- <xml version="1.0" encoding="iso-8859-1"> -->
         <!--Simply COuntdown-->
