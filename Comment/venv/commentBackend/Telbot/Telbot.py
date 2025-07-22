@@ -6,7 +6,7 @@ from telegram import Update
 from django.contrib.staticfiles import finders
 # import json
 
-BOT_TOKEN = ""
+BOT_TOKEN = "8168266978:AAH_QMWVTVH0RJdZIWiSnXUjkymQv9EfH9o"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 user_data={}
@@ -67,13 +67,13 @@ def create_link(message):
     #     user_state.pop(chat_id,None)
     #     cancel_handler(message)
     #     return
-    if user_state[chat_id] != "awaiting_name" or message.text=='n':
+    if user_state[chat_id] != "awaiting_name" or message.text=='n' or message.text=='N':
         bot.send_message(chat_id, "Silakan mulai dengan perintah /link.")
         return
     name = user_data.get(chat_id,{}).get("name","")
     title = user_data.get(chat_id,{}).get("title","")
 
-    bot.send_message(chat_id,f"berikut link undangan: \n http://192.168.1.41:5500?p={title}&g={name}")
+    bot.send_message(chat_id,f"berikut link undangan: \n http://192.168.1.41:3000?p={title}&g={name}")
 
 @bot.message_handler(commands=['cancel'])
 def cancel_handler(message):

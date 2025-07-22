@@ -102,7 +102,6 @@
                   
                   <div class="sm:w-2/3 sm:text-right mt-1 sm:mt-0 sm:pl-4 md:pr-4 justify-center items-center">
                     <h3 class="text-xl font-semibold mb-2">Groom</h3>
-                    <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit suscipit placeat repellendus porro ullam rerum.</p>
                     <p class="i3">putra dari fulan <br> dan <br> ibu fulanah</p>
                   </div>
                   <div class="w-24 sm:w-1/3 mt-2 ">
@@ -119,7 +118,6 @@
                   </div>
                   <div class="sm:w-2/3 sm:text-left mt-4 sm:mt-0 sm:pl-4">
                     <h3 class="text-xl font-semibold mb-2">Bride</h3>
-                    <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit suscipit placeat repellendus porro ullam rerum.</p>
                     <p class="i4">putri dari bapak fulan <br> dan <br> ibu fulanah</p>
                   </div>
                   
@@ -138,10 +136,9 @@
             <!-- for iframe -> class = "i6-1 lg:w-180 lg:h-80 mx-auto mb-2" -->
             <div class="i6-1"></div>
             <a href="https://g.co/kgs/ya9HtGB" target="_blank" class="i6-2 inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-3 mt-2">Klik untuk membuka peta</a>
-            <p class="description px-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia pariatur magni hic! Nisi, eveniet. ipsum dolor, sit amet consectetur adipisicing elit. Nam, totam. ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="flex flex-col sm:flex-row justify-center items-center mt-7 gap-6">
-            <div class="cardAkad max-w-sm w-120 rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
+            <div class="cardAkad max-w-sm rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
               <p class="text-white mb-4 text-center">
                 Akad Nikah
               </p>
@@ -159,7 +156,7 @@
                   <p class="text-left text-white">Rabu, 2 Juli 2025</p>
                 </div>
               </div>
-              <p class="text-white mt-4 mb-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio est quae.</p>
+              <!-- <p class="text-white mt-4 mb-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio est quae.</p> -->
             </div>
             <div class="cardResepsi max-w-sm bg-white rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
               <p class="text-white mb-4 text-center">
@@ -179,7 +176,7 @@
                   <p class="text-left text-white">Rabu, 2 Juli 2025</p>
                 </div>
               </div>
-              <p class="text-white mt-4 mb-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio est quae.</p>
+              <!-- <p class="text-white mt-4 mb-2 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio est quae.</p> -->
             </div>
           </div>
         </section>
@@ -240,7 +237,7 @@
           <div class="flex flex-col text-center items-center">
             <span>Our Memory</span>
             <h2>Galeri<br></h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 justify-center place-items-center ml-4 mr-4 mt-3">
               <a href="https://picsum.photos/id/433/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/433/1200/768')">
