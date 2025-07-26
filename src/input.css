@@ -144,9 +144,10 @@ body{
     background-color: var(--c1);
 }
 footer{
-    padding-top: 4rem;
+    padding-top: 3rem;
     background-color: var(--c3);
     color: #171717;
+    padding-bottom: 0.5rem;
 }
 footer a{
     color: var(--bg);
@@ -154,7 +155,7 @@ footer a{
     font-weight: bold; 
 }
 footer a:hover{
-    color: #f5f5f5;
+    color: moccasin;
 }
 
 .rsvp{
