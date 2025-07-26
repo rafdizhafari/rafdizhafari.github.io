@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'corsheaders',
-    'Telbot.apps.MyAppConfig'
+    # 'Telbot.apps.MyAppConfig'
 ]
 
 MIDDLEWARE = [
@@ -61,7 +61,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
-    "http://192.168.1.41:3000"
+    "http://192.168.1.41:3000",
+    "http://127.0.0.1:5500",
 ]
 
 ROOT_URLCONF = 'commentBackend.urls'

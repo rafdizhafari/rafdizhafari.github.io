@@ -129,7 +129,6 @@
         </section>
 
         <section id="info" class="info">
-          
           <div class="flex flex-col text-center items-center">
             <h2>Informasi Acara<br></h2>
             <p class="description address i5 mb-2 px-14">Alamat: Sevastopol<br></p>
@@ -374,7 +373,7 @@
 
         <div id="audio-holder">
           <audio id="audio" autoplay loop>
-            <source src="audio/wedding-day-318423.mp3" type="audio/mp3">
+            <source src="audio/Baraka_Allahu_Lakuma.mp3" type="audio/mp3">
           </audio>
           <div class="audio-icon-wrapper justify-center items-center flex scale-95 transition-all duration-300" style="display: none;">
             <svg class="play-btn w-10 h-10 justify-center items-center hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -620,7 +619,7 @@
             const guestName = document.querySelector('.guestName')
             const commentList = document.querySelector('.comment-list')
 
-            fetch('http://192.168.1.41:8000/submit/',{
+            fetch('http://127.0.0.1:8000/submit/',{
               method: 'POST',
               headers:{
                 'Content-Type': 'application/json',
@@ -707,7 +706,7 @@
         <!-- Create message list -->
         <script>
           //let currentPage = 1
-          fetch('http://192.168.1.41:8000/show/')
+          fetch('http://127.0.0.1:8000/show/')
           .then(res => res.json())
           .then(data =>{
             const list = document.querySelector('.comment-list');
