@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+*{
+    --gold: #ffd11a;
+    --bg: #263300;
+    --shadow : 0 2px 2px rgba(0,0,0,0.5);
+    --earth: #cc9900;
+    --pink: #ffcccc;
+    scroll-behavior: smooth;
+    --c1: #C6E7FF;
+    --c2: #D4F6FF;
+    --c3: #FBFBFB;
+    --c4: #FFDDAE;
+}
+body{
+    font-size: 1.4rem;
+    font-family: "Outfit",sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/bg.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1 .hero p .hero h4{
+    text-shadow: var(--shadow);
+}
+.hero h1{
+    font-family: "Sacramento", cursive;
+    font-size: 4.8rem;
+    font-style: italic;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a{
+    color: var(--gold);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--gold);
+    color: white;
+}
+
+.navbar-icon{
+    background-color: var(--c2);
+    border-radius: 999px;
+    width: 500px;
+    justify-content: center;
+    justify-self: center;
+    border-color: var(--c4);
+    border-width: 1px;
+}
+
+.navbar-icon svg{
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    color: #263300;
+}
+
+.home,
+.story,
+.gallery,
+.rsvp,
+.gifts,
+.info{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.home{
+    background-color: var(--c1);
+}
+
+.info{
+    background-color: var(--c4);
+    color: maroon;
+}
+
+.info .cardAkad{
+    background-color: rgba(128,0,0,0.2);
+}
+.info .cardResepsi{
+    background-color: rgba(128,0,0,0.2);
+}
+
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2{
+    color: var(--earth);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.info p,
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.info-card p{
+    font-size: 1.4rem;
+}
+
+.gallery{
+    background-color: var(--c1);
+}
+
+.lightbox{
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+}
+
+.gifts{
+    background-color: var(--c1);
+}
+footer{
+    padding-top: 4rem;
+    background-color: var(--c3);
+    color: #171717;
+}
+footer a{
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: bold; 
+}
+footer a:hover{
+    color: #f5f5f5;
+}
+
+.rsvp{
+    background-color: var(--c4);
+}
+.rsvp p{
+    color: #f5f5f5;
+}
+.rsvp button{
+    background-color: #ffd11a;
+}
+
+.rsvp-form{
+    background-color: rgba(218,192,163,0.4);
+}
+
+.rsvp form .nameInput input,
+.rsvp form .guestAmount input,
+.rsvp form .guestStatus select,
+.rsvp .comment-section textarea,
+.rsvp .comment-section input,
+.rsvp .comment-list-section ul
+{
+    background-color: var(--c2);
+}
+.rsvp .comment-list-section{
+    background-color: var(--c3);
+}
+.rsvp .comment-list-section ul li{
+    background-color: var(--c1);
+}
+
+.alertMessage{
+    background-color: var(--c2);
+    border-color: var(--c3);
+    position: fixed;
+    color: black;
+    bottom:45rem;
+    cursor: pointer;
+    left: 2rem;
+    width: 17rem;
+    height: 3rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3px;
+    padding-top: 0.4rem;
+    border-width: 0.3vh;
+}
+
+.comment-list-section span{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    margin-top: 3rem;
+    color: maroon;
+}
+.comment-list-section .comment-list li h3{
+    color: black;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-optical-sizing: auto;
+}
+.comment-list-section .comment-list li h4{
+    text-align: right;
+    padding-right: 1rem;
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: small;
+    font-optical-sizing: auto;
+}
+.comment-list-section .comment-list li p{
+    color: black;
+    margin-top: 0.90rem;
+    margin-bottom: 0.5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-optical-sizing: auto;
+}
+.cls-head svg{
+    color: maroon;
+}
+.cls-head span{
+  font-family: "Cookie", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: x-large;
+}
+.rotating-box {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  animation: rotate360 17s linear infinite;
+}
+@keyframes rotate360 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes fadeIn {
+    from{
+        transform: translateY(70px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.animate-fadeIn{
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animate-zoom{
+    animation: zoomIn 0.6s ease-out forwards;
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 75%;
+    }
+    .navbar-icon{
+        width: 500px;
+    }
+    .simply-countdown > simply-section{
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 70%;
+    }
+    .navbar-icon{
+        width:380px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html{
+        font-size: 65%;
+    }
+    .navbar-icon{
+        width: 305px;
+    }
+}

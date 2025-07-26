@@ -1,0 +1,54 @@
+[
+    {
+        "i1":{
+            "bride":"Erisa",
+            "groom":"Rafdi"
+        },
+        "i2":{
+            "date":"2 Juli 2025",
+            "city":"Jakarta"
+        },
+        "i4":{
+            "bride_f":"Fulan",
+            "bride_m":"Fulanah"
+        },
+        "i3":{
+            "groom_f":"Fulan",
+            "groom_m":"Fulanah"
+        },
+        "location":"Jalan Meruya Selatan No. 1, RT.01 / RW.08, Meruya Selatan, Kembangan, RT.1/RW.8, RT.1/RW.8, Meruya Sel., Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11650",
+        "i6":{
+            "frame":"<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d507699.5967384808!2d106.1603506!3d-6.2104465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74f787aac3d%3A0xa1c81e3c4cdd58c5!2sMasjid%20Manarul%20&#39;Amal%20Universitas%20Mercu%20Buana!5e0!3m2!1sid!2sid!4v1752823831477!5m2!1sid!2sid' class='i6-1 lg:w-180 lg:h-80 mx-auto mb-2' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+            "maps":"https://maps.app.goo.gl/fAdJ9WyZsupTvCtU9"
+        },
+        "akad":"08.00 - 11.00",
+        "resepsi":"11.00 - Selesai",
+        "i9":{
+            "story1":{
+                "title":"",
+                "date":"",
+                "narative":""
+            },
+            "story2":{
+                "title":"",
+                "date":"",
+                "narative":""
+            },
+            "story3":{
+                "title":"",
+                "date":"",
+                "narative":""
+            }
+        },
+        "i10":{
+            "1":{
+                "name":"",
+                "number":""
+            },
+            "2":{
+                "name":"",
+                "number":""
+            }
+        }
+    }
+]

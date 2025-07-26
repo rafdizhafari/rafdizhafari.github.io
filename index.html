@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=no"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cookie&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./Countdown/themes/default.css">
+        <link rel="stylesheet" type="text/css" href="./src/output.css">
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
+        <title>Invitation 2</title>
+    </head>
+    <body>
+        <section id="hero" class="hero w-full h-full p-3 mx-auto text-center flex justify-center items-center text-white opacity-0 transition-all">
+            <main>
+                <h4>Kepada <span></span></h4>
+                <h1 class="i1">Erisa & Rafdi</h1>
+                <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+                <div class="my-countdown simply-countdown mt-2"></div>
+                <a href="#home" class="hero-button mt-4 inline-block rounded py-2 px-4" onclick="enableScroll()">Lihat undangan</a>
+            </main>
+        </section>
+
+        <nav class="fixed bottom-23 w-full justify-center items-center z-50 mynavbar">
+            <div class="navbar-icon flex flex-row justify-center items-center text-center gap-8 transfrom transition-all hidden">
+                <a href="#home" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-12 transfrom transition hover:translate-y-[-4px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </a>
+                <a href="#info">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-12 transfrom transition hover:translate-y-[-4px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                    </svg>
+                </a>
+                <a href="#story">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-12 transfrom transition hover:translate-y-[-4px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                    </svg>
+                </a>
+                <a href="#gallery">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-12 transfrom transition hover:translate-y-[-4px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>    
+                </a>
+                <a href="#rsvp">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-12 transfrom transition hover:translate-y-[-4px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                    </svg>
+                </a>
+                <a href="#gifts">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-12 transfrom transition hover:translate-y-[-4px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <section id="home" class="home min-h-screen flex justify-center pt-10 z-50">
+          <div class="container text-center p-4">
+            <div class="relative w-0 h-0 -top-10 left-50 opacity-5 z-0">
+              <svg version="1.1" class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 461.602 461.602" width="120" height="120"><path d="M117.3 28.488c-2.088 -2.772 -5.364 -4.656 -9.588 -5.532 -0.096 -3.792 -1.488 -6.252 -3.048 -7.8 -1.56 -1.56 -4.008 -2.952 -7.8 -3.048 -0.876 -4.224 -2.76 -7.5 -5.532 -9.588C88.344 0.276 84.48 -0.492 80.16 0.3 70.692 2.04 58.872 11.484 51.42 23.268c-5.976 9.468 -5.532 17.928 -4.104 23.364a30 30 0 0 0 7.092 12.708L1.524 112.236a4.548 4.548 0 0 0 6.432 6.432l19.464 -19.464a36.6 36.6 0 0 0 22.692 7.788c9.864 0 19.128 -3.84 26.1 -10.812a4.56 4.56 0 0 0 0 -6.432 36.72 36.72 0 0 0 -26.1 -10.812q-1.26 0 -2.508 0.084L60.864 65.76c3.504 3.168 7.788 5.544 12.3 6.732a27.6 27.6 0 0 0 7.02 0.912c4.692 0 10.32 -1.2 16.344 -5.016 11.784 -7.452 21.228 -19.272 22.968 -28.74 0.792 -4.32 0.036 -8.184 -2.208 -11.16m-51.36 64.488c-4.62 3.204 -10.092 4.932 -15.828 4.932s-11.208 -1.728 -15.828 -4.932c4.62 -3.204 10.092 -4.932 15.828 -4.932s11.208 1.728 15.828 4.932m30.372 -61.248a66 66 0 0 1 -13.08 18.552c-4.728 4.728 -9.072 7.488 -12.576 7.98 -2.484 0.348 -4.596 -0.432 -6.624 -2.46s-2.82 -4.14 -2.46 -6.624c0.492 -3.504 3.252 -7.86 7.98 -12.576 5.388 -5.388 12.324 -10.284 18.552 -13.08 3.96 -1.776 6.756 -2.304 8.412 -2.304 0.948 0 1.524 0.168 1.728 0.384 0.564 0.564 0.876 3.912 -1.92 10.14m-37.2 -3.576c6 -9.492 15.756 -17.616 22.692 -18.888q2.7 -0.48 4.056 0.54c0.936 0.708 1.644 2.088 2.052 3.984a48 48 0 0 0 -3.552 1.428 74.4 74.4 0 0 0 -21.252 14.94q-4.956 4.956 -7.596 9.564 -0.036 -5.796 3.6 -11.568m51.444 9.864c-1.272 6.936 -9.396 16.692 -18.888 22.692q-5.772 3.636 -11.568 3.6 4.608 -2.64 9.564 -7.596a74.4 74.4 0 0 0 14.94 -21.252 48 48 0 0 0 1.428 -3.552c1.896 0.408 3.276 1.116 3.984 2.052q1.02 1.38 0.54 4.056"/></svg>
+            </div>
+            <h2 class="text-4xl z-40">Acara Pernikahan</h2>
+            <h3 class="text-3xl i2">Diselenggarakan pada 2 juli 2025 di Jakarta.</h3>
+            <p class="text-lg md:text-sm mt-4 mb-9">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+            <div class="flex flex-col lg:flex-row items-center couple md:mt-3 gap-4">
+            <!--div class=""-->
+              <div class="lg:w-1/2">
+                <div class="flex flex-col sm:flex-row justify-center items-center">
+                  <div class="sm:w-2/3 sm:text-right mt-1 sm:mt-0 sm:pl-4 md:pr-4 justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-2">Groom</h3>
+                    <p class="i3">putra dari Bapak fulan <br> dan <br> ibu fulanah</p>
+                  </div>
+                  <div class="w-56 sm:w-1/3 mt-2 ">
+                    <img src="Image/9202.jpg" alt="Foto pengantin pria" class="w-full rounded-full object-cover sm:ml-4 md:ml-0">
+                  </div>
+                </div>
+              </div>
+            <!--/div-->
+            <!--div class="flex justify-end flex-col lg:flex-row items-center couple mt-5"-->
+              <div class="lg:w-1/2">
+                <div class="flex justify-end flex-col sm:flex-row items-center">
+                  <div class="w-56 sm:w-1/3">
+                    <img src="Image/front-view-woman-holding-flowers-bouquet.jpg" alt="Foto pengantin wanita" class="w-full rounded-full object-cover">
+                  </div>
+                  <div class="sm:w-2/3 sm:text-left mt-4 sm:mt-0 sm:pl-4">
+                    <h3 class="text-xl font-semibold mb-2">Bride</h3>
+                    <p class="i4">putri dari bapak fulan <br> dan <br> ibu fulanah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="info" class="info">
+          <div class="flex flex-col text-center items-center">
+            <h2>Informasi Acara<br></h2>
+            <p class="description address i5 mb-2 px-14">Alamat: Sevastopol<br></p>
+            <div class="i6-1"></div>
+            <a href="https://g.co/kgs/ya9HtGB" target="_blank" class="i6-2 inline-block text-black bg-white opacity-80 hover:bg-gray-700 font-bold py-2 px-4 rounded mb-3 mt-2">Klik untuk membuka peta</a>
+          </div>
+          <div class="info-card flex flex-col sm:flex-row justify-center items-center mt-7 gap-6">
+            <div class="cardAkad max-w-sm rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
+              <p class="text-white mb-4 text-center">
+                Akad Nikah
+              </p>
+              <div class="flex flex-col flex-row gap-5 items-center justify-center ml-4">
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <p class="i7 text-left text-white">08.00 - 11.00</p>
+                </div>
+                <div class="flex flex-col items-center justify-end">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                  </svg>
+                  <p class="text-left text-white">Rabu, 2 Juli 2025</p>
+                </div>
+              </div>
+            </div>
+            <div class="cardResepsi max-w-sm rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
+              <p class="text-white mb-4 text-center">
+                Resepsi
+              </p>
+              <div class="flex flex-col flex-row gap-5 items-center justify-center ml-4">
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <p class="i8 text-left text-white">11.00 - selesai</p>
+                </div>
+                <div class="flex flex-col items-center justify-end">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                  </svg>
+                  <p class="text-left text-white">Rabu, 2 Juli 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+          <div class="flex flex-col text-center items-center">
+            <span>Our Memory</span>
+            <h2>Galeri<br></h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 justify-center place-items-center ml-4 mr-4 mt-3">
+              <a href="https://picsum.photos/id/433/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/433/1200/768')">
+                <img src="https://picsum.photos/id/433/400/533">
+              </a>
+              <a href="https://picsum.photos/id/434/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/434/1200/768')">
+                <img src="https://picsum.photos/id/434/400/533">
+              </a>
+              <a href="https://picsum.photos/id/435/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/435/1200/768')">
+                <img src="https://picsum.photos/id/435/400/533">
+              </a>
+              <a href="https://picsum.photos/id/436/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/436/1200/768')">
+                <img src="https://picsum.photos/id/436/400/533">
+              </a>
+              <a href="https://picsum.photos/id/437/1200/768" onclick="openLightbox(event,'https://picsum.photos/id/437/1200/768')">
+                <img src="https://picsum.photos/id/437/400/533">
+              </a>    
+          </div>
+        </section>
+
+        <div id="lightbox" class="lightbox fixed inset-0 flex items-center justify-center z-50 transition-opacity duration-300 opacity-0 hidden">
+          <div class="relative transform transition-transform duration-300 scale-95" id="lightboxInner">
+            <button onclick="closeLightbox()" id="lightboxclosebtn" class="absolute top-2 right-2 text-white text-2xl hidden">
+              &times;
+            </button>
+            <img id="lightboxImage" src="" class="max-w-full max-h-[90vh] rounded shadow-xl">
+            </div>
+          </div>
+        </div>
+
+        <section id="rsvp" class="rsvp">
+          <div class="flex flex-col text-center items-center">
+            <h2>Konfirmasi Kehadiran<br></h2>
+            <p>Isi form di bawah ini untuk konfirmasi kehadiran.</p>
+          </div>
+          <div class="flex justify-center items-center mt-7 mb-5">
+            <form autocomplete="off" id="rsvp-form" class="rsvp-form flex flex-col md:flex-row justify-center items-center sm:space-x-2 space-y-2 sm:space-y-0 gap-6 md:w-220 md:h-120 w-105 h-145 rounded-lg"
+            name="rsvp-form"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbwiX_OqN8qqNHe4RGxWF_MG64gR26xOEJFgx-Fgx8YF0ZMs6GlghJ65qfyye7iACJm7ug/exec">
+              <div class="nameInput flex flex-col">
+                <label for="name" class="text-white text-left items-left">NAMA</label>
+                <input 
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="px-4 py-2 border border-gray-300 rounded-lg bg-white w-48 lg:w-48 items-center justify-center"
+                />
+              </div>
+              <div class="guestAmount flex flex-col">
+                <label for="amount" class="text-white text-left items-left">JUMLAH TAMU</label>
+                <input 
+                  type="number"
+                  id="amount"
+                  name="amount"
+                  class="px-4 py-2 border border-gray-300 rounded-lg bg-white w-48 lg=w-32 items-center justify-center"
+                  min="1" max="3" length="1" value="1"
+                />
+              </div>
+              <div class="guestStatus flex flex-col">
+                <label for="status" class="text-white text-left items-left">KONFIRMASI</label>
+                <select name="status" id="status" class="status px-4 py-2 w-48 h-12 mt-1 bg-white rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                  <option selected>Pilih salah satu</option>
+                  <option value="1">Hadir</option>
+                  <option value="0">Tidak hadir</option>
+                </select>
+              </div>
+              <button type="submit" class="rsvpBtn rounded py-2 px-4 h-11 mt-7.5">
+                Kirim
+              </button>
+            </form>
+          </div>
+          
+          <div class="wishes-section flex justify-center items-center text-center">
+            <div class="relative comment-list-section bg-white w-105 h-230 sm:w-170 sm:h-230 justify-center rounded-lg items-center text-center mt-8 mb-4 pt-2">
+              <div class="cls-head flex flex-row justify-center items-center text-center gap-4 h-17">
+                <svg version="1.1" id="Capa_1" class="" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 28" style="enable-background:new 0 0 404 404;" xml:space="preserve" width="28" height="28"><g><path d="m27.848 10.628 -1.647 -1.246 0.135 -0.369a0.381 0.381 0 0 0 -0.226 -0.488l-2.018 -0.737L14.229 0.338a0.373 0.373 0 0 0 -0.46 0L10.481 2.823 5.99 1.185a0.381 0.381 0 0 0 -0.488 0.226L2.893 8.556 0.152 10.628a0.373 0.373 0 0 0 -0.152 0.306v16.424a0.381 0.381 0 0 0 0.38 0.38h27.237a0.381 0.381 0 0 0 0.38 -0.38V10.934a0.373 0.373 0 0 0 -0.152 -0.303m-26.327 0.684h0.369l-0.079 0.219zm0.649 -0.763h-0.649l0.894 -0.677zm8.451 8.594L0.763 26.593V11.699zm3.383 -1.601 12.483 9.434h-24.967zm3.383 1.601 9.851 -7.446v14.894zm8.111 -7.831h0.987l-1.363 1.029zm0.987 -0.763h-0.709l0.154 -0.42zM14 1.12l7.644 5.777 -10.311 -3.761zM6.088 2.03l19.402 7.079 -1.489 4.081L16.753 18.667l-2.522 -1.906a0.373 0.373 0 0 0 -0.46 0L11.249 18.667 2.443 12.012z"/><path d="m6.643 7.324 0.989 0.362 -1.02 0.474a0.38 0.38 0 0 0 0.322 0.691l1.71 -0.796 0.303 0.11 -0.11 0.303 -1.71 0.796a0.38 0.38 0 0 0 0.322 0.691l1.02 -0.474 -0.362 0.989a0.381 0.381 0 0 0 0.357 0.511 0.373 0.373 0 0 0 0.357 -0.25l0.362 -0.989 0.474 1.02a0.381 0.381 0 0 0 0.506 0.184 0.381 0.381 0 0 0 0.184 -0.506l-0.796 -1.71 0.11 -0.303 0.303 0.11 0.796 1.71a0.38 0.38 0 1 0 0.691 -0.322l-0.474 -1.02 0.989 0.362a0.38 0.38 0 0 0 0.261 -0.716l-0.989 -0.362 1.02 -0.474a0.38 0.38 0 0 0 -0.322 -0.691l-1.71 0.796 -0.303 -0.11 0.11 -0.303 1.71 -0.796a0.38 0.38 0 0 0 -0.322 -0.691l-1.02 0.474 0.362 -0.989a0.381 0.381 0 0 0 -0.226 -0.488 0.381 0.381 0 0 0 -0.488 0.226l-0.359 0.992 -0.474 -1.02a0.38 0.38 0 0 0 -0.691 0.322l0.796 1.71 -0.11 0.303 -0.303 -0.11 -0.796 -1.71a0.38 0.38 0 0 0 -0.691 0.322l0.474 1.02 -0.989 -0.362a0.381 0.381 0 0 0 -0.488 0.226 0.381 0.381 0 0 0 0.226 0.49"/><path d="m16.823 8.493 6.153 2.245a0.38 0.38 0 0 0 0.261 -0.716l-6.153 -2.245a0.38 0.38 0 1 0 -0.261 0.716"/><path d="m16.165 10.299 6.151 2.247a0.38 0.38 0 0 0 0.261 -0.716l-6.153 -2.245a0.38 0.38 0 0 0 -0.261 0.716"/><path d="m15.505 12.108 6.153 2.245a0.38 0.38 0 0 0 0.261 -0.716l-6.153 -2.245a0.38 0.38 0 0 0 -0.261 0.716"/></g></svg>
+                <span class="-translate-y-5">Doa & Harapan</span>
+              </div>
+              <div class="comment-section flex flex-col justify-center items-center mt-7 mb-2 gap-1">
+                <input autocomplete="off" type="text" name="guestName" id="guestName" class="guestName bg-white rounded-lg h-15 w-95 px-2 py-4" placeholder="Tulis nama pengirim di sini...">
+                <textarea name="comment-input" class="flex comment-input resize-none rounded-lg bg-white px-2 py-4 mt-0 w-95 h-32" placeholder="Tulis pesan anda di sini..."></textarea>
+                <button type="submit" onclick="submitForm()" name="comment-submit" class="comment-submit flex rounded py-2 px-4 h-11 mt-5 mb-3">Kirim</button>
+              </div>
+              <div class="rotating-box absolute top-1 right-1">
+                <svg class="opacity-50" height="45px" width="45px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28.8 28.8" xml:space="preserve"><style type="text/css">.st0{fill:#000000;}</style><g><path class="st0" d="M27.846 11.194a5.809 5.809 0 0 0 -1.674 -1.672 5.727 5.727 0 0 0 0.124 -1.172 5.834 5.834 0 0 0 -1.714 -4.132 5.834 5.834 0 0 0 -4.129 -1.714 5.727 5.727 0 0 0 -1.174 0.124 5.809 5.809 0 0 0 -1.672 -1.673A5.834 5.834 0 0 0 14.401 0a5.834 5.834 0 0 0 -3.206 0.954 5.809 5.809 0 0 0 -1.673 1.673 5.727 5.727 0 0 0 -1.173 -0.124 5.834 5.834 0 0 0 -4.129 1.714 5.834 5.834 0 0 0 -1.714 4.131c0 0.394 0.044 0.785 0.124 1.173a5.809 5.809 0 0 0 -1.674 1.672A5.834 5.834 0 0 0 0 14.399a5.834 5.834 0 0 0 0.954 3.206 5.809 5.809 0 0 0 1.674 1.673 5.727 5.727 0 0 0 -0.124 1.173 5.825 5.825 0 0 0 1.714 4.129 5.834 5.834 0 0 0 4.131 1.715c0.393 0 0.785 -0.045 1.172 -0.124a5.809 5.809 0 0 0 1.672 1.673A5.834 5.834 0 0 0 14.4 28.8a5.834 5.834 0 0 0 3.206 -0.955 5.809 5.809 0 0 0 1.673 -1.673c0.387 0.079 0.779 0.124 1.172 0.124a5.834 5.834 0 0 0 4.13 -1.715 5.825 5.825 0 0 0 1.714 -4.131q-0.002 -0.591 -0.124 -1.172a5.809 5.809 0 0 0 1.674 -1.672 5.834 5.834 0 0 0 0.953 -3.206 5.809 5.809 0 0 0 -0.954 -3.206m-1.74 5.272a3.731 3.731 0 0 1 -1.583 1.356l-0.893 0.402 0.347 0.916a3.764 3.764 0 0 1 0.239 1.312 3.747 3.747 0 0 1 -1.105 2.659 3.747 3.747 0 0 1 -2.659 1.105 3.764 3.764 0 0 1 -1.313 -0.239l-0.915 -0.346 -0.403 0.893a3.723 3.723 0 0 1 -1.356 1.583 3.764 3.764 0 0 1 -2.066 0.614 3.747 3.747 0 0 1 -3.422 -2.197l-0.403 -0.893 -0.916 0.346a3.764 3.764 0 0 1 -1.312 0.239 3.747 3.747 0 0 1 -2.66 -1.105 3.747 3.747 0 0 1 -1.105 -2.658 3.764 3.764 0 0 1 0.239 -1.313l0.347 -0.916 -0.893 -0.402a3.739 3.739 0 0 1 -1.584 -1.357 3.764 3.764 0 0 1 -0.614 -2.065 3.764 3.764 0 0 1 0.614 -2.064 3.739 3.739 0 0 1 1.584 -1.357l0.893 -0.402 -0.347 -0.916a3.764 3.764 0 0 1 -0.239 -1.313 3.755 3.755 0 0 1 1.105 -2.66 3.747 3.747 0 0 1 2.657 -1.105 3.682 3.682 0 0 1 1.313 0.24l0.915 0.347 0.403 -0.893a3.731 3.731 0 0 1 1.357 -1.584 3.764 3.764 0 0 1 2.068 -0.611 3.764 3.764 0 0 1 2.065 0.614 3.731 3.731 0 0 1 1.357 1.584l0.403 0.893 0.915 -0.347a3.764 3.764 0 0 1 1.314 -0.24 3.747 3.747 0 0 1 2.657 1.105 3.764 3.764 0 0 1 1.105 2.66 3.764 3.764 0 0 1 -0.239 1.313l-0.347 0.916 0.893 0.402a3.723 3.723 0 0 1 1.583 1.356 3.764 3.764 0 0 1 0.614 2.065 3.764 3.764 0 0 1 -0.614 2.067"/><path class="st0" d="M14.334 10.104a11.455 11.455 0 0 0 0.191 -0.457c0.581 -1.477 0.775 -2.15 0.039 -2.826a10.636 10.636 0 0 1 -0.305 -0.268 7.364 7.364 0 0 1 -0.292 0.281c-0.708 0.706 -0.484 1.37 0.158 2.819q0.077 0.177 0.209 0.452"/><path class="st0" d="M10.816 11.272c0.116 0.045 0.275 0.103 0.466 0.169a14.727 14.727 0 0 0 -0.188 -0.457c-0.633 -1.453 -0.97 -2.068 -1.969 -2.025q-0.203 0.019 -0.404 0.025a11.455 11.455 0 0 1 -0.01 0.407c-0.001 1.001 0.628 1.312 2.106 1.883"/><path class="st0" d="M10.102 14.467a13.091 13.091 0 0 0 -0.456 -0.19c-1.476 -0.583 -2.149 -0.776 -2.826 -0.042a9 9 0 0 1 -0.268 0.307 6.545 6.545 0 0 1 0.281 0.292c0.704 0.706 1.37 0.484 2.82 -0.158a18.818 18.818 0 0 0 0.448 -0.209"/><path class="st0" d="M8.958 19.676q0.02 0.202 0.025 0.403 0.203 0.001 0.407 0.01c1 0 1.312 -0.627 1.884 -2.106 0.046 -0.117 0.105 -0.277 0.17 -0.468a18.818 18.818 0 0 0 -0.46 0.191c-1.453 0.632 -2.068 0.97 -2.025 1.969"/><path class="st0" d="M14.467 18.695a12.273 12.273 0 0 0 -0.191 0.458c-0.58 1.477 -0.775 2.149 -0.038 2.826a10.636 10.636 0 0 1 0.305 0.268 6.545 6.545 0 0 1 0.292 -0.281c0.707 -0.706 0.484 -1.37 -0.158 -2.819a16.364 16.364 0 0 0 -0.209 -0.452"/><path class="st0" d="M14.401 12.466a1.934 1.934 0 1 0 -0.001 3.868 1.934 1.934 0 0 0 0.001 -3.868"/><path class="st0" d="M19.842 9.124a6.545 6.545 0 0 1 -0.025 -0.404q-0.203 -0.002 -0.407 -0.01c-0.999 0 -1.31 0.627 -1.884 2.107a11.455 11.455 0 0 0 -0.169 0.466 14.727 14.727 0 0 0 0.46 -0.19c1.453 -0.632 2.067 -0.97 2.025 -1.968"/><path class="st0" d="M17.984 17.526a13.091 13.091 0 0 0 -0.466 -0.169c0.074 0.187 0.139 0.344 0.191 0.46 0.632 1.453 0.97 2.068 1.969 2.025q0.203 -0.019 0.404 -0.025 0.001 -0.202 0.011 -0.407c-0.001 -0.999 -0.628 -1.312 -2.107 -1.883"/><path class="st0" d="M19.148 14.123c-0.117 0.05 -0.27 0.122 -0.45 0.209a11.455 11.455 0 0 0 0.457 0.191c1.475 0.583 2.149 0.776 2.825 0.04q0.131 -0.156 0.268 -0.306a6.545 6.545 0 0 1 -0.281 -0.291c-0.704 -0.707 -1.37 -0.484 -2.819 0.157"/></g></svg>
+              </div>
+              <ul class="comment-list z-50 bg-white border items-center border-black mx-auto mt-1 rounded-lg w-95 h-120 sm:w-120 sm:h-120 px-4 py-6 space-y-4 overflow-y-auto custom-scrollbar"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="gifts" class="gifts">
+          <div class="flex flex-col text-center items-center">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim hadiah<br></h2>
+            <p>Isi form di bawah ini untuk konfirmasi kehadiran.</p>
+          </div>
+          <div class="flex flex-col justify-center text-center">
+            <ul class="max-w-md mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow-md space-y-4">
+              <li class="py-2 px-4 hover:bg-gray-100 transition-colors">
+                <div class="font-bold i10">Bank A</div>
+                09027498 - KOKO JUJUM
+              </li>
+              <li class="py-2 px-4 hover:bg-gray-100 transition-colors">
+                <div class="font-bold">Bank B</div>
+                07023498 - KOKO JUJUM
+              </li>
+              <li class="py-2 px-4 hover:bg-gray-100 transition-colors items-center justify-center">
+                <div class="font-bold">QRIS</div>
+                <img src="Image/barcode.gif" alt="QRIS" class="ml-3.5 w-48 rounded border border-gray-300 p-1 shadow-sm justify-center items-center">
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <footer>
+          <div class="flex flex-col justify-center text-center">
+            <small class="block">&copy; 2025 Prasida Informatic, All Rights Reserved.</small>
+            <small class="block">Design by <a href="https://www.instagram.com/rrzhafari/"> @prasida_informatic</a>.</small>
+            <ul class="flex space-x-4 justify-center place-items-center mt-2">
+              <li class=""><a href="">
+                <svg class="w-6 h-6 hover:white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </footer>
+
+         <!-- section animations -->
+        <script>
+          const hero_section = document.getElementById('hero');
+
+          window.addEventListener('DOMContentLoaded',()=>{
+            hero_section.classList.add('animate-zoom')
+          })
+        </script>
+
+         <!-- Scroll enabler -->
+        <script>
+            const rootElement = document.querySelector(":root")
+            const navbar = document.querySelector(".navbar-icon")
+            
+            function disableScroll(){
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                window.onscroll = function(){
+                window.scrollTo(scrollTop,scrollLeft)
+                }
+
+            rootElement.style.scrollBehavior = 'auto'
+            }
+
+            function enableScroll(){ 
+                document.querySelector('.hero-button').classList.add('opacity-0','scale-0','transition-all','duration-500')
+                document.querySelector('.hero-button').addEventListener('transitionend',()=>{
+                document.querySelector('.hero-button').remove()
+                },{once:true})
+                window.onscroll = function(){ }          
+                rootElement.style.scrollBehavior = 'smooth'
+                navbar.classList.remove('hidden')
+                navbar.classList.add('animate-fadeIn')
+                // playAudio();
+                // isPlaying = true;
+          }
+          disableScroll();
+        </script>
+
+        <!-- Countdown -->
+        <script src="./Countdown/simplyCountdown.umd.js"/>   
+        </script>
+        <script>
+             simplyCountdown('.my-countdown',{
+                year:2026,
+                month:7,
+                day:2,
+                words: { // Custom labels, with lambda for plurals
+                    days: { root: 'hari', lambda: (root, n) => n > 1 ? root: root },
+                    hours: { root: 'jam', lambda: (root, n) => n > 1 ? root: root },
+                    minutes: { root: 'menit', lambda: (root, n) => n > 1 ? root: root },
+                    seconds: { root: 'detik', lambda: (root, n) => n > 1 ? root: root }
+                },
+                plural: false,
+            });
+        </script>
+
+        <!-- GET data from json -->
+        <script>
+            fetch('data.json')
+            .then(res => res.json())
+            .then(data=>{
+                data.forEach(item =>{
+                    const i1 = document.querySelector(".i1")
+                    const i2 = document.querySelector(".i2")
+                    const i3 = document.querySelector(".i3")
+                    const i4 = document.querySelector(".i4")
+                    const i5 = document.querySelector(".i5")
+                    const i6_1 = document.querySelector(".i6-1")
+                    const i6_2 = document.querySelector(".i6-2")
+                    const i7 = document.querySelector(".i7")
+                    const i8 = document.querySelector(".i8")
+                    const i9 = document.querySelector(".i9")
+                    const i10 = document.querySelector(".i10")
+
+                    i1.innerHTML = `${item.i1["bride"]}<br>&<br>${item.i1["groom"]}`
+                    i2.innerHTML = `Diselenggarakan pada ${item.i2["date"]} di ${item.i2["city"]}.`
+                    i3.innerHTML = `Putra dari Bapak ${item.i3["groom_f"]} <br> dan <br> Ibu ${item.i3["groom_m"]}`
+                    i4.innerHTML = `Putri dari Bapak ${item.i4["bride_f"]} <br> dan <br> Ibu ${item.i4["bride_f"]}`
+                    i5.innerHTML = `Alamat: ${item.location}`
+                    i6_1.innerHTML = `${item.i6["frame"]}`
+                    i6_2.setAttribute("href",`${item.i6["maps"]}`)
+                    i7.innerHTML = `${item.akad}`
+                    i8.innerHTML = `${item.resepsi}`
+                })
+            })
+        </script>
+
+        <!-- lightbox -->
+        <script>
+            const lightbox = document.getElementById('lightbox')
+            const lightboxImage = document.getElementById('lightboxImage')
+            const lightboxclosebtn = document.getElementById('lightboxclosebtn')
+            const lightboxInner = document.getElementById("lightboxInner");
+
+            function openLightbox(event,src){
+                event.preventDefault();
+                lightboxImage.src = src;
+                lightbox.classList.remove('hidden');
+                lightboxclosebtn.classList.remove('hidden');
+                //document.body.style.overflow="hidden";
+                //display change before transition
+                requestAnimationFrame(()=>{
+                lightbox.classList.add('opacity-100')
+                lightbox.classList.remove('opacity-0')
+                lightbox.classList.add('scale-100')
+                lightbox.classList.remove('scale-95')
+                })
+            }
+            function closeLightbox(){
+                lightbox.classList.remove('opacity-100')
+                lightbox.classList.add('opacity-0')
+                lightbox.classList.remove('scale-100')
+                lightbox.classList.add('scale-95')
+                //after transition ends, hide modal
+                setTimeout(()=>{
+                lightbox.classList.add('hidden')
+                lightboxImage.src = ""
+                //document.body.style.overflow="visible";
+                lightboxclosebtn.classList.add('hidden')
+                },300);
+            }
+            lightbox.addEventListener('click',function(e){
+                if(e.target === this){
+                closeLightbox();
+                }
+            })
+        </script>
+
+
+    </body>
+</html>
