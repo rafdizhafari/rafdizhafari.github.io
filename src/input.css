@@ -145,7 +145,8 @@ body{
 .gallery,
 .rsvp,
 .gifts,
-.info{
+.info,
+.closing{
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
@@ -362,11 +363,9 @@ footer a:hover{
   animation: rotate360 17s linear infinite;
 }
 .just-rotating{
-    animation: rotate360 17s linear infinite;
+    animation: rotate360 20s linear infinite;
 }
-.flower .st0{
-    color: #ffd11a;
-}
+
 @keyframes rotate360 {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
@@ -381,7 +380,7 @@ footer a:hover{
     }
 }
 .animate-fadeIn{
-    animation: fadeIn 0.4s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
 }
 
 @keyframes zoomIn{
@@ -394,8 +393,26 @@ footer a:hover{
         transform: scale(1);
     }
 }
+
+@keyframes zoomIn-infinite{
+    0%{
+        /* opacity: 0; */
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: scale(0.8);
+    }
+}
+
 .animate-zoom{
     animation: zoomIn 0.6s ease-out forwards;
+}
+.animate-zoom-infinite{
+    animation: zoomIn-infinite 3s ease-in-out infinite;
 }
 
 @layer utilities{

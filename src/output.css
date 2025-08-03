@@ -203,41 +203,14 @@
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
-  .right-2 {
-    right: calc(var(--spacing) * 2);
-  }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
-  }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
-  }
-  .right-40 {
-    right: calc(var(--spacing) * 40);
-  }
-  .right-50 {
-    right: calc(var(--spacing) * 50);
-  }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
-  }
   .bottom-25 {
     bottom: calc(var(--spacing) * 25);
   }
   .bottom-30 {
     bottom: calc(var(--spacing) * 30);
   }
-  .-left-5 {
-    left: calc(var(--spacing) * -5);
-  }
-  .-left-10 {
-    left: calc(var(--spacing) * -10);
-  }
   .-left-25 {
     left: calc(var(--spacing) * -25);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-50 {
     left: calc(var(--spacing) * 50);
@@ -284,6 +257,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
   }
@@ -298,6 +274,9 @@
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
@@ -635,38 +614,14 @@
   .opacity-0 {
     opacity: 0%;
   }
-  .opacity-2 {
-    opacity: 2%;
-  }
   .opacity-5 {
     opacity: 5%;
-  }
-  .opacity-7 {
-    opacity: 7%;
-  }
-  .opacity-8 {
-    opacity: 8%;
-  }
-  .opacity-9 {
-    opacity: 9%;
-  }
-  .opacity-10 {
-    opacity: 10%;
-  }
-  .opacity-20 {
-    opacity: 20%;
   }
   .opacity-50 {
     opacity: 50%;
   }
-  .opacity-65 {
-    opacity: 65%;
-  }
   .opacity-80 {
     opacity: 80%;
-  }
-  .opacity-88 {
-    opacity: 88%;
   }
   .opacity-100 {
     opacity: 100%;
@@ -995,7 +950,7 @@ body {
   padding: 4px;
   border-color: var(--c3);
 }
-.home, .story, .gallery, .rsvp, .gifts, .info {
+.home, .story, .gallery, .rsvp, .gifts, .info, .closing {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -1180,10 +1135,7 @@ footer a:hover {
   animation: rotate360 17s linear infinite;
 }
 .just-rotating {
-  animation: rotate360 17s linear infinite;
-}
-.flower .st0 {
-  color: #ffd11a;
+  animation: rotate360 20s linear infinite;
 }
 @keyframes rotate360 {
   from {
@@ -1202,7 +1154,7 @@ footer a:hover {
   }
 }
 .animate-fadeIn {
-  animation: fadeIn 0.4s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
 }
 @keyframes zoomIn {
   from {
@@ -1214,8 +1166,22 @@ footer a:hover {
     transform: scale(1);
   }
 }
+@keyframes zoomIn-infinite {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 .animate-zoom {
   animation: zoomIn 0.6s ease-out forwards;
+}
+.animate-zoom-infinite {
+  animation: zoomIn-infinite 3s ease-in-out infinite;
 }
 @layer utilities {
   .custom-scrollbar::-webkit-scrollbar {

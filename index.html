@@ -25,7 +25,7 @@
             <h1 class="i1"></h1>
             <p>Akan melangsungkan resepsi pernikahan dalam:</p>
             <div class="my-countdown simply-countdown mt-2"></div>
-            <a href="#home" class="hero-button mt-4 inline-block rounded py-2 px-4" onclick="enableScroll()">Lihat undangan</a>
+            <a href="#home" class="animate-zoom-infinite hero-button mt-4 inline-block rounded py-2 px-4" onclick="enableScroll()">Lihat undangan</a>
         </main>
       </section>
 
@@ -116,11 +116,11 @@
       <section id="info" class="info">
         <div class="flex flex-col text-center items-center">
           <h2>Informasi Acara<br></h2>
-          <p class="description address i5 mb-2 px-14">Alamat: Sevastopol<br></p>
+          <p class="description address i5 my-4 px-14">Alamat: Sevastopol<br></p>
           <div class="i6-1 flex justify-center items-center w-125 h-95 lg:w-185 lg:h-85 shadow-md"></div>
           <a href="https://g.co/kgs/ya9HtGB" target="_blank" class="i6-2 inline-block opacity-80 hover:bg-yellow-700 font-bold py-2 px-4 rounded mb-3 mt-2 shadow-sm">Klik untuk membuka peta</a>
         </div>
-        <div class="info-card flex flex-col sm:flex-row justify-center items-center mt-4 gap-6">
+        <div class="info-card flex flex-col sm:flex-row justify-center items-center mt-6 gap-6">
           <div class="cardAkad max-w-md rounded-lg shadow-md overflow-hidden p-4 justify-center items-center text-center">
             <p class="text-white text-center">
               Akad 
@@ -230,7 +230,7 @@
       <section id="closing" class="closing">
         <div class="flex flex-col justify-center items-center text-center gap-5 mx-5">
           <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami bila tamu undangan berkenan untuk memberikan do'a restu kepada kami.</p>
-          <h1 class="mb-5">Rivky & Nia</h1>
+          <h1 class="">Rivky & Nia</h1>
         </div>
       </section>
 
@@ -611,6 +611,20 @@
         })
         .catch((e) => {
           console.log(console.error(e))
+        })
+      </script>
+
+      <script>
+        const sections = document.querySelectorAll('section')
+
+        const observer = new IntersectionObserver(([entry]) =>{
+          if (entry.isIntersecting){
+            entry.target.classList.add("animate-fadeIn")
+          }
+        },{threshold: 0.1})
+
+        sections.forEach(sect=>{
+          observer.observe(sect)
         })
       </script>
 
