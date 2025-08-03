@@ -1,11 +1,11 @@
 [
     {
         "i1":{
-            "bride":"Bride",
-            "groom":"Groom"
+            "bride":"Rivky",
+            "groom":"Nia"
         },
         "i2":{
-            "date":"2 Juli 2025",
+            "date":"6 September 2025",
             "city":"Jakarta"
         },
         "i4":{
@@ -16,13 +16,14 @@
             "groom_f":"Fulan",
             "groom_m":"Fulanah"
         },
-        "location":"Jalan Meruya Selatan No. 1, RT.01 / RW.08, Meruya Selatan, Kembangan, RT.1/RW.8, RT.1/RW.8, Meruya Sel., Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11650",
+        "location":"Jl. HR. Rasuna Said Apartemen Taman Rasuna No.1506h, RT.16/RW.1, Kuningan, Menteng Atas, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12960",
         "i6":{
-            "frame":"<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d507699.5967384808!2d106.1603506!3d-6.2104465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74f787aac3d%3A0xa1c81e3c4cdd58c5!2sMasjid%20Manarul%20&#39;Amal%20Universitas%20Mercu%20Buana!5e0!3m2!1sid!2sid!4v1752823831477!5m2!1sid!2sid' class='i6-1 lg:w-180 lg:h-80 mx-auto mb-2' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
-            "maps":"https://maps.app.goo.gl/fAdJ9WyZsupTvCtU9"
+            "frame-temp":"<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d507699.5967384808!2d106.1603506!3d-6.2104465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74f787aac3d%3A0xa1c81e3c4cdd58c5!2sMasjid%20Manarul%20&#39;Amal%20Universitas%20Mercu%20Buana!5e0!3m2!1sid!2sid!4v1752823831477!5m2!1sid!2sid' class='i6-1 w-120 h-90 lg:w-180 lg:h-80 mx-auto mb-2' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+            "frame":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.370533075122!2d106.8376433!3d-6.2194268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f5b314861f%3A0x3d77029222479e05!2sMasjid%20Al-Bakrie!5e1!3m2!1sid!2sid!4v1754190112232!5m2!1sid!2sid' class='i6-1 w-120 h-90 lg:w-180 lg:h-80 mx-auto mb-2' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+            "maps":"https://maps.app.goo.gl/ii6yxUmZpSkjYhLj6"
         },
-        "akad":"08.00 - 11.00",
-        "resepsi":"11.00 - Selesai",
+        "akad":"10.00 - 11.30",
+        "resepsi":"12.30 - Selesai",
         "i9":{
             "story1":{
                 "title":"",

@@ -16,6 +16,7 @@ body{
     font-size: 1.4rem;
     font-family: "Outfit",sans-serif;
     min-height: 2000px;
+    font-weight: 400;
 }
 
 .hero::before{
@@ -25,7 +26,8 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../image/bg.png);
+    /* background-image: url(../image/bg.png); */
+    background-color: var(--c1);
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -64,20 +66,78 @@ body{
     color: white;
 }
 
+.ayat{
+    background-color: var(--c4);
+    height: 300px;
+}
+
+.inside-ayat{
+    background-color: var(--c3);
+    width: 75%;
+    height: 260px;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.inside-ayat p{
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.inside-ayat h1{
+    margin-top: 32px;
+    color: #171717 !important; 
+}
+
+
+.home .basmalah,
+.home .salam{
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home .basmalah{
+    font-size: 40px;
+    color: var(--c3);
+}
+
+.home .salam{
+    font-size: 25px;
+    color: var(--c3);
+}
+
+.home h1{
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #d8c57b;
+}
+
 .navbar-icon{
     background-color: var(--c2);
-    border-radius: 999px;
+    border-radius: 12px;
     width: 500px;
     justify-content: center;
     justify-self: center;
-    border-color: var(--c4);
+    border-color: var(--c3);
     border-width: 1px;
+    height: 60px;
 }
 
 .navbar-icon svg{
     padding-left: 0.5vh;
     padding-right: 0.5vh;
     color: #263300;
+}
+
+.navbar-icon a{
+    border-radius: 4px;
+    background-color: var(--c4);
+    padding: 4px;
+    border-color: var(--c3);
 }
 
 .home,
@@ -91,7 +151,7 @@ body{
 }
 
 .home{
-    background-color: var(--c1);
+    background-color: var(--c4);
 }
 
 .info{
@@ -101,9 +161,23 @@ body{
 
 .info .cardAkad{
     background-color: rgba(128,0,0,0.2);
+    width: fit-content;
 }
 .info .cardResepsi{
     background-color: rgba(128,0,0,0.2);
+    width: fit-content;
+}
+.info .cardResepsi .i8{
+    font-size: 13px;
+}
+
+.info .i6-1 {
+    background-color: var(--earth);
+}
+
+.info a{
+    background-color: var(--earth);
+    color: #FBFBFB;
 }
 
 .info h2,
@@ -141,11 +215,17 @@ body{
 }
 
 .gifts{
-    background-color: var(--c1);
+    background-color: var(--c4);
 }
+
+.closing{
+    background-color: var(--c4);
+}
+
 footer{
+    backdrop-filter: blur(5px);
     padding-top: 3rem;
-    background-color: var(--c3);
+    background-color: rgba(255, 221, 174, 0.3);
     color: #171717;
     padding-bottom: 0.5rem;
 }
@@ -166,6 +246,7 @@ footer a:hover{
 }
 .rsvp button{
     background-color: #ffd11a;
+    cursor: pointer;
 }
 
 .rsvp-form{
@@ -188,6 +269,20 @@ footer a:hover{
     background-color: var(--c1);
 }
 
+.audio-icon-wrapper{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 25rem;
+    right: 0rem;
+    cursor: pointer;
+    color: black;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    background-color: rosybrown;
+}
+
 .alertMessage{
     background-color: var(--c2);
     border-color: var(--c3);
@@ -196,13 +291,15 @@ footer a:hover{
     bottom:45rem;
     cursor: pointer;
     left: 2rem;
-    width: 17rem;
+    width: fit-content;
     height: 3rem;
     text-align: center;
     justify-content: center;
     border-radius: 3px;
     padding-top: 0.4rem;
     border-width: 0.3vh;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
 }
 
 .comment-list-section span{
@@ -214,10 +311,10 @@ footer a:hover{
 }
 .comment-list-section .comment-list li h3{
     color: black;
-    font-weight: bold;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     font-optical-sizing: auto;
+    font-size: medium;
 }
 .comment-list-section .comment-list li h4{
     text-align: right;
@@ -233,7 +330,8 @@ footer a:hover{
     margin-top: 0.90rem;
     margin-bottom: 0.5rem;
     font-family: "Nunito", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: medium;
     font-optical-sizing: auto;
 }
 .cls-head svg{
@@ -245,6 +343,15 @@ footer a:hover{
   font-style: normal;
   font-size: x-large;
 }
+.closing p{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+.closing h1{
+    font-family: "sacramento", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
 .rotating-box {
   width: 45px;
   height: 45px;
@@ -253,6 +360,12 @@ footer a:hover{
   justify-content: center;
   font-size: 2rem;
   animation: rotate360 17s linear infinite;
+}
+.just-rotating{
+    animation: rotate360 17s linear infinite;
+}
+.flower .st0{
+    color: #ffd11a;
 }
 @keyframes rotate360 {
     from {transform: rotate(0deg);}
@@ -285,16 +398,40 @@ footer a:hover{
     animation: zoomIn 0.6s ease-out forwards;
 }
 
+@layer utilities{
+    .custom-scrollbar::-webkit-scrollbar{
+        width: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track{
+        background: var(--c2);
+        border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb{
+        background: var(--c3);
+        border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover{
+        background: var(--c3);
+    }
+}
+
 @media screen and (max-width:992px) {
     html{
         font-size: 75%;
     }
     .navbar-icon{
-        width: 500px;
+        width: 450px;
+        height: 50px;
     }
     .simply-countdown > simply-section{
         padding: 70px;
     }
+    /* .comment-list-section .comment-list li h3{
+        font-size: medium;
+    }
+    .comment-list-section .comment-list li p{
+        font-size: medium;
+    } */
 }
 
 @media screen and (max-width:768px) {
@@ -302,7 +439,7 @@ footer a:hover{
         font-size: 70%;
     }
     .navbar-icon{
-        width:380px;
+        width:350px;
     }
 }
 
@@ -312,5 +449,11 @@ footer a:hover{
     }
     .navbar-icon{
         width: 305px;
+    }
+    .ayat{
+        height: 350px;
+    }
+    .inside-ayat{
+        height: 310px;
     }
 }
