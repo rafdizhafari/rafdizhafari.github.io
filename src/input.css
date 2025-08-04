@@ -163,14 +163,18 @@ body{
 .info .cardAkad{
     background-color: rgba(128,0,0,0.2);
     width: fit-content;
+    padding-left:40px;
+    padding-right: 40px;
 }
 .info .cardResepsi{
     background-color: rgba(128,0,0,0.2);
     width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-.info .cardResepsi .i8{
+/* .info .cardResepsi .i8{
     font-size: 13px;
-}
+} */
 
 .info .i6-1 {
     background-color: var(--earth);
@@ -179,6 +183,10 @@ body{
 .info a{
     background-color: var(--earth);
     color: #FBFBFB;
+}
+
+.info .card-title{
+    font-size: 20px;
 }
 
 .info h2,
