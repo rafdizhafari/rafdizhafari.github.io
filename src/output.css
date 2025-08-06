@@ -307,8 +307,14 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
   }
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
@@ -362,6 +368,9 @@
   }
   .h-95 {
     height: calc(var(--spacing) * 95);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
   }
   .h-120 {
     height: calc(var(--spacing) * 120);
@@ -849,7 +858,7 @@ body {
   position: relative;
   min-height: 100vh;
 }
-.hero h1, .hero p, .hero h4 {
+.hero h1, .hero p, .hero h4, .hero h5 {
   text-shadow: var(--shadow);
   color: whitesmoke;
 }
@@ -858,7 +867,7 @@ body {
 }
 .hero h1 {
   font-family: "Sacramento", cursive;
-  font-size: 4.8rem;
+  font-size: 5rem;
   font-style: italic;
 }
 .hero h4 {
@@ -871,6 +880,7 @@ body {
   color: var(--gold);
   background-color: white;
   box-shadow: var(--shadow);
+  width: 88%;
 }
 .hero a:hover {
   background-color: var(--gold);
@@ -1034,13 +1044,13 @@ footer a:hover {
   background-color: rgba(218,192,163,0.4);
 }
 .rsvp form .nameInput input, .rsvp form .guestAmount input, .rsvp form .guestStatus select, .rsvp .comment-section textarea, .rsvp .comment-section input, .rsvp .comment-list-section ul {
-  background-color: var(--c2);
+  background-color: #F5F0CD;
 }
 .rsvp .comment-list-section {
   background-color: rgba(212, 134, 17,0.3);
 }
 .rsvp .comment-list-section ul li {
-  background-color: var(--c1);
+  background-color: #F5F0E1;
 }
 .audio-icon-wrapper {
   width: 3.5rem;
@@ -1112,7 +1122,7 @@ footer a:hover {
   font-family: "Cookie", cursive;
   font-weight: bold;
   font-style: normal;
-  font-size: x-large;
+  font-size: 30px;
 }
 .closing p {
   font-family: "Nunito", sans-serif;
@@ -1167,13 +1177,13 @@ footer a:hover {
 }
 @keyframes zoomIn-infinite {
   0% {
-    transform: scale(0.8);
+    transform: scale(0.98);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(0.8);
+    transform: scale(0.98);
   }
 }
 .animate-zoom {
@@ -1187,7 +1197,7 @@ footer a:hover {
     width: 3px;
   }
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: var(--c2);
+    background: #F5F0E1;
     border-radius: 8px;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -1209,10 +1219,16 @@ footer a:hover {
   .simply-countdown > simply-section {
     padding: 70px;
   }
+  .cls-head span {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width:768px) {
   html {
     font-size: 70%;
+  }
+  .cls-head span {
+    font-size: x-large;
   }
   .navbar-icon {
     width: 350px;
