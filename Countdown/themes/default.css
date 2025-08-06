@@ -54,32 +54,32 @@
 
 @media (min-width: 640px) {
   .simply-countdown > .simply-section {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     padding: 1.75rem;
   }
 
   .simply-countdown > .simply-section .simply-amount {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
 
   .simply-countdown > .simply-section .simply-word {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
 }
 
 @media (min-width: 1024px) {
   .simply-countdown > .simply-section {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     padding: 2rem;
   }
 
   .simply-countdown > .simply-section .simply-amount {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .simply-countdown > .simply-section .simply-word {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
