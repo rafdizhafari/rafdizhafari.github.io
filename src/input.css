@@ -2,7 +2,7 @@
 
 *{
     --gold: #ffd11a;
-    --clay: #D48611;
+    --clay: rgb(212, 134, 17);
     --bg: #263300;
     --shadow : 0 2px 2px rgba(0,0,0,0.5);
     --earth: #a25940;
@@ -77,7 +77,7 @@ body{
 }
 
 .inside-ayat{
-    background-color: var(--c3);
+    background-color: rgba(212, 134, 17,0.6);
     width: 75%;
     height: 260px;
     text-align: center;
@@ -285,7 +285,7 @@ footer a:hover{
     background-color: var(--c2);
 }
 .rsvp .comment-list-section{
-    background-color: var(--c3);
+    background-color: rgba(212, 134, 17,0.3);
 }
 .rsvp .comment-list-section ul li{
     background-color: var(--c1);
@@ -329,7 +329,7 @@ footer a:hover{
     font-weight: bold;
     font-optical-sizing: auto;
     margin-top: 3rem;
-    color: maroon;
+    color: #925940;
 }
 .comment-list-section .comment-list li h3{
     color: black;
@@ -357,7 +357,7 @@ footer a:hover{
     font-optical-sizing: auto;
 }
 .cls-head svg{
-    color: maroon;
+    color: #925940;
 }
 .cls-head span{
   font-family: "Cookie", cursive;
@@ -385,7 +385,7 @@ footer a:hover{
   animation: rotate360 17s linear infinite;
 }
 .just-rotating{
-    animation: rotate360 20s linear infinite;
+    animation: rotate360 25s linear infinite;
 }
 
 @keyframes rotate360 {
