@@ -125,6 +125,15 @@ body{
     font-weight: 700;
     color: #D48611;
 }
+.home h3{
+    font-family: "Sacramento", cursive;
+    font-size: 2.5rem;
+}
+.info-couple{
+    background-color: rgb(245, 240, 205);
+    padding:2rem;
+    border: #171717 2px solid;
+}
 
 .navbar-icon{
     background-color: var(--c2);
@@ -156,7 +165,8 @@ body{
 .rsvp,
 .gifts,
 .info,
-.closing{
+.closing,
+.cd{
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
@@ -261,7 +271,7 @@ footer a:hover{
     color: moccasin;
 }
 
-.rsvp{
+.rsvp,.cd{
     background-color: var(--c4);
 }
 .rsvp p{
