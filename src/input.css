@@ -205,9 +205,6 @@ body{
     color: #FBFBFB;
 }
 
-.info .card-title{
-    font-size: 20px;
-}
 .info .info-card svg{
     color: #925940;
 }
@@ -238,6 +235,11 @@ body{
     color: #925940;
 }
 
+.info-card h3{
+    font-size: 1.6rem;
+    color: #925940;
+}
+
 .gallery{
     background-color: var(--c1);
 }
@@ -249,6 +251,14 @@ body{
 
 .gifts{
     background-color: var(--c4);
+}
+
+.cd p{
+    font-family: "Grand Hotel", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #171717;
 }
 
 .closing{
@@ -479,6 +489,10 @@ footer a:hover{
     }
     .cls-head span{
         font-size: 30px;
+    }
+    .info-card h3{
+        font-size: 2rem;
+        color: #925940;
     }
     /* .comment-list-section .comment-list li h3{
         font-size: medium;
