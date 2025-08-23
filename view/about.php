@@ -8,15 +8,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
-        <?php include '../shared/header.php';?>
+        <?php include('../shared/header.php') ?>
         <main>
             <section class="bg-white pt-16">
                 <div class="@container mx-auto p-12 space-y-12">
-                    <h1>FACILITIES</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptatum earum, commodi tempore, vero repellendus voluptatem laborum saepe sint modi, dolorum provident accusantium voluptas sequi omnis aut ducimus dolor libero laboriosam iusto. Ea, eveniet optio quod ipsam, laboriosam dolore quas aliquid eaque ipsa repellat cumque, culpa qui autem ab.</p>
-                </div> 
+                    <h1>Tentang Kami</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ea autem quos, est labore eum animi aliquid, sint necessitatibus delectus maiores perferendis nobis cum odit nisi. Ex ad libero illum?</p>
+                </div>
             </section>
         </main>
-        <?php include '../shared/footer.php';?>
+        <?php include('../shared/footer.php') ?>
     </body>
 </html>

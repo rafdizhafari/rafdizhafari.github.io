@@ -10,8 +10,10 @@
             <!-- navbar for lg to md -->
             <div class="hidden md:flex text-white flex-row space-x-6">
                 <a href="/">Beranda</a>
+                <a href="/view/about.php">Tentang kami</a>
                 <a href="/view/facilities.php">Fasilitas</a>
-                <a href="#">Contact</a>
+                <a href="/view/Intracurricular.php">Intrakulikuler</a>
+                <a href="/view/extracurricular.php">Ekstrakulikuler</a>
             </div>
             <!-- hamburger button -->
             <div class="md:hidden pt-2 transition hover:-translate-y-1 hover:scale-110 ease-in-out">
@@ -27,10 +29,12 @@
     </div>
     <!-- menu after hamburger -->
     <div id="menu" class="md:hidden px-4 pb-4 pt-4 bg-sky-200 right-0 shadow-md transition-all overflow-hidden duration-1000 ease-in-out max-h-0 -translate-y-30 z-20">
-        <div class="flex flex-col space-y-6 w-15 text-right ml-auto">
-            <a class="block" href="/">Beranda</a>
-            <a class="block" href="/view/facilities.php">Fasilitas</a>
-            <a class="block" href="#">Contact</a>
+        <div class="flex flex-col space-y-6 w-24 text-right ml-auto">
+            <a href="/">Beranda</a>
+            <a href="/view/about.php">Tentang kami</a>
+            <a href="/view/facilities.php">Fasilitas</a>
+            <a href="/view/Intracurricular.php">Intrakulikuler</a>
+            <a href="/view/extracurricular.php">Ekstrakulikuler</a>
         </div>
     </div>
 </nav>
