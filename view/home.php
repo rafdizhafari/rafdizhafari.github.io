@@ -5,8 +5,13 @@
     </div>
     <!-- paraghraph middle -->
     <div class="@container mx-auto p-12 space-y-12">
-        <div class="text-center justify-center space-y-4 [&>h1]:text-3xl">
+        <div class="text-center justify-center mx-auto space-y-8">
             <img class="size-50 mx-auto" src="../img/1755576547837.png" alt="Logo Sekolah">
+            <div class="flex mx-auto text-center items-center justify-center p-8 space-x-50 translate-x-4">
+                <h2 class="text-4xl">TK</h2>
+                <h2 class="text-4xl">SD</h2>
+                <h2 class="text-4xl">SMP</h2>
+            </div>
             <h1>VISI</h1>
             <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, vero. Reprehenderit nobis nesciunt modi saepe fuga corrupti iste, cumque aliquam et quasi mollitia numquam error minus fugiat hic facilis? Eligendi!</p>
             <h1>MISI</h1>

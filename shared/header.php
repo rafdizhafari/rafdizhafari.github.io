@@ -1,19 +1,24 @@
 <header>
-<nav class="w-full fixed shadow-md bg-sky-200 h-[64px] z-50">
+<nav class="w-full fixed shadow-md bg-sky-200 h-[58px] md:h-[64px] z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-40">
         <div class="flex justify-between items-center h-16">
             <!-- Logo and image -->
             <div class="flex flex-row items-center gap-1">
                 <img src="/img/1755576547837.png" alt="Logo Sekolah" class="size-18 items-start object-contain z-40">
-                <h1 class="text-left font-medium tracking-tight text-sm md:text-base lg:text-xl z-40">UWAIS AL QORNI<br>ISLAMIC SCHOOL (UAQIS)</h1>
+                <h2 class="text-left font-medium tracking-tight z-40">UWAIS AL QORNI<br>ISLAMIC SCHOOL (UAQIS)</h2>
             </div>
             <!-- navbar for lg to md -->
-            <div class="hidden md:flex text-white flex-row space-x-6">
+            <div class="hidden md:flex text-white flex-row space-x-6 px-12">
                 <a href="/">Beranda</a>
                 <a href="/view/about.php">Tentang kami</a>
-                <a href="/view/facilities.php">Fasilitas</a>
-                <a href="/view/Intracurricular.php">Intrakulikuler</a>
-                <a href="/view/extracurricular.php">Ekstrakulikuler</a>
+                <div class="relative group">
+                    <a href="#" class="">Sekolah Kami</a>
+                    <div class="absolute hidden group-hover:block bg-sky-200 p-4 py-6 w-50 -left-5 space-y-6 transition-all duration-1000">
+                        <a href="#" class="block">TK Uwais Al Qorni</a>
+                        <a href="#" class="block">SD Uwais Al Qorni</a>
+                        <a href="#" class="block">SMP Uwais Al Qorni</a>
+                    </div>
+                </div>
             </div>
             <!-- hamburger button -->
             <div class="md:hidden pt-2 transition hover:-translate-y-1 hover:scale-110 ease-in-out">
