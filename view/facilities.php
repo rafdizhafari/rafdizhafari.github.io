@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="lg:text-[98%] md:text-[95%] text-[85%]">
     <head>
         <meta charset="UTF-8">
         <title>Uwais Al Qorni</title>

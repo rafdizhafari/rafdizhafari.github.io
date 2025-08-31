@@ -15,8 +15,8 @@
                     <a href="#" class="">Sekolah Kami</a>
                     <div class="absolute hidden group-hover:block bg-sky-200 p-4 py-6 w-50 -left-5 space-y-6 transition-all duration-1000">
                         <a href="#" class="block">TK Uwais Al Qorni</a>
-                        <a href="#" class="block">SD Uwais Al Qorni</a>
-                        <a href="#" class="block">SMP Uwais Al Qorni</a>
+                        <a href="/view/elementary.php" class="block">SD Uwais Al Qorni</a>
+                        <a href="/view/middle.php" class="block">SMP Uwais Al Qorni</a>
                     </div>
                 </div>
             </div>
