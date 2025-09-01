@@ -2,7 +2,7 @@
     <div class="py-12 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-md">
         <div class="gap-1">
             <h2>Hubungi kami</h2>
-            <ul class="space-y-2">
+            <ul class="space-y-2 pt-2">
                 <li>Jl. Mandor Tadjir No.39, Serua, Kec. Bojongsari, Kota Depok, Jawa Barat 16517</li>
                 <li class="flex flex-row gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -43,15 +43,18 @@
         </div>
         <div class="gap-1">
             <h2>Jangkau kami</h2>
-            <ul class="space-y-2">
-                <li>sosmed 1</li>
-                <li>sosmed 2</li>
-                <li>sosmed 3</li>
+            <ul class="space-y-2 pt-2">
+                <li><a class="flex space-x-2 size-fit" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                    <p>uaqislamicschool</p>
+                </a></li>
             </ul>
         </div>
         <div class="gap-1">
             <h3>Lokasi kami</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.16962318605!2d106.7305584749916!3d-6.372089893618098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef5aef931ee5%3A0x214e3341e7d53503!2sUWAIS%20AL%20QORNI%20ISLAMIC%20SCHOOL%20TK-SD-SMP!5e0!3m2!1sid!2sid!4v1755588772097!5m2!1sid!2sid" class="w-full h-82 md:h-63 rounded-md border-white border-2" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.16962318605!2d106.7305584749916!3d-6.372089893618098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef5aef931ee5%3A0x214e3341e7d53503!2sUWAIS%20AL%20QORNI%20ISLAMIC%20SCHOOL%20TK-SD-SMP!5e0!3m2!1sid!2sid!4v1755588772097!5m2!1sid!2sid" class="w-full h-82 md:h-63 rounded-md border-white border-2 mt-2" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <div class="text-center justify-center py-4">

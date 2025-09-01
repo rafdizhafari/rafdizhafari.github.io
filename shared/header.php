@@ -14,11 +14,12 @@
                 <div class="relative group">
                     <a href="#" class="">Sekolah Kami</a>
                     <div class="absolute hidden group-hover:block bg-sky-200 p-4 py-6 w-50 -left-5 space-y-6 transition-all duration-1000">
-                        <a href="#" class="block">TK Uwais Al Qorni</a>
+                        <a href="/view/kindergarten.php" class="block">TK Uwais Al Qorni</a>
                         <a href="/view/elementary.php" class="block">SD Uwais Al Qorni</a>
                         <a href="/view/middle.php" class="block">SMP Uwais Al Qorni</a>
                     </div>
                 </div>
+                <a href="/view/facilities.php">Fasilitas</a>
             </div>
             <!-- hamburger button -->
             <div class="md:hidden pt-2 transition hover:-translate-y-1 hover:scale-110 ease-in-out">
@@ -37,6 +38,14 @@
         <div class="flex flex-col space-y-6 w-24 text-right ml-auto">
             <a href="/">Beranda</a>
             <a href="/view/about.php">Tentang kami</a>
+            <div class="relative group">
+                <a href="#" class="">Sekolah Kami</a>
+                <div class="absolute hidden group-hover:block bg-sky-200 p-4 py-6 w-50 -left-60 -top-4 space-y-6 shadow-md transition-all duration-1000">
+                    <a href="/view/kindergarten.php" class="block">TK Uwais Al Qorni</a>
+                    <a href="/view/elementary.php" class="block">SD Uwais Al Qorni</a>
+                    <a href="/view/middle.php" class="block">SMP Uwais Al Qorni</a>
+                </div>
+            </div>
             <a href="/view/facilities.php">Fasilitas</a>
             <a href="/view/Intracurricular.php">Intrakulikuler</a>
             <a href="/view/extracurricular.php">Ekstrakulikuler</a>

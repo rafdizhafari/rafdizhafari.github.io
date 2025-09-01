@@ -11,9 +11,19 @@
         <?php include '../shared/header.php';?>
         <main>
             <section class="bg-white pt-16">
-                <div class="@container mx-auto p-12 space-y-12">
+                <div class="@container mx-auto p-12 space-y-12 max-w-4xl">
                     <h1>FACILITIES</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptatum earum, commodi tempore, vero repellendus voluptatem laborum saepe sint modi, dolorum provident accusantium voluptas sequi omnis aut ducimus dolor libero laboriosam iusto. Ea, eveniet optio quod ipsam, laboriosam dolore quas aliquid eaque ipsa repellat cumque, culpa qui autem ab.</p>
+                    <ul>
+                        <li>Ruangan Kelas disediakan AC</li>
+                        <li>Kelas dipisah Ikhwan & Akhwat</li>
+                        <li>Lapangan Olahraga</li>
+                        <li>Mushola</li>
+                        <li>Kantin sehat</li>
+                        <li>Sekolah Orang Tua</li>
+                        <li>Kajian Anak</li>
+                        <li>Wifi</li>
+                        <li>CCTV 24 Jam</li>
+                    </ul>
                 </div> 
             </section>
         </main>

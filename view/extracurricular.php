@@ -13,7 +13,15 @@
             <section class="bg-white pt-16">
                 <div class="@container mx-auto p-12 space-y-12">
                     <h1>Ekstrakulikuler</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ea autem quos, est labore eum animi aliquid, sint necessitatibus delectus maiores perferendis nobis cum odit nisi. Ex ad libero illum?</p>
+                    <ul>
+                        <li>Rumah Qur'an</li>
+                        <li>Robotic Club</li>
+                        <li>Futsal</li>
+                        <li>Drawing Club</li>
+                        <li>English Club</li>
+                        <li>Arabic Club</li>
+                        <li>Aikido</li>
+                    </ul>
                 </div>
             </section>
         </main>

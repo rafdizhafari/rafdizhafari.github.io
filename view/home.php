@@ -4,7 +4,7 @@
         <img src="" class="slide-image w-full h-full object-cover object-center transition-opacity duration-500 ease-in-out">
     </div>
     <!-- paraghraph middle -->
-    <div class="@container mx-auto p-12 space-y-12">
+    <div class="@container mx-auto p-12 space-y-12 max-w-4xl">
         <div class="text-center justify-center mx-auto space-y-8">
             <img class="size-50 mx-auto" src="../img/1755576547837.png" alt="Logo Sekolah">
             <div class="flex mx-auto text-center items-center justify-center p-8 space-x-50 translate-x-4">
