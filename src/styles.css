@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme{
+    --color-navy: #133962;
+
+    --font-poppins: "Poppins", sans-serif;
+}
+
+@layer base{
+    /* a{
+        font-size: 16px;
+    } */
+}
