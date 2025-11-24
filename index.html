@@ -10,8 +10,8 @@
     </head>
     <body>
         <nav class="w-full fixed flex mx-auto h-[115px] bg-navy py-[16px] 2xl:px-[220px] lg:px-[120px] z-50">
-            <div class="w-full flex flex-column justify-between items-center">
-                <div class="flex flex-column text-white items-center justify-left">
+            <div class="w-full flex flex-row justify-between items-center">
+                <div class="flex flex-col text-white items-center justify-left">
                     <img class="size-[29px] space-x-[11.5px]" src="images/1755576547837.png" alt="">
                     <h1>Putra Reja Boga</h1>
                 </div>
@@ -25,8 +25,41 @@
             </div>
         </nav>
         <section id="home" class="home translate-y-[64px]">
-            <div class="bg-[url('/images/IMG-20240826-WA0051.jpg')] bg-linear-to-r h-[653px] w-full bg-cover bg-center">
-                <div class="inset-0 bg-gradient-to-r from-white from-45% via-white/80 via-60% to-white/40 h-[653px]"></div>
+            <div class="relative flex w-full bg-[url('/images/IMG-20240826-WA0051.jpg')] bg-linear-to-r h-[653px] pt-[16px] w-full bg-cover bg-center font-poppins">
+                <div class="absolute inset-0 bg-gradient-to-r from-white from-45% via-white/80 via-60% to-white/40 h-[653px]"></div>
+                <div class="absolute inset-10 flex flex-row text-black items-center justify-between h-[265px] translate-y-[171px]">
+                    <div class="flex flex-col space-y-[12px]">
+                        <div class="space-y-[32px]">
+                            <h2 class="text-[40px] font-bold text-navy">Putra Reja Boga</h2>
+                            <p class="max-w-[900px] text-[18px]">PT Putra Reja Boga merupakan sebuah usaha yang bergerak di bidang makanan siap saji (Catering Service) bermula atas rintisan awal dari CV. Mas Blangkon Catering yang berdiri sejak tahun 2011 serta resmi pendirian kelembagaan sejak tahun 2020. Kami menyediakan pelayanan catering baik perusahaan atau lembaga pendidikan, mulai dari Catering Event, Catering Kantor, Catering Sekolah, Catering Kampus, Catering Pabrik, Catering Seminar, Catering Prasmanan, Catering Harian Kryawan, Catering Rapat, dll. Alhamdulillah dari tahun 2019 hingga saat ini kami masih dipercaya untuk Catering Harian Karyawan Mabes TNI Cilangkap.</p>
+                        </div>
+                        <form class="grid grid-cols-3 grid-rows-2 space-x-[12px] space-y-[12px]" action="">
+                            <div class="flex flex-col w-[264px] space-y-[10px]">
+                                <label for="pilih-tanggal">Pilih tanggal</label>
+                                <input class="border-[2px] rounded-[12px] p-[6px]" type="date">
+                            </div>
+                            <div class="flex flex-col w-[264px] space-y-[10px]">
+                                <label for="pilih-tanggal">Pilih waktu</label>
+                                <input class="border-[2px] rounded-[12px] p-[6px]" type="time">
+                            </div>
+                            <div class="flex flex-col w-[264px] space-y-[10px]">
+                                <label for="pilih-tanggal">Pilih jumlah</label>
+                                <input class="border-[2px] rounded-[12px] p-[6px]" type="text">
+                            </div>
+                            <button class="text-[16px] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 py-[12px] px-[10px] size-fit text-white rounded-[12px]">Pesan Sekarang</button>
+                        </form>
+                    </div>
+                    <div class="translate-x-[-200px]">
+                        <img class="size-[350px] rounded-[16px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="paket-menu" class="paket-menu">
+            <div>
+                <div>
+
+                </div>
             </div>
         </section>
         <!-- <a href="https://wa.me/6281617680098?text=test%20wa%20link">whatsapp</a> -->

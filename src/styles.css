@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 @theme{
-    --color-navy: #133962;
+    --color-navy: #004186;
+    --color-cbutton1: #133969;
+    --color-cbutton2: #295A8E;
+    --color-cbutton3: #2B70BB;
 
     --font-poppins: "Poppins", sans-serif;
 }
