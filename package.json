@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.16",
-    "jquery": "^3.7.1",
     "tailwindcss": "^4.1.16"
   },
   "name": "putrarejaboga",

@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./dist/output.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <title>Putra Reja Boga</title>
     </head>
     <body>
@@ -56,7 +57,7 @@
             </div>
         </section>
         <section id="paket-pilihan-menu" class="paket-pilihan-menu">
-            <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] h-[1886px] py-[80px] px-8">
+            <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] py-[80px] px-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center pb-6">Paket Menu</h1>
                 <div class="grid grid-cols-3 grid-rows-2 mx-auto justify-center place-items-center w-max-[1574px] gap-8">
                     <div class="size-[485px] rounded-[35px] bg-white shadow-md">
@@ -120,57 +121,35 @@
                         </div>
                     </div>
                 </div>
-                <h1 class="font-poppins font-bold text-navy text-[48px] text-center pt-[80px]">Pilihan Menu</h1>
+            </div>
+        </section>
+        <section id="pilihan-menu">
+            <div class="p-8">
+                <h1 class="font-poppins font-bold text-navy text-[48px] text-center">Pilihan Menu</h1>
                 <div id="slider" class="flex flex-row justify-center items-center mx-auto overflow-hidden transition-transform duration-500 gap-[100px]">
                     <button id="prevBtn" class="">Prev</button>
-                    <div class="flex flex-col justify-center gap-6 items-center w-[277px] h-[526px]">
-                        <img src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <h2 class="text-navy font-bold text-[30px]">Daging Ayam</h2>
-                        <button class="rounded-[12px] bg-navy text-white w-[189px] h-[48px] font-bold text-[16px]">Lihat Detail Menu</button>
-                    </div>
-                    <div class="flex flex-col justify-center gap-6 items-center w-[277px] h-[526px]">
-                        <img src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <h2 class="text-navy font-bold text-[30px]">Daging Ayam</h2>
-                        <button class="rounded-[12px] bg-navy text-white w-[189px] h-[48px] font-bold text-[16px]">Lihat Detail Menu</button>
-                    </div>
-                    <div class="flex flex-col justify-center gap-6 items-center w-[277px] h-[526px]">
-                        <img src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <h2 class="text-navy font-bold text-[30px]">Daging Ayam</h2>
-                        <button class="rounded-[12px] bg-navy text-white w-[189px] h-[48px] font-bold text-[16px]">Lihat Detail Menu</button>
-                    </div>
-                    <div class="flex flex-col justify-center gap-6 items-center w-[277px] h-[526px]">
-                        <img src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <h2 class="text-navy font-bold text-[30px]">Daging Ayam</h2>
-                        <button class="rounded-[12px] bg-navy text-white w-[189px] h-[48px] font-bold text-[16px]">Lihat Detail Menu</button>
-                    </div>
-                    <div class="flex flex-col justify-center gap-6 items-center w-[277px] h-[526px]">
-                        <img src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <h2 class="text-navy font-bold text-[30px]">Daging Ayam</h2>
-                        <button class="rounded-[12px] bg-navy text-white w-[189px] h-[48px] font-bold text-[16px]">Lihat Detail Menu</button>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col border px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px]">
+                            <h3 class="font-semibold text-[22px]">Paket Menu Daging Ayam</h3>
+                            <ol class="gap-[25px] ">
+                                <li>lorem</li>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                            </ol>
+                        </div>
                     </div>
                     <button id="nextBtn" class="">Next</button>
                 </div>
             </div>
         </section>
         <section id="testimoni">
-            <div class="w-full h-[574px] bg-stestimoni p-8">
+            <div class="w-full p-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center pb-6">Testimoni</h1>
-                <div class="flex flex-row">
-                    <div class="bg-white flex flex-row font-poppins w-[820px] h-[340px] rounded-[16px] mx-auto shadow-md">
-                        <div class="flex flex-col p-[56px] gap-[19px]">
-                            <h2 class="font-bold text-[32px] w-[277px]">Mabes TNI Cilangkap</h2>
-                            <p class="font-semibold text-[16px]">Kami dipercaya melayani berbagai acara kebutuhan konsums Catering di Mabes TNI Cilangkap sejak tahun 2019 hingga saat ini</p>
-                        </div>
-                        <img class="rounded-r-[16px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    </div>
-                    <div class="bg-white flex flex-row font-poppins w-[820px] h-[340px] rounded-[16px] mx-auto shadow-md">
-                        <div class="flex flex-col p-[56px] gap-[19px]">
-                            <h2 class="font-bold text-[32px] w-[277px]">Mabes TNI Cilangkap</h2>
-                            <p class="font-semibold text-[16px]">Kami dipercaya melayani berbagai acara kebutuhan konsums Catering di Mabes TNI Cilangkap sejak tahun 2019 hingga saat ini</p>
-                        </div>
-                        <img class="rounded-r-[16px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    </div>
-                    
+                <div class="bg-white flex flex-row font-poppins mx-auto gap-[50px] justify-center items-center">
+                    <img class="size-[500px] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[500px] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[500px] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -178,8 +157,6 @@
         <!-- script section -->
          <!-- pilihan menu slider -->
          <script>
-            const $ = require("jquery")(window);
-
             $(document).ready(function(){
                 let current = 0;
                 const totalSlides = $("#slider").children().length;
