@@ -325,6 +325,9 @@
   .w-\[377px\] {
     width: 377px;
   }
+  .w-\[470px\] {
+    width: 470px;
+  }
   .w-\[485px\] {
     width: 485px;
   }
@@ -398,11 +401,20 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-\[12px\] {
+    gap: 12px;
+  }
   .gap-\[32px\] {
     gap: 32px;
   }
   .gap-\[50px\] {
     gap: 50px;
+  }
+  .gap-\[63px\] {
+    gap: 63px;
+  }
+  .gap-\[64px\] {
+    gap: 64px;
   }
   .gap-\[100px\] {
     gap: 100px;
