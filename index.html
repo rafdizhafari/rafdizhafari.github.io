@@ -126,12 +126,35 @@
         <section id="pilihan-menu">
             <div class="p-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center">Pilihan Menu</h1>
-                <div id="slider" class="flex flex-row justify-center items-center mx-auto overflow-hidden transition-transform duration-500 gap-[100px]">
-                    <button id="prevBtn" class="">Prev</button>
-                    <div class="flex flex-row">
-                        <div class="flex flex-col border px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px]">
-                            <h3 class="font-semibold text-[22px]">Paket Menu Daging Ayam</h3>
-                            <ol class="gap-[25px] ">
+                <div id="slider-place" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
+                    <button id="prevBtn" class="absolute z-10 bg-white h-full w-[250px] left-0">Prev</button>
+                    <div id="slider" class="flex flex-row gap-[32px] justify-center items-center w-[1300px] z-0 transition-transform duration-300">
+                        <div id="menu-slide-1" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
+                            <h3 class="font-semibold text-[22px] text-navy">Paket Menu Olahan Ikan</h3>
+                            <ol class="space-y-[25px] font-medium text-[18px] text-navy">
+                                <li>Ikan Bawal Bakar/Goreng</li>
+                                <li>Ikan Mas Bumbu Presmol</li>
+                                <li>Ikan Mas Pepes</li>
+                                <li>Ikan Tuna Manado</li>
+                                <li>Ikan Nila Bakar/Goreng</li>
+                                <li>Ikan Tuna Bumbu Kuning</li>
+                                <li>Ikan Bandeng Presto</li>
+                                <li>Ikan Kembung Bumbu Kuning</li>
+                                <li>Ikan Gembung Goreng</li>
+                            </ol>
+                        </div>
+                        <div id="menu-slide-2" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
+                            <h3 class="font-semibold text-[22px] text-navy">Paket Menu Daging Ayam</h3>
+                            <ol class="space-y-[25px] font-medium text-[18px] text-navy">
+                                <li>lorem</li>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                            </ol>
+                        </div>
+                        <div id="menu-slide-3" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
+                            <h3 class="font-semibold text-[22px] text-navy">Paket Menu Daging Ayam</h3>
+                            <ol class="space-y-[25px] font-medium text-[18px] text-navy">
                                 <li>lorem</li>
                                 <li>lorem</li>
                                 <li>lorem</li>
@@ -139,7 +162,7 @@
                             </ol>
                         </div>
                     </div>
-                    <button id="nextBtn" class="">Next</button>
+                    <button id="nextBtn" class="absolute z-10 justify-right bg-white w-[250px] right-0">Next</button>
                 </div>
             </div>
         </section>
@@ -153,6 +176,24 @@
                 </div>
             </div>
         </section>
+        <section id="klien">
+            <div class="p-8">
+                <h1 class="text-navy font-poppins font-bold text-[48px] mx-auto text-center pb-6">Klien Kami</h1>
+                <div class="flex flex-row mx-auto items-center justify-center gap-[50px]">
+                    <img class="size-[300px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[300px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[300px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="p-8 bg-gold">
+                <div class="flex flex-row justify-center gap-12">
+                    <img class="size-[50px] w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[50px] w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                </div>
+            </div>
+        </footer>
         <!-- <a href="https://wa.me/6281617680098?text=test%20wa%20link">whatsapp</a> -->
         <!-- script section -->
          <!-- pilihan menu slider -->
@@ -162,7 +203,7 @@
                 const totalSlides = $("#slider").children().length;
 
                 function updateSlider(){
-                    $("#slider").css("transform", `translateX(-${current * 100}%)`);
+                    $("#slider").css("transform",`translateX(-${current * 32}%)`);
                 }
 
                 $("#nextBtn").click(function(){
