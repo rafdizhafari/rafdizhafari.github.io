@@ -56,7 +56,7 @@
                 </div>
             </div>
         </section>
-        <section id="paket-pilihan-menu" class="paket-pilihan-menu">
+        <section id="paket-menu" class="paket-pilihan-menu">
             <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] py-[80px] px-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center pb-6">Paket Menu</h1>
                 <div class="grid grid-cols-3 grid-rows-2 mx-auto justify-center place-items-center w-max-[1574px] gap-8">
@@ -126,12 +126,12 @@
         <section id="pilihan-menu">
             <div class="p-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center">Pilihan Menu</h1>
-                <div id="slider-place" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
+                <div id="slider-wrapper" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
                     <button id="prevBtn" class="absolute z-10 bg-white h-full w-[250px] left-0">Prev</button>
-                    <div id="slider" class="flex flex-row gap-[32px] justify-center items-center w-[1300px] z-0 transition-transform duration-300">
+                    <div id="slider" class="flex flex-row gap-[32px] justify-center items-center w-[1300px] z-0 transition-transform duration-300 translate-x-105">
                         <div id="menu-slide-1" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
                             <h3 class="font-semibold text-[22px] text-navy">Paket Menu Olahan Ikan</h3>
-                            <ol class="space-y-[25px] font-medium text-[18px] text-navy">
+                            <ol class="space-y-[25px] font-medium text-[18px] text-navy list-disc">
                                 <li>Ikan Bawal Bakar/Goreng</li>
                                 <li>Ikan Mas Bumbu Presmol</li>
                                 <li>Ikan Mas Pepes</li>
@@ -162,7 +162,7 @@
                             </ol>
                         </div>
                     </div>
-                    <button id="nextBtn" class="absolute z-10 justify-right bg-white w-[250px] right-0">Next</button>
+                    <button id="nextBtn" class="absolute z-10 justify-right bg-white h-full w-[250px] right-0">Next</button>
                 </div>
             </div>
         </section>
@@ -218,16 +218,50 @@
          <script>
             $(document).ready(function(){
                 let current = 0;
-                const totalSlides = $("#slider").children().length;
+                const totalSlides = $("#slider").children("div").length;
 
                 function updateSlider(){
-                    $("#slider").css("transform",`translateX(-${current * 32}%)`);
+                    $("#slider").css("transform",`translateX(-${current * 31}%)`);
+                }
+
+                function changeApp(){
+                    $(`#menu-slide-${current+1}`).removeClass("bg-white h-[600px] border border-gold")
+                    $(`#menu-slide-${current+1} h3`).removeClass("text-navy")
+                    $(`#menu-slide-${current+1} ol`).removeClass("text-navy")
+                    $(`#menu-slide-${current+1}`).addClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current+1} h3`).addClass("text-cpaklay")
+                    $(`#menu-slide-${current+1} ol`).addClass("text-white")
+
+                    $(`#menu-slide-${current}`).removeClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current} h3`).removeClass("text-cpaklay")
+                    $(`#menu-slide-${current} ol`).removeClass("text-white")
+                    $(`#menu-slide-${current}`).addClass("bg-white h-[600px] text-navy border border-gold")
+                    $(`#menu-slide-${current} h3`).addClass("text-navy")
+                    $(`#menu-slide-${current} ol`).addClass("text-navy")
+                }
+
+                function reverseChangeApp(){
+                    $(`#menu-slide-${current+2}`).removeClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current+2} h3`).removeClass("text-cpaklay")
+                    $(`#menu-slide-${current+2} ol`).removeClass("text-white")
+                    $(`#menu-slide-${current+2}`).addClass("bg-white h-[600px] text-navy border border-gold")
+                    $(`#menu-slide-${current+2} h3`).addClass("text-navy")
+                    $(`#menu-slide-${current+2} ol`).addClass("text-navy")
+                    
+                    $(`#menu-slide-${current+1}`).removeClass("bg-white h-[600px] text-navy border border-gold")
+                    $(`#menu-slide-${current+1} h3`).removeClass("text-navy")
+                    $(`#menu-slide-${current+1} ol`).removeClass("text-navy")
+                    $(`#menu-slide-${current+1}`).addClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current+1} h3`).addClass("text-cpaklay")
+                    $(`#menu-slide-${current+1} ol`).addClass("text-white")
                 }
 
                 $("#nextBtn").click(function(){
                     if(current < totalSlides - 1){
                         current++;
                         updateSlider();
+                        changeApp();
+                        console.log(current)
                     }
                 })
 
@@ -235,6 +269,8 @@
                     if(current > 0){
                         current--;
                         updateSlider();
+                        reverseChangeApp();
+                        console.log(current)
                     }
                 })
             })
