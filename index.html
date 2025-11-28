@@ -13,8 +13,7 @@
         <nav class="w-full fixed flex mx-auto h-[115px] bg-navy py-[16px] 2xl:px-[220px] lg:px-[120px] z-50">
             <div class="w-full flex flex-row justify-between items-center p-8">
                 <div class="flex flex-col text-white items-center justify-left">
-                    <img class="size-[29px] space-x-[11.5px]" src="images/1755576547837.png" alt="">
-                    <h1>Putra Reja Boga</h1>
+                    <img class="w-[118px] h-[83px] space-x-[11.5px] color-white" src="images/1_PT Putra Reja Boga 1.png" alt="">
                 </div>
                 <div class="flex font-poppins whitespace-nowrap text-white space-x-[48px] items-center justify-right w-[650px] h-[60px] text-[16px]">
                     <a href="#" class="">Tentang Kami</a>
@@ -127,11 +126,13 @@
             <div class="p-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center">Pilihan Menu</h1>
                 <div id="slider-wrapper" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
-                    <button id="prevBtn" class="absolute z-10 bg-white h-full w-[250px] left-0">Prev</button>
+                    <button id="prevBtn" class="absolute z-10 bg-white h-full w-[250px] left-0">
+                        <img class="mx-auto" src="images/Arrow Left.png" alt="">
+                    </button>
                     <div id="slider" class="flex flex-row gap-[32px] justify-center items-center w-[1300px] z-0 transition-transform duration-300 translate-x-105">
-                        <div id="menu-slide-1" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
-                            <h3 class="font-semibold text-[22px] text-navy">Paket Menu Olahan Ikan</h3>
-                            <ol class="space-y-[25px] font-medium text-[18px] text-navy list-disc">
+                        <div id="menu-slide-1" class="flex flex-col px-[44px] pt-[20px] h-[650px] font-poppins rounded-[10px] gap-6 bg-navy shadow-md">
+                            <h3 class="font-semibold text-[22px] text-cpaklay">Paket Menu Olahan Ikan</h3>
+                            <ol class="space-y-[25px] font-medium text-[18px] text-white list-image-[url(/images/Icon.png)]">
                                 <li>Ikan Bawal Bakar/Goreng</li>
                                 <li>Ikan Mas Bumbu Presmol</li>
                                 <li>Ikan Mas Pepes</li>
@@ -162,7 +163,9 @@
                             </ol>
                         </div>
                     </div>
-                    <button id="nextBtn" class="absolute z-10 justify-right bg-white h-full w-[250px] right-0">Next</button>
+                    <button id="nextBtn" class="absolute z-10 justify-right bg-white h-full w-[250px] right-0">
+                        <img class="mx-auto scale-x-[-1]" src="images/Arrow Left.png" alt="">
+                    </button>
                 </div>
             </div>
         </section>
@@ -187,10 +190,10 @@
             </div>
         </section>
         <footer id="footer">
-            <div class="p-8 bg-gold">
+            <div class="p-[56px] bg-navy">
                 <div class="flex flex-row justify-center gap-[63px] text-white">
-                    <img class="size-[50px] w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    <img class="size-[50px] w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="" src="images/1_PT Putra Reja Boga 2.png" alt="">
                     <div class="flex flex-col font-poppins w-[470px]">
                         <h3 class="font-bold text-[22px]">Alamat</h3>
                         <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum expedita perferendis.</p>
@@ -261,7 +264,6 @@
                         current++;
                         updateSlider();
                         changeApp();
-                        console.log(current)
                     }
                 })
 
@@ -270,7 +272,6 @@
                         current--;
                         updateSlider();
                         reverseChangeApp();
-                        console.log(current)
                     }
                 })
             })

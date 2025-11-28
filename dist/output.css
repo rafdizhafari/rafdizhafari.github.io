@@ -207,6 +207,9 @@
   .z-50 {
     z-index: 50;
   }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -250,6 +253,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[83px\] {
+    height: 83px;
+  }
   .h-\[115px\] {
     height: 115px;
   }
@@ -274,11 +280,17 @@
   .h-full {
     height: 100%;
   }
+  .w-\[118px\] {
+    width: 118px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
   .w-\[264px\] {
     width: 264px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[377px\] {
     width: 377px;
@@ -364,14 +376,30 @@
     --tw-translate-y: 171px;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .scale-x-\[-1\] {
+    --tw-scale-x: -1;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .resize {
     resize: both;
   }
+  .list-\[images\/Icon\.png\] {
+    list-style-type: images/Icon.png;
+  }
   .list-disc {
     list-style-type: disc;
+  }
+  .list-image-\[images\/Icon\.png\] {
+    list-style-image: images/Icon.png;
+  }
+  .list-image-\[url\(\/images\/Icon\.png\)\] {
+    list-style-image: url(/images/Icon.png);
+  }
+  .list-image-\[url\(images\/Icon\.png\)\] {
+    list-style-image: url(images/Icon.png);
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -405,6 +433,9 @@
   }
   .gap-\[12px\] {
     gap: 12px;
+  }
+  .gap-\[18px\] {
+    gap: 18px;
   }
   .gap-\[32px\] {
     gap: 32px;
@@ -624,6 +655,9 @@
   .bg-center {
     background-position: center;
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -632,6 +666,9 @@
   }
   .p-\[6px\] {
     padding: 6px;
+  }
+  .p-\[56px\] {
+    padding: 56px;
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -651,11 +688,17 @@
   .py-\[80px\] {
     padding-block: 80px;
   }
+  .pt-\[5p6x\] {
+    padding-top: 5p6x;
+  }
   .pt-\[16px\] {
     padding-top: 16px;
   }
   .pt-\[20px\] {
     padding-top: 20px;
+  }
+  .pt-\[56px\] {
+    padding-top: 56px;
   }
   .pt-\[64px\] {
     padding-top: 64px;
@@ -665,6 +708,9 @@
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
   }
   .text-center {
     text-align: center;
@@ -743,6 +789,18 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .before\:absolute {
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .before\:content-\[images\/Icon\.png\] {
+    &::before {
+      --tw-content: images/Icon.png;
+      content: var(--tw-content);
+    }
+  }
   .md\:text-\[95\%\] {
     @media (width >= 48rem) {
       font-size: 95%;
@@ -779,6 +837,21 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -935,12 +1008,20 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -975,6 +1056,7 @@
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
       --tw-duration: initial;
+      --tw-content: "";
     }
   }
 }
