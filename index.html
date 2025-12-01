@@ -10,129 +10,138 @@
         <title>Putra Reja Boga</title>
     </head>
     <body>
-        <nav class="w-full fixed flex mx-auto h-[115px] bg-navy py-[16px] 2xl:px-[220px] lg:px-[120px] z-50">
-            <div class="w-full flex flex-row justify-between items-center p-8">
-                <div class="flex flex-col text-white items-center justify-left">
-                    <img class="w-[118px] h-[83px] space-x-[11.5px] color-white" src="images/1_PT Putra Reja Boga 1.png" alt="">
+        <header id="header">
+            <nav class="w-full fixed flex mx-auto h-[115px] bg-navy py-[16px] 2xl:px-[220px] lg:px-[120px] z-50">
+                <div class="w-full flex flex-row justify-between items-center p-8">
+                    <div class="flex flex-col text-white items-center justify-start">
+                        <img class="max-w-[100%] h-auto space-x-[11.5px] color-white" src="images/1_PT Putra Reja Boga 1.png" alt="">
+                    </div>
+                    <div class="flex flex-row font-poppins whitespace-nowrap text-white space-x-[48px] items-center justify-end w-[650px] h-[60px] text-[0.833vw]">
+                        <a href="#" class="">Tentang Kami</a>
+                        <a href="#">Paket Menu</a>
+                        <a href="#">Pilihan Menu</a>
+                        <a href="#">Portofolio</a>
+                        <a href="#">Testimoni</a>
+                    </div>
                 </div>
-                <div class="flex font-poppins whitespace-nowrap text-white space-x-[48px] items-center justify-right w-[650px] h-[60px] text-[16px]">
-                    <a href="#" class="">Tentang Kami</a>
-                    <a href="#">Paket Menu</a>
-                    <a href="#">Pilihan Menu</a>
-                    <a href="#">Portofolio</a>
-                    <a href="#">Testimoni</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
+    
         <section id="home" class="home pt-[64px]">
             <div class="relative p-8 flex w-full bg-[url('/images/IMG-20240826-WA0051.jpg')] bg-linear-to-r h-[653px] pt-[16px] w-full bg-cover bg-center font-poppins">
                 <div class="absolute inset-0 bg-gradient-to-r from-white from-45% via-white/80 via-60% to-white/40 h-[653px]"></div>
                 <div class="absolute inset-10 flex flex-row text-black items-center justify-between h-[265px] translate-y-[171px]">
-                    <div class="flex flex-col space-y-[12px] translate-x-[120px]">
-                        <div class="space-y-[32px]">
-                            <h2 class="text-[40px] font-bold text-navy">Putra Reja Boga</h2>
-                            <p class="max-w-[900px] text-[18px]">PT Putra Reja Boga merupakan sebuah usaha yang bergerak di bidang makanan siap saji (Catering Service) bermula atas rintisan awal dari CV. Mas Blangkon Catering yang berdiri sejak tahun 2011 serta resmi pendirian kelembagaan sejak tahun 2020. Kami menyediakan pelayanan catering baik perusahaan atau lembaga pendidikan, mulai dari Catering Event, Catering Kantor, Catering Sekolah, Catering Kampus, Catering Pabrik, Catering Seminar, Catering Prasmanan, Catering Harian Kryawan, Catering Rapat, dll. Alhamdulillah dari tahun 2019 hingga saat ini kami masih dipercaya untuk Catering Harian Karyawan Mabes TNI Cilangkap.</p>
+                    <div class="flex flex-col space-y-[32px] translate-x-[120px]">
+                        <div class="space-y-[32px] xl:max-w-[758px] 2xl:max-w-[1008px]">
+                            <h2 class="text-[2.083vw] font-bold text-navy">Putra Reja Boga</h2>
+                            <p class="text-[0.938vw] text-navy">PT Putra Reja Boga merupakan sebuah usaha yang bergerak di bidang makanan siap saji (Catering Service) bermula atas rintisan awal dari CV. Mas Blangkon Catering yang berdiri sejak tahun 2011 serta resmi pendirian kelembagaan sejak tahun 2020. Kami menyediakan pelayanan catering baik perusahaan atau lembaga pendidikan, mulai dari Catering Event, Catering Kantor, Catering Sekolah, Catering Kampus, Catering Pabrik, Catering Seminar, Catering Prasmanan, Catering Harian Kryawan, Catering Rapat, dll. Alhamdulillah dari tahun 2019 hingga saat ini kami masih dipercaya untuk Catering Harian Karyawan Mabes TNI Cilangkap.</p>
                         </div>
-                        <form class="grid grid-cols-3 grid-rows-2 space-x-[12px] space-y-[12px]" action="">
-                            <div class="flex flex-col w-[264px] space-y-[10px]">
-                                <label for="pilih-tanggal">Pilih tanggal</label>
+                        <form class="grid grid-cols-4 grid-rows-1 space-x-[0.417vw] space-y-[12px] text-navy">
+                            <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                <label id="pilih-tanggal">Pilih tanggal</label>
                                 <input class="border-[2px] rounded-[12px] p-[6px]" type="date">
                             </div>
-                            <div class="flex flex-col w-[264px] space-y-[10px]">
-                                <label for="pilih-tanggal">Pilih waktu</label>
+                            <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                <label id="pilih-tanggal">Pilih waktu</label>
                                 <input class="border-[2px] rounded-[12px] p-[6px]" type="time">
                             </div>
-                            <div class="flex flex-col w-[264px] space-y-[10px]">
-                                <label for="pilih-tanggal">Pilih jumlah</label>
+                            <div class="relative flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                <label id="pilih-tanggal">Pilih jumlah</label>
                                 <input class="border-[2px] rounded-[12px] p-[6px]" type="text">
+                                <p class="absolute right-3 top-11 border border-navy text-navy px-[10px] font-poppins rounded-[6px] text-sm">Pax</p>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute right-3 top-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg> -->
                             </div>
-                            <button class="text-[16px] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 py-[12px] px-[10px] size-fit text-white rounded-[12px]">Pesan Sekarang</button>
+                            <button class="text-[16px] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 py-[12px] px-[10px] translate-y-7 size-fit text-white rounded-[12px]">Pesan Sekarang</button>
                         </form>
                     </div>
-                    <div class="translate-x-[-200px]">
-                        <img class="size-[350px] rounded-[16px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    </div>
+                    <!-- <div class="translate-x-[-200px]">
+                        <img class="size-[18.229vw] rounded-[16px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    </div> -->
                 </div>
             </div>
         </section>
+
         <section id="paket-menu" class="paket-pilihan-menu">
             <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] py-[80px] px-8">
-                <h1 class="font-poppins font-bold text-navy text-[48px] text-center pb-6">Paket Menu</h1>
-                <div class="grid grid-cols-3 grid-rows-2 mx-auto justify-center place-items-center w-max-[1574px] gap-8">
-                    <div class="size-[485px] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[485px] rounded-t-[35px] h-[333px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                <h1 class="font-poppins font-bold text-navy text-[2.5vw] text-center pb-6">Paket Menu</h1>
+                <div class="grid grid-cols-3 grid-rows-2 mx-auto justify-center place-items-center w-max-[81.979vw] gap-8">
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[26px] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[12px] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
                             </div>
-                            <p class="text-[16px]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
-                    <div class="size-[485px] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[485px] rounded-t-[35px] h-[333px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[26px] font-bold">Paket Reguler</h2>
-                                <p class="text-[12px] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
                             </div>
-                            <p class="text-[16px]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
-                    <div class="size-[485px] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[485px] rounded-t-[35px] h-[333px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[26px] font-bold">Paket Premium</h2>
-                                <p class="text-[12px] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
                             </div>
-                            <p class="text-[16px]">Sajian nasi box premium dengan varian menu pilihan lengkap: Nasi, lauk utama 1, lauk utama 2 lauk pendamping, sayur dan buah</p>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
-                    <div class="size-[485px] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[485px] rounded-t-[35px] h-[333px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[26px] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[12px] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
                             </div>
-                            <p class="text-[16px]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
-                    <div class="size-[485px] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[485px] rounded-t-[35px] h-[333px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[26px] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[12px] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
                             </div>
-                            <p class="text-[16px]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
-                    <div class="size-[485px] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[485px] rounded-t-[35px] h-[333px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[26px] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[12px] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
                             </div>
-                            <p class="text-[16px]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="pilihan-menu">
             <div class="p-8">
-                <h1 class="font-poppins font-bold text-navy text-[48px] text-center">Pilihan Menu</h1>
+                <h1 class="font-poppins font-bold text-navy text-[2.5vw] text-center">Pilihan Menu</h1>
                 <div id="slider-wrapper" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
-                    <button id="prevBtn" class="absolute z-10 bg-white h-full w-[250px] left-0">
+                    <button id="prevBtn" class="absolute z-10 bg-white h-full w-[13.021vw] left-0">
                         <img class="mx-auto" src="images/Arrow Left.png" alt="">
                     </button>
-                    <div id="slider" class="flex flex-row gap-[32px] justify-center items-center w-[1300px] z-0 transition-transform duration-300 translate-x-105">
-                        <div id="menu-slide-1" class="flex flex-col px-[44px] pt-[20px] h-[650px] font-poppins rounded-[10px] gap-6 bg-navy shadow-md">
-                            <h3 class="font-semibold text-[22px] text-cpaklay">Paket Menu Olahan Ikan</h3>
-                            <ol class="space-y-[25px] font-medium text-[18px] text-white list-image-[url(/images/Icon.png)]">
+                    <div id="slider" class="flex flex-row gap-[1.667vw] justify-center items-center w-[67.708vw] z-0 transition-transform duration-300 translate-x-3/9">
+                        <div id="menu-slide-1" class="flex flex-col px-[44px] pt-[1.042vw] xl:h-[36.458vw] 2xl:h-[31.25vw] font-poppins rounded-[10px] gap-6 bg-navy shadow-md">
+                            <h3 class="font-semibold text-[1.146vw] text-cpaklay">Paket Menu Olahan Ikan</h3>
+                            <ol class="space-y-[1.302vw] font-medium text-[0.938vw] text-white list-image-[url(/images/Icon.png)]">
                                 <li>Ikan Bawal Bakar/Goreng</li>
                                 <li>Ikan Mas Bumbu Presmol</li>
                                 <li>Ikan Mas Pepes</li>
@@ -144,72 +153,85 @@
                                 <li>Ikan Gembung Goreng</li>
                             </ol>
                         </div>
-                        <div id="menu-slide-2" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
-                            <h3 class="font-semibold text-[22px] text-navy">Paket Menu Daging Ayam</h3>
-                            <ol class="space-y-[25px] font-medium text-[18px] text-navy">
-                                <li>lorem</li>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                                <li>lorem</li>
+                        <div id="menu-slide-2" class="flex flex-col border border-gold px-[44px] pt-[1.042vw] xl:h-[33.854vw] 2xl:h-[31.25vw] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
+                            <h3 class="font-semibold text-[1.146vw] text-navy">Paket Menu Olahan Ikan</h3>
+                            <ol class="space-y-[1.302vw] font-medium text-[0.938vw] text-navy list-image-[url(/images/Icon.png)]">
+                                <li>Ikan Bawal Bakar/Goreng</li>
+                                <li>Ikan Mas Bumbu Presmol</li>
+                                <li>Ikan Mas Pepes</li>
+                                <li>Ikan Tuna Manado</li>
+                                <li>Ikan Nila Bakar/Goreng</li>
+                                <li>Ikan Tuna Bumbu Kuning</li>
+                                <li>Ikan Bandeng Presto</li>
+                                <li>Ikan Kembung Bumbu Kuning</li>
+                                <li>Ikan Gembung Goreng</li>
                             </ol>
                         </div>
-                        <div id="menu-slide-3" class="flex flex-col border border-gold px-[44px] pt-[20px] h-[600px] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
-                            <h3 class="font-semibold text-[22px] text-navy">Paket Menu Daging Ayam</h3>
-                            <ol class="space-y-[25px] font-medium text-[18px] text-navy">
-                                <li>lorem</li>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                                <li>lorem</li>
+                        <div id="menu-slide-3" class="flex flex-col border border-gold px-[44px] pt-[1.042vw] xl:h-[33.854vw] 2xl:h-[31.25vw] font-poppins rounded-[10px] gap-6 bg-white shadow-md">
+                            <h3 class="font-semibold text-[1.146vw] text-navy">Paket Menu Olahan Ikan</h3>
+                            <ol class="space-y-[1.302vw] font-medium text-[0.938vw] text-navy list-image-[url(/images/Icon.png)]">
+                                <li>Ikan Bawal Bakar/Goreng</li>
+                                <li>Ikan Mas Bumbu Presmol</li>
+                                <li>Ikan Mas Pepes</li>
+                                <li>Ikan Tuna Manado</li>
+                                <li>Ikan Nila Bakar/Goreng</li>
+                                <li>Ikan Tuna Bumbu Kuning</li>
+                                <li>Ikan Bandeng Presto</li>
+                                <li>Ikan Kembung Bumbu Kuning</li>
+                                <li>Ikan Gembung Goreng</li>
                             </ol>
                         </div>
                     </div>
-                    <button id="nextBtn" class="absolute z-10 justify-right bg-white h-full w-[250px] right-0">
+                    <button id="nextBtn" class="absolute z-10 justify-right bg-white h-full w-[13.021vw] right-0">
                         <img class="mx-auto scale-x-[-1]" src="images/Arrow Left.png" alt="">
                     </button>
                 </div>
             </div>
         </section>
+
         <section id="testimoni">
             <div class="w-full p-8">
                 <h1 class="font-poppins font-bold text-navy text-[48px] text-center pb-6">Testimoni</h1>
                 <div class="bg-white flex flex-row font-poppins mx-auto gap-[50px] justify-center items-center">
-                    <img class="size-[500px] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    <img class="size-[500px] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    <img class="size-[500px] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[26.042vw] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[26.042vw] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[26.042vw] rounded-[40px]" src="images/IMG-20240826-WA0051.jpg" alt="">
                 </div>
             </div>
         </section>
+
         <section id="klien">
             <div class="p-8">
                 <h1 class="text-navy font-poppins font-bold text-[48px] mx-auto text-center pb-6">Klien Kami</h1>
                 <div class="flex flex-row mx-auto items-center justify-center gap-[50px]">
-                    <img class="size-[300px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    <img class="size-[300px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    <img class="size-[300px]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[15.625vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[15.625vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                    <img class="size-[15.625vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                 </div>
             </div>
         </section>
+        
         <footer id="footer">
             <div class="p-[56px] bg-navy">
-                <div class="flex flex-row justify-center gap-[63px] text-white">
+                <div class="flex flex-row justify-center gap-[3.281vw] text-white">
                     <img class="w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
                     <img class="" src="images/1_PT Putra Reja Boga 2.png" alt="">
-                    <div class="flex flex-col font-poppins w-[470px]">
-                        <h3 class="font-bold text-[22px]">Alamat</h3>
-                        <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum expedita perferendis.</p>
+                    <div class="flex flex-col font-poppins w-[24.479vw]">
+                        <h3 class="font-bold text-[1.146vw]">Alamat</h3>
+                        <p class="text-[0.938vw]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum expedita perferendis.</p>
                     </div>
-                    <div class="flex flex-col gap-[64px]">
+                    <div class="flex flex-col gap-[3.333vw]">
                         <div class="flex flex-col">
-                            <h3 class="font-bold text-[22px]">Follow Us</h3>
-                            <div class="flex flex-row gap-[12px]">
-                                <img class="size-[50px]" src="images\IMG-20240826-WA0051.jpg" alt="">
-                                <img class="size-[50px]" src="images\IMG-20240826-WA0051.jpg" alt="">
-                                <img class="size-[50px]" src="images\IMG-20240826-WA0051.jpg" alt="">
+                            <h3 class="font-bold text-[1.146vw]">Follow Us</h3>
+                            <div class="flex flex-row gap-[0.625vw]">
+                                <img class="size-[2.604vw]" src="images\IMG-20240826-WA0051.jpg" alt="">
+                                <img class="size-[2.604vw]" src="images\IMG-20240826-WA0051.jpg" alt="">
+                                <img class="size-[2.604vw]" src="images\IMG-20240826-WA0051.jpg" alt="">
                             </div>
                         </div>
                         <div class="flex flex-col">
-                            <h3 class="font-bold text-[22px]">Call Us</h3>
-                            <p class="text-[18px]">091023012</p>
+                            <h3 class="font-bold text-[1.146vw]">Call Us</h3>
+                            <p class="text-[0.938vw]">091023012</p>
                         </div>
                     </div>
                 </div>
@@ -217,44 +239,45 @@
         </footer>
         <!-- <a href="https://wa.me/6281617680098?text=test%20wa%20link">whatsapp</a> -->
         <!-- script section -->
-         <!-- pilihan menu slider -->
          <script>
             $(document).ready(function(){
+
+                //pilihan menu slider
                 let current = 0;
                 const totalSlides = $("#slider").children("div").length;
 
                 function updateSlider(){
-                    $("#slider").css("transform",`translateX(-${current * 31}%)`);
+                    $("#slider").css("transform",`translateX(-${current * 25}%)`);
                 }
 
                 function changeApp(){
-                    $(`#menu-slide-${current+1}`).removeClass("bg-white h-[600px] border border-gold")
+                    $(`#menu-slide-${current+1}`).removeClass("bg-white xl:h-[33.854vw] 2xl:h-[31.25vw] border border-gold")
                     $(`#menu-slide-${current+1} h3`).removeClass("text-navy")
                     $(`#menu-slide-${current+1} ol`).removeClass("text-navy")
-                    $(`#menu-slide-${current+1}`).addClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current+1}`).addClass("bg-navy xl:h-[36.458vw] 2xl:h-[33.854vw] text-white")
                     $(`#menu-slide-${current+1} h3`).addClass("text-cpaklay")
                     $(`#menu-slide-${current+1} ol`).addClass("text-white")
 
-                    $(`#menu-slide-${current}`).removeClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current}`).removeClass("bg-navy xl:h-[36.458vw] 2xl:h-[33.854vw] text-white")
                     $(`#menu-slide-${current} h3`).removeClass("text-cpaklay")
                     $(`#menu-slide-${current} ol`).removeClass("text-white")
-                    $(`#menu-slide-${current}`).addClass("bg-white h-[600px] text-navy border border-gold")
+                    $(`#menu-slide-${current}`).addClass("bg-white xl:h-[33.854vw] 2xl:h-[31.25vw] text-navy border border-gold")
                     $(`#menu-slide-${current} h3`).addClass("text-navy")
                     $(`#menu-slide-${current} ol`).addClass("text-navy")
                 }
 
                 function reverseChangeApp(){
-                    $(`#menu-slide-${current+2}`).removeClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current+2}`).removeClass("bg-navy xl:h-[36.458vw] 2xl:h-[33.854vw] text-white")
                     $(`#menu-slide-${current+2} h3`).removeClass("text-cpaklay")
                     $(`#menu-slide-${current+2} ol`).removeClass("text-white")
-                    $(`#menu-slide-${current+2}`).addClass("bg-white h-[600px] text-navy border border-gold")
+                    $(`#menu-slide-${current+2}`).addClass("bg-white xl:h-[33.854vw] 2xl:h-[31.25vw] text-navy border border-gold")
                     $(`#menu-slide-${current+2} h3`).addClass("text-navy")
                     $(`#menu-slide-${current+2} ol`).addClass("text-navy")
                     
-                    $(`#menu-slide-${current+1}`).removeClass("bg-white h-[600px] text-navy border border-gold")
+                    $(`#menu-slide-${current+1}`).removeClass("bg-white xl:h-[33.854vw] 2xl:h-[31.25vw] text-navy border border-gold")
                     $(`#menu-slide-${current+1} h3`).removeClass("text-navy")
                     $(`#menu-slide-${current+1} ol`).removeClass("text-navy")
-                    $(`#menu-slide-${current+1}`).addClass("bg-navy h-[650px] text-white")
+                    $(`#menu-slide-${current+1}`).addClass("bg-navy xl:h-[36.458vw] 2xl:h-[33.854vw] text-white")
                     $(`#menu-slide-${current+1} h3`).addClass("text-cpaklay")
                     $(`#menu-slide-${current+1} ol`).addClass("text-white")
                 }
@@ -274,6 +297,8 @@
                         reverseChangeApp();
                     }
                 })
+            
+                
             })
          </script>
     </body>
