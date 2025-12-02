@@ -17,11 +17,10 @@
                         <img class="max-w-[100%] h-auto space-x-[11.5px] color-white" src="images/1_PT Putra Reja Boga 1.png" alt="">
                     </div>
                     <div class="flex flex-row font-poppins whitespace-nowrap text-white space-x-[48px] items-center justify-end w-[650px] h-[60px] text-[0.833vw]">
-                        <a href="#" class="">Tentang Kami</a>
-                        <a href="#">Paket Menu</a>
-                        <a href="#">Pilihan Menu</a>
-                        <a href="#">Portofolio</a>
-                        <a href="#">Testimoni</a>
+                        <a href="#home" class="">Tentang Kami</a>
+                        <a href="#paket-menu">Paket Menu</a>
+                        <a href="#pilihan-menu">Pilihan Menu</a>
+                        <a href="#testimoni">Testimoni</a>
                     </div>
                 </div>
             </nav>
@@ -33,28 +32,32 @@
                 <div class="absolute inset-10 flex flex-row text-black items-center justify-between h-[265px] translate-y-[171px]">
                     <div class="flex flex-col space-y-[32px] translate-x-[120px]">
                         <div class="space-y-[32px] xl:max-w-[758px] 2xl:max-w-[1008px]">
-                            <h2 class="text-[2.083vw] font-bold text-navy">Putra Reja Boga</h2>
+                            <h2 class="text-[2.083vw] font-bold text-navy text-shadow-md">Putra Reja Boga</h2>
                             <p class="text-[0.938vw] text-navy">PT Putra Reja Boga merupakan sebuah usaha yang bergerak di bidang makanan siap saji (Catering Service) bermula atas rintisan awal dari CV. Mas Blangkon Catering yang berdiri sejak tahun 2011 serta resmi pendirian kelembagaan sejak tahun 2020. Kami menyediakan pelayanan catering baik perusahaan atau lembaga pendidikan, mulai dari Catering Event, Catering Kantor, Catering Sekolah, Catering Kampus, Catering Pabrik, Catering Seminar, Catering Prasmanan, Catering Harian Kryawan, Catering Rapat, dll. Alhamdulillah dari tahun 2019 hingga saat ini kami masih dipercaya untuk Catering Harian Karyawan Mabes TNI Cilangkap.</p>
                         </div>
-                        <form class="grid grid-cols-4 grid-rows-1 space-x-[0.417vw] space-y-[12px] text-navy">
-                            <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
-                                <label id="pilih-tanggal">Pilih tanggal</label>
-                                <input class="border-[2px] rounded-[12px] p-[6px]" type="date">
-                            </div>
-                            <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
-                                <label id="pilih-tanggal">Pilih waktu</label>
-                                <input class="border-[2px] rounded-[12px] p-[6px]" type="time">
-                            </div>
-                            <div class="relative flex flex-col max-w-[13.90vw] space-y-[10px]">
-                                <label id="pilih-tanggal">Pilih jumlah</label>
-                                <input class="border-[2px] rounded-[12px] p-[6px]" type="text">
-                                <p class="absolute right-3 top-11 border border-navy text-navy px-[10px] font-poppins rounded-[6px] text-sm">Pax</p>
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute right-3 top-12">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                </svg> -->
-                            </div>
-                            <button class="text-[16px] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 py-[12px] px-[10px] translate-y-7 size-fit text-white rounded-[12px]">Pesan Sekarang</button>
-                        </form>
+                        <div class="space-y-4 bg-navy/10 p-6 rounded-md">
+                            <h2 class="text-black/70 font-poppins text-5xl font-semibold">Lebih cepat pesan di sini!</h2>
+                            <form id="order-form" class="grid grid-cols-4 grid-rows-1 space-x-[0.417vw] space-y-[12px] text-navy">
+                                <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                    <label id="pilih-tanggal">Pilih tanggal</label>
+                                    <input name="order-date" id="order-date" class="border-[2px] rounded-[12px] p-[6px]" type="date">
+                                </div>
+                                <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                    <label id="pilih-tanggal">Pilih waktu</label>
+                                    <input name="order-time" id="order-time" class="border-[2px] rounded-[12px] p-[6px]" type="time">
+                                </div>
+                                <div class="relative flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                    <label id="pilih-tanggal">Pilih jumlah</label>
+                                    <input autocomplete="off" id="number-of-order" name="number-of-order" class="border-[2px] rounded-[12px] p-[6px]" type="text">
+                                    <p class="absolute right-3 top-11 border border-navy text-navy px-[10px] font-poppins rounded-[6px] text-sm">Pax</p>
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute right-3 top-12">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg> -->
+                                </div>
+                                <button type="submit" id="order-now" class="text-[16px] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 py-[12px] px-[10px] translate-y-7 size-fit text-white rounded-[12px]">Pesan Sekarang</button>
+                            </form>
+                        </div>
+                        
                     </div>
                     <!-- <div class="translate-x-[-200px]">
                         <img class="size-[18.229vw] rounded-[16px]" src="images/IMG-20240826-WA0051.jpg" alt="">
@@ -64,67 +67,67 @@
         </section>
 
         <section id="paket-menu" class="paket-pilihan-menu">
-            <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] py-[80px] px-8">
+            <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] py-[80px] px-[9.375vw]">
                 <h1 class="font-poppins font-bold text-navy text-[2.5vw] text-center pb-6">Paket Menu</h1>
                 <div class="grid grid-cols-3 grid-rows-2 mx-auto justify-center place-items-center w-max-[81.979vw] gap-8">
                     <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images\Rectangle 17.png" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">PAKET EKONOMIS</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20.000 - Rp 25.000 / Pax</p>
                             </div>
                             <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                        </div>
+                    </div>
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images\Rectangle 17 (1).png" alt="">
+                        <div class="items-center p-4 pb-2 font-poppins space-y-2">
+                            <div class="flex flex-row justify-between">
+                                <h2 class="text-[1.354vw] font-bold">PAKET REGULER</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20.000 - Rp 25.000 / Pax</p>
+                            </div>
+                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
+                        </div>
+                    </div>
+                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
+                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images\Rectangle 17 (2).png" alt="">
+                        <div class="items-center p-4 pb-2 font-poppins space-y-2">
+                            <div class="flex flex-row justify-between">
+                                <h2 class="text-[1.354vw] font-bold">PAKET PREMIUM</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20.000 - Rp 25.000 / Pax</p>
+                            </div>
+                            <p class="text-[0.833vw]">Sajian nasi box premium dengan varian menu pilihan lengkap: Nasi, lauk utama 1, lauk utama 2 lauk pendamping, sayur dan buah</p>
                         </div>
                     </div>
                     <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
                         <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">PAKET RANTANGAN</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20.000 - Rp 35.000 / Pax</p>
                             </div>
-                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian nasi rantangan pilihan varian menu lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
                         </div>
                     </div>
                     <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
                         <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">PAKET PRASMANAN</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 50.000 - Rp 80.000 / Pax</p>
                             </div>
-                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian menu prasmanan varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur, buah dan minuman</p>
                         </div>
                     </div>
                     <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
                         <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
                         <div class="items-center p-4 pb-2 font-poppins space-y-2">
                             <div class="flex flex-row justify-between">
-                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
+                                <h2 class="text-[1.354vw] font-bold">PAKET TUMPENG</h2>
+                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 45.000 - Rp 70.000 / Pax</p>
                             </div>
-                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
-                        </div>
-                    </div>
-                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <div class="items-center p-4 pb-2 font-poppins space-y-2">
-                            <div class="flex flex-row justify-between">
-                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
-                            </div>
-                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
-                        </div>
-                    </div>
-                    <div class="size-[25.26vw] rounded-[35px] bg-white shadow-md">
-                        <img class="w-[25.26vw] rounded-t-[35px] h-[17.344vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <div class="items-center p-4 pb-2 font-poppins space-y-2">
-                            <div class="flex flex-row justify-between">
-                                <h2 class="text-[1.354vw] font-bold">Paket Ekonomis</h2>
-                                <p class="text-[0.625vw] translate-y-2 font-medium">Rp 20. 000 - Rp 25.000 / Pax</p>
-                            </div>
-                            <p class="text-[0.833vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
+                            <p class="text-[0.833vw]">Sajian menu prasmanan varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
                         </div>
                     </div>
                 </div>
@@ -138,8 +141,8 @@
                     <button id="prevBtn" class="absolute z-10 bg-white h-full w-[13.021vw] left-0">
                         <img class="mx-auto" src="images/Arrow Left.png" alt="">
                     </button>
-                    <div id="slider" class="flex flex-row gap-[1.667vw] justify-center items-center w-[67.708vw] z-0 transition-transform duration-300 translate-x-3/9">
-                        <div id="menu-slide-1" class="flex flex-col px-[44px] pt-[1.042vw] xl:h-[36.458vw] 2xl:h-[31.25vw] font-poppins rounded-[10px] gap-6 bg-navy shadow-md">
+                    <div id="slider" class="flex flex-row gap-[1.667vw] justify-center items-center w-[67.708vw] z-0 transition-transform duration-300 xl:translate-x-3/9 2xl:translate-x-100">
+                        <div id="menu-slide-1" class="flex flex-col px-[44px] pt-[1.042vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-6 bg-navy shadow-md">
                             <h3 class="font-semibold text-[1.146vw] text-cpaklay">Paket Menu Olahan Ikan</h3>
                             <ol class="space-y-[1.302vw] font-medium text-[0.938vw] text-white list-image-[url(/images/Icon.png)]">
                                 <li>Ikan Bawal Bakar/Goreng</li>
@@ -214,24 +217,32 @@
         <footer id="footer">
             <div class="p-[56px] bg-navy">
                 <div class="flex flex-row justify-center gap-[3.281vw] text-white">
-                    <img class="w-[377px] h-[251px]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                    <img class="" src="images/1_PT Putra Reja Boga 2.png" alt="">
-                    <div class="flex flex-col font-poppins w-[24.479vw]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253802.08535400743!2d106.65026108671874!3d-6.3086373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69936222ebd81f%3A0xfc5f6898991e6189!2sMas%20Blangkon%20House!5e0!3m2!1sid!2sid!4v1764645831296!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img class="object-contain xl:w-1/6 h-auto" src="images/1_PT Putra Reja Boga 2.png" alt="">
+                    <div class="flex flex-col font-poppins w-[24.479vw] gap-[0.781vw]">
                         <h3 class="font-bold text-[1.146vw]">Alamat</h3>
-                        <p class="text-[0.938vw]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum expedita perferendis.</p>
+                        <p class="text-[0.938vw]">Gg. Masjid No.11, RT.002/RW.003, Jatimelati, Kec. Pd. Melati, Kota Bks, Jawa Barat 17415</p>
                     </div>
                     <div class="flex flex-col gap-[3.333vw]">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col gap-[0.781vw]">
                             <h3 class="font-bold text-[1.146vw]">Follow Us</h3>
                             <div class="flex flex-row gap-[0.625vw]">
-                                <img class="size-[2.604vw]" src="images\IMG-20240826-WA0051.jpg" alt="">
-                                <img class="size-[2.604vw]" src="images\IMG-20240826-WA0051.jpg" alt="">
-                                <img class="size-[2.604vw]" src="images\IMG-20240826-WA0051.jpg" alt="">
+                                <a href="https://www.instagram.com/putrarejaboga?igsh=OTEyOWYyMmZweWN4"><img class="size-[2.604vw]" src="images\social.png" alt=""></a>
+                                <a href="https://www.facebook.com/share/1Bg7eS9XQ8/"><img class="size-[2.604vw]" src="images\social (1).png" alt=""></a>
+                                <a href="https://www.tiktok.com/@mas_blangkon_catering?_r=1&_t=ZS-91sLxGuLnHD"><img class="size-[2.604vw]" src="images\social (2).png" alt=""></a>
                             </div>
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col gap-[0.781vw]">
                             <h3 class="font-bold text-[1.146vw]">Call Us</h3>
-                            <p class="text-[0.938vw]">091023012</p>
+                            <!-- <div class="flex flex-row gap-4"> -->
+                                <p class="text-[0.938vw]">0812-8446-3352</p>
+                                <!-- <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                                    </svg>
+                                </a> -->
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -247,7 +258,7 @@
                 const totalSlides = $("#slider").children("div").length;
 
                 function updateSlider(){
-                    $("#slider").css("transform",`translateX(-${current * 25}%)`);
+                    $("#slider").css("transform",`translateX(-${current * 30}%)`);
                 }
 
                 function changeApp(){
@@ -298,7 +309,24 @@
                     }
                 })
             
-                
+                $("#order-form").on("submit",function(e){
+                    e.preventDefault();
+                    let date = $("#order-date").val()
+                    let time = $("#order-time").val()
+                    let pax = $("#number-of-order").val()
+                    
+                    const phone = "6281617680098"
+                    let message = `Selamat siang 
+tanggal: ${date}
+waktu: ${time}
+jumlah pesanan ${pax}
+Terima kasih.`
+
+                    let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+
+                    console.log(time)
+                    window.open(url,"_blank")
+                })
             })
          </script>
     </body>
