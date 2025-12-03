@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./dist/output.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
         <title>Putra Reja Boga</title>
     </head>
     <body>
@@ -38,17 +39,19 @@
                         <div class="space-y-4 bg-navy/10 p-6 rounded-md">
                             <h2 class="text-black/70 font-poppins text-5xl font-semibold">Lebih cepat pesan di sini!</h2>
                             <form id="order-form" class="grid grid-cols-4 grid-rows-1 space-x-[0.417vw] space-y-[12px] text-navy">
-                                <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                <div class="relative flex flex-col max-w-[13.90vw] space-y-[10px]">
                                     <label id="pilih-tanggal">Pilih tanggal</label>
-                                    <input name="order-date" id="order-date" class="border-[2px] rounded-[12px] p-[6px]" type="date">
+                                    <input name="order-date" id="order-date" class="border-[2px] rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10" type="date">
+                                    <img src="images\Chevron.svg" class="absolute right-3 top-12 -z-10 size-4" alt="">
                                 </div>
-                                <div class="flex flex-col max-w-[13.90vw] space-y-[10px]">
+                                <div class="relative flex flex-col max-w-[13.90vw] space-y-[10px]">
                                     <label id="pilih-tanggal">Pilih waktu</label>
-                                    <input name="order-time" id="order-time" class="border-[2px] rounded-[12px] p-[6px]" type="time">
+                                    <input name="order-time" id="order-time" class="border-[2px] rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10" type="time">
+                                    <img src="images\Icon.svg" class="absolute right-3 top-12 -z-10 size-4" alt="">
                                 </div>
                                 <div class="relative flex flex-col max-w-[13.90vw] space-y-[10px]">
                                     <label id="pilih-tanggal">Pilih jumlah</label>
-                                    <input autocomplete="off" id="number-of-order" name="number-of-order" class="border-[2px] rounded-[12px] p-[6px]" type="text">
+                                    <input autocomplete="off" id="number-of-order" name="number-of-order" class="border-[2px] rounded-[12px] p-[6px] text-navy" type="text">
                                     <p class="absolute right-3 top-11 border border-navy text-navy px-[10px] font-poppins rounded-[6px] text-sm">Pax</p>
                                     <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute right-3 top-12">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -137,7 +140,7 @@
         <section id="pilihan-menu">
             <div class="p-8 space-y-[60px]">
                 <div class="relative">
-                    <img class="absolute right-157 top-11 -z-10" src="images\Element.png" alt="">
+                    <img class="absolute right-[32.708vw] top-[2.292vw] w-1/6 h-auto -z-10" src="images\Element.png" alt="">
                     <h1 class="font-poppins font-bold text-navy text-[2.5vw] text-center z-10">Pilihan Menu</h1>
                 </div>
                 <div id="slider-wrapper" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
