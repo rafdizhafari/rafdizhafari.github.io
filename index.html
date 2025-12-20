@@ -41,23 +41,23 @@
                             <form id="order-form" class="grid xl:grid-cols-4 xl:grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 sm:grid-cols-1 sm:grid-rows-4 gap-[0.625vw] space-y-[0.625vw] text-navy">
                                 <div class="relative flex flex-col w-[13.90vw] space-y-[0.521vw]">
                                     <label id="pilih-tanggal" class="text-nowrap">Pilih tanggal</label>
-                                    <input name="order-date" id="order-date" class="sm:border-[2px] border-1 rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10 w-[40vw] lg:w-[16vw] xl:w-full" type="date">
+                                    <input name="order-date" id="order-date" class="border-[2px] rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10 w-[40vw] lg:w-[16vw] xl:w-full" type="date">
                                     <img src="images\Chevron.svg" class="absolute right-[-25.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 -z-10 size-fit" alt="">
                                 </div>
                                 <div class="relative flex flex-col w-[13.90vw] space-y-[0.521vw]">
                                     <label id="pilih-tanggal" class="text-nowrap">Pilih waktu</label>
-                                    <input name="order-time" id="order-time" class="sm:border-[2px] border-1 rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10 w-[40vw] lg:w-[16vw] xl:w-full" type="time">
+                                    <input name="order-time" id="order-time" class="border-[2px] rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10 w-[40vw] lg:w-[16vw] xl:w-full" type="time">
                                     <img src="images\Icon.svg" class="absolute right-[-25.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 -z-10 size-fit" alt="">
                                 </div>
                                 <div class="relative flex flex-col w-[13.90vw] space-y-[0.521vw]">
                                     <label id="pilih-tanggal" class="text-nowrap">Pilih jumlah</label>
-                                    <input autocomplete="off" id="number-of-order" name="number-of-order" class="sm:border-[2px] border-1 rounded-[12px] p-[6px] text-navy w-[40vw] lg:w-[16vw] xl:w-full" type="text">
-                                    <p class="absolute right-[-24.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 border border-navy text-navy px-[10px] font-poppins rounded-[6px] text-sm">Pax</p>
+                                    <input autocomplete="off" id="number-of-order" name="number-of-order" class="border-[2px] border rounded-[12px] p-[6px] text-navy w-[40vw] lg:w-[16vw] xl:w-full" type="text">
+                                    <p class="absolute right-[-24.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 border-2 border-navy text-navy px-[10px] font-poppins font-bold rounded-[6px] text-sm">Pax</p>
                                     <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute right-3 top-12">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                                     </svg> -->
                                 </div>
-                                <button type="submit" id="order-now" class="2xl:text-[0.833vw] xl:text-[1.133vw] text-[3.133vw] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 p-1 sm:py-[0.625vw] sm:px-[0.521vw] 2xl:translate-y-5 lg:translate-y-8 size-fit text-white lg:rounded-[12px] rounded-[8px]">Pesan Sekarang</button>
+                                <button type="submit" id="order-now" class="2xl:text-[0.833vw] xl:text-[1.133vw] sm:text-[2.733vw] text-[3.133vw] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 p-2 sm:py-[0.625vw] sm:px-[0.521vw] 2xl:translate-y-5 lg:translate-y-8 size-fit text-white lg:rounded-[12px] rounded-[8px]">Pesan Sekarang</button>
                             </form>
                         </div>
                         
@@ -73,9 +73,10 @@
             <div class="w-full bg-linear-225 from-cmenu1/[22%] via-45% to-cmenu2/[22%] py-8 px-[9.375vw] space-y-[60px]">
                 <h1 class="font-poppins font-bold text-navy lg:text-[2.5vw] sm:text-[2.8vw] text-[5.8vw] text-center">Paket Menu</h1>
                 <div class="grid lg:grid-cols-3 lg:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 mx-auto justify-center place-items-center w-max-[81.979vw] gap-8">
-                    <div class="lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-white shadow-md">
-                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw]" src="images\Rectangle 17.png" alt="">
-                        <div class="items-center p-3 pb-2 font-poppins space-y-1">
+                    <div class="relative lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-[url('/images/pattern.jfif')] bg-cover bg-center  shadow-md">
+                        <div class="absolute inset-0 bg-white/75 z-0 rounded-[1.823vw]"></div>
+                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw] translate-y-0" src="images\Rectangle 17.png" alt="">
+                        <div class="items-center p-3 pb-2 font-poppins space-y-1 translate-y-0">
                             <div class="flex flex-row justify-between">
                                 <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] font-bold">PAKET EKONOMIS</h2>
                                 <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 20.000 - Rp 25.000 / Pax</p>
@@ -83,9 +84,10 @@
                             <p class="text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, dan sayur</p>
                         </div>
                     </div>
-                    <div class="lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-white shadow-md">
-                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw]" src="images\Rectangle 17 (1).png" alt="">
-                        <div class="items-center p-3 pb-2 font-poppins space-y-1">
+                    <div class="relative lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-[url('/images/pattern.jfif')] bg-cover bg-center shadow-md">
+                        <div class="absolute inset-0 bg-white/75 z-0 rounded-[1.823vw]"></div>
+                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw] translate-y-0" src="images\Rectangle 17 (1).png" alt="">
+                        <div class="items-center p-3 pb-2 font-poppins space-y-1 translate-y-0">
                             <div class="flex flex-row justify-between">
                                 <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] font-bold">PAKET REGULER</h2>
                                 <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 20.000 - Rp 25.000 / Pax</p>
@@ -93,9 +95,10 @@
                             <p class="text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian nasi box varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
                         </div>
                     </div>
-                    <div class="lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-white shadow-md">
-                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw]" src="images\Rectangle 17 (2).png" alt="">
-                        <div class="items-center p-3 pb-2 font-poppins space-y-1">
+                    <div class=" relative lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-[url('/images/pattern.jfif')] bg-cover bg-center shadow-md">
+                        <div class="absolute inset-0 bg-white/75 z-0 rounded-[1.823vw]"></div>
+                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw] translate-y-0" src="images\Rectangle 17 (2).png" alt="">
+                        <div class="items-center p-3 pb-2 font-poppins space-y-1 translate-y-0">
                             <div class="flex flex-row justify-between">
                                 <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] font-bold">PAKET PREMIUM</h2>
                                 <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 20.000 - Rp 25.000 / Pax</p>
@@ -103,9 +106,10 @@
                             <p class="text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian nasi box premium dengan varian menu pilihan lengkap: Nasi, lauk utama 1, lauk utama 2 lauk pendamping, sayur dan buah</p>
                         </div>
                     </div>
-                    <div class="lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-white shadow-md">
-                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <div class="items-center p-3 pb-2 font-poppins space-y-1">
+                    <div class="relative lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-[url('/images/pattern.jfif')] bg-cover bg-center shadow-md">
+                        <div class="absolute inset-0 bg-white/75 z-0 rounded-[1.823vw]"></div>
+                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw] translate-y-0" src="images/IMG-20240826-WA0051.jpg" alt="">
+                        <div class="items-center p-3 pb-2 font-poppins space-y-1 translate-y-0">
                             <div class="flex flex-row justify-between">
                                 <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] font-bold">PAKET RANTANGAN</h2>
                                 <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 20.000 - Rp 35.000 / Pax</p>
@@ -113,9 +117,10 @@
                             <p class="text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian nasi rantangan pilihan varian menu lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
                         </div>
                     </div>
-                    <div class="lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-white shadow-md">
-                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <div class="items-center p-3 pb-2 font-poppins space-y-1">
+                    <div class="relative lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-[url('/images/pattern.jfif')] bg-cover bg-center shadow-md">
+                        <div class="absolute inset-0 bg-white/75 z-0 rounded-[1.823vw]"></div>
+                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw] translate-y-0" src="images/IMG-20240826-WA0051.jpg" alt="">
+                        <div class="items-center p-3 pb-2 font-poppins space-y-1 translate-y-0">
                             <div class="flex flex-row justify-between">
                                 <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] font-bold">PAKET PRASMANAN</h2>
                                 <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 50.000 - Rp 80.000 / Pax</p>
@@ -123,21 +128,25 @@
                             <p class="text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian menu prasmanan varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur, buah dan minuman</p>
                         </div>
                     </div>
-                    <div class="lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] bg-white shadow-md">
-                        <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw]" src="images/IMG-20240826-WA0051.jpg" alt="">
-                        <div class="items-center p-3 pb-2 font-poppins space-y-1">
-                            <div class="flex flex-row justify-between">
-                                <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] font-bold">PAKET TUMPENG</h2>
-                                <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 45.000 - Rp 70.000 / Pax</p>
+                    <div class="relative lg:size-[25.26vw] sm:size-[32.26vw] size-[70vw] rounded-[1.823vw] shadow-md bg-[url('/images/pattern.jfif')] bg-cover bg-center">
+                        <div class="absolute inset-0 bg-white/75 z-0 rounded-[1.823vw]"></div>
+                        <div class="z-10">
+                            <img class="w-full rounded-t-[1.823vw] sm:h-[17.344vw] h-[45vw] translate-y-0" src="images/IMG-20240826-WA0051.jpg" alt="">
+                            <div class="items-center p-3 pb-2 font-poppins space-y-1 z-20">
+                                <div class="flex flex-row justify-between">
+                                    <h2 class="lg:text-[1.132vw] sm:text-[1.452vw] text-[2.852vw] translate-y-0 font-bold">PAKET TUMPENG</h2>
+                                    <p class="xl:text-[0.625vw] lg:text-[0.725vw] sm:text-[1.045vw] text-[2.25vw] translate-y-1 font-medium">Rp 45.000 - Rp 70.000 / Pax</p>
+                                </div>
+                                <p class="translate-y-0 text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian menu prasmanan varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
                             </div>
-                            <p class="text-[2.633vw] sm:text-[1.433vw] lg:text-[0.933vw]">Sajian menu prasmanan varian menu pilihan lengkap dengan lauk utama, lauk pendamping, sayur dan buah</p>
                         </div>
+                        
                     </div>
                 </div>
                 <section id="pilihan-menu">
                     <div class="p-8 space-y-[60px]">
                         <div class="relative">
-                            <img class="absolute right-[23.708vw] top-[2.592vw] w-1/6 h-auto -z-10" src="images\Element.png" alt="">
+                            <img class="absolute right-[10.708vw] top-[5.992vw] sm:right-[23.708vw] sm:top-[2.592vw] w-1/4 sm:w-1/6 h-auto -z-10" src="images\Element.png" alt="">
                             <h1 class="font-poppins font-bold text-navy lg:text-[2.5vw] sm:text-[2.8vw] text-[5.8vw] text-center z-10">Pilihan Menu</h1>
                         </div>
                         <div id="slider-wrapper" class="relative flex flex-row justify-center items-center mx-auto overflow-hidden gap-[100px]">
@@ -147,44 +156,125 @@
                             <div id="slider" class="flex flex-row gap-[1.667vw] justify-start items-center w-[67.708vw] z-0 transition-transform duration-300 overflow-x-scroll pb-6">
                                 <div id="menu-slide-1" class="flex flex-col px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] xl:pb-0 xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto">Paket Menu Olahan Ikan</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] xl:columns-1 columns-2 translate-x-4 xl:translate-x-0 space-x-6 xl:space-x-0">
-                                        <li>Ikan Bawal Bakar/Goreng</li>
-                                        <li>Ikan Mas Bumbu Presmol</li>
-                                        <li>Ikan Mas Pepes</li>
-                                        <li>Ikan Tuna Manado</li>
-                                        <li>Ikan Nila Bakar/Goreng</li>
-                                        <li>Ikan Tuna Bumbu Kuning</li>
-                                        <li>Ikan Bandeng Presto</li>
-                                        <li>Ikan Kembung Bumbu Kuning</li>
-                                        <li>Ikan Gembung Goreng</li>
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-outside list-pt-2 xl:columns-1 columns-2 translate-x-4 xl:translate-x-0 space-x-6 xl:space-x-0">
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Bawal Bakar/Goreng</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Mas Bumbu Presmol</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Mas Pepes</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Tuna Manado</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Nila Bakar/Goreng</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Tuna Bumbu Kuning</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Bandeng Presto</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Kembung Bumbu Kuning</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Gembung Goreng</span>
+                                        </li>
                                     </ol>
                                 </div>
                                 <div id="menu-slide-2" class="flex flex-col px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] xl:pb-0 xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto">Paket Menu Olahan Ikan</h3>
                                     <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] xl:columns-1 columns-2 translate-x-4 xl:translate-x-0 space-x-6 xl:space-x-0">
-                                        <li>Ikan Bawal Bakar/Goreng</li>
-                                        <li>Ikan Mas Bumbu Presmol</li>
-                                        <li>Ikan Mas Pepes</li>
-                                        <li>Ikan Tuna Manado</li>
-                                        <li>Ikan Nila Bakar/Goreng</li>
-                                        <li>Ikan Tuna Bumbu Kuning</li>
-                                        <li>Ikan Bandeng Presto</li>
-                                        <li>Ikan Kembung Bumbu Kuning</li>
-                                        <li>Ikan Gembung Goreng</li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Bawal Bakar/Goreng</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Mas Bumbu Presmol</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Mas Pepes</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Tuna Manado</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Nila Bakar/Goreng</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Tuna Bumbu Kuning</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Bandeng Presto</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Kembung Bumbu Kuning</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Gembung Goreng</span>
+                                        </li>
                                     </ol>
                                 </div>
                                 <div id="menu-slide-3" class="flex flex-col px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] xl:pb-0 xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto">Paket Menu Olahan Ikan</h3>
                                     <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] xl:columns-1 columns-2 translate-x-4 xl:translate-x-0 space-x-6 xl:space-x-0">
-                                        <li>Ikan Bawal Bakar/Goreng</li>
-                                        <li>Ikan Mas Bumbu Presmol</li>
-                                        <li>Ikan Mas Pepes</li>
-                                        <li>Ikan Tuna Manado</li>
-                                        <li>Ikan Nila Bakar/Goreng</li>
-                                        <li>Ikan Tuna Bumbu Kuning</li>
-                                        <li>Ikan Bandeng Presto</li>
-                                        <li>Ikan Kembung Bumbu Kuning</li>
-                                        <li>Ikan Gembung Goreng</li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Bawal Bakar/Goreng</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Mas Bumbu Presmol</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Mas Pepes</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Tuna Manado</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Nila Bakar/Goreng</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Tuna Bumbu Kuning</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Bandeng Presto</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Kembung Bumbu Kuning</span>
+                                        </li>
+                                        <li class="flex flex-row gap-2">
+                                            <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
+                                            <span>Ikan Gembung Goreng</span>
+                                        </li>
                                     </ol>
                                 </div>
                             </div>
@@ -198,7 +288,7 @@
         </section>
 
         <section id="testimoni">
-            <div class="w-full p-8 space-y-[60px] bg-gold">
+            <div class="w-full p-8 bg-gold">
                 <h1 class="font-poppins font-bold text-navy lg:text-[2.5vw] sm:text-[2.8vw] text-[5.8vw] text-center">Testimoni</h1>
                 <div class="flex flex-row font-poppins mx-auto gap-[25px] sm:gap-[50px] justify-center items-center overflow-x-scroll scroll-hide justify-start pb-6 p-12">
                     <iframe src="https://drive.google.com/file/d/1qgKbkYfoncZp8Qof2J31Ere5zOfkQFEe/preview" width="640" height="480" class="rounded-sm border-2 border-white"></iframe>
