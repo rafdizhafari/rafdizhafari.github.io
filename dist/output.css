@@ -696,6 +696,12 @@
   .bg-\[url\(\'\/images\/IMG-20240826-WA0051\.jpg\'\)\] {
     background-image: url('/images/IMG-20240826-WA0051.jpg');
   }
+  .bg-\[url\(\'\/images\/IMG20190118072455\.jpg\'\)\] {
+    background-image: url('/images/IMG20190118072455.jpg');
+  }
+  .bg-\[url\(\'\/images\/f7d60560-c8b5-476a-8990-bee17a200251\.jpg\'\)\] {
+    background-image: url('/images/f7d60560-c8b5-476a-8990-bee17a200251.jpg');
+  }
   .bg-\[url\(\'\/images\/pattern\.jfif\'\)\] {
     background-image: url('/images/pattern.jfif');
   }
