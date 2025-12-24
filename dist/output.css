@@ -242,12 +242,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .ml-0 {
-    margin-left: calc(var(--spacing) * 0);
-  }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -265,6 +259,14 @@
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
   }
+  .size-7 {
+    width: calc(var(--spacing) * 7);
+    height: calc(var(--spacing) * 7);
+  }
+  .size-8 {
+    width: calc(var(--spacing) * 8);
+    height: calc(var(--spacing) * 8);
+  }
   .size-\[6\.304vw\] {
     width: 6.304vw;
     height: 6.304vw;
@@ -272,10 +274,6 @@
   .size-\[18\.229vw\] {
     width: 18.229vw;
     height: 18.229vw;
-  }
-  .size-\[40\.042vw\] {
-    width: 40.042vw;
-    height: 40.042vw;
   }
   .size-\[70vw\] {
     width: 70vw;
@@ -294,8 +292,32 @@
   .h-\[20\.99vw\] {
     height: 20.99vw;
   }
+  .h-\[36\.458vw\] {
+    height: 36.458vw;
+  }
+  .h-\[40\.458vw\] {
+    height: 40.458vw;
+  }
   .h-\[45vw\] {
     height: 45vw;
+  }
+  .h-\[50\.458vw\] {
+    height: 50.458vw;
+  }
+  .h-\[52\.458vw\] {
+    height: 52.458vw;
+  }
+  .h-\[60\.458vw\] {
+    height: 60.458vw;
+  }
+  .h-\[65\.458vw\] {
+    height: 65.458vw;
+  }
+  .h-\[75\.458vw\] {
+    height: 75.458vw;
+  }
+  .h-\[80\.458vw\] {
+    height: 80.458vw;
   }
   .h-\[170\.01vw\] {
     height: 170.01vw;
@@ -341,9 +363,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-none {
-    max-width: none;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -393,6 +412,12 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .grid-rows-4 {
     grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -521,9 +546,6 @@
       margin-inline-end: calc(11.5px * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .overflow-x-auto {
     overflow-x: auto;
   }
@@ -533,14 +555,14 @@
   .overflow-y-hidden {
     overflow-y: hidden;
   }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
   .scroll-smooth {
     scroll-behavior: smooth;
   }
   .rounded-\[1\.823vw\] {
     border-radius: 1.823vw;
-  }
-  .rounded-\[2\.083vw\] {
-    border-radius: 2.083vw;
   }
   .rounded-\[6px\] {
     border-radius: 6px;
@@ -698,6 +720,9 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -722,6 +747,9 @@
   .px-\[10px\] {
     padding-inline: 10px;
   }
+  .px-\[22px\] {
+    padding-inline: 22px;
+  }
   .px-\[44px\] {
     padding-inline: 44px;
   }
@@ -739,9 +767,6 @@
   }
   .pt-\[3\.333vw\] {
     padding-top: 3.333vw;
-  }
-  .pr-8 {
-    padding-right: calc(var(--spacing) * 8);
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -887,12 +912,6 @@
     @media (width >= 40rem) {
       width: 3.004vw;
       height: 3.004vw;
-    }
-  }
-  .sm\:size-\[22\.042vw\] {
-    @media (width >= 40rem) {
-      width: 22.042vw;
-      height: 22.042vw;
     }
   }
   .sm\:size-\[32\.26vw\] {
@@ -1059,6 +1078,11 @@
       padding: calc(var(--spacing) * 1);
     }
   }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:p-\[56px\] {
     @media (width >= 40rem) {
       padding: 56px;
@@ -1067,6 +1091,11 @@
   .sm\:px-\[0\.521vw\] {
     @media (width >= 40rem) {
       padding-inline: 0.521vw;
+    }
+  }
+  .sm\:px-\[44px\] {
+    @media (width >= 40rem) {
+      padding-inline: 44px;
     }
   }
   .sm\:px-\[100px\] {
@@ -1134,6 +1163,11 @@
       font-size: 2.733vw;
     }
   }
+  .md\:h-\[60\.458vw\] {
+    @media (width >= 48rem) {
+      height: 60.458vw;
+    }
+  }
   .md\:w-\[3\.385vw\] {
     @media (width >= 48rem) {
       width: 3.385vw;
@@ -1189,6 +1223,11 @@
   .lg\:h-\[50\.01vw\] {
     @media (width >= 64rem) {
       height: 50.01vw;
+    }
+  }
+  .lg\:h-\[60\.458vw\] {
+    @media (width >= 64rem) {
+      height: 60.458vw;
     }
   }
   .lg\:w-\[8\.146vw\] {
