@@ -1,4 +1,4 @@
-<html class="scroll-smooth lg:text-[98%] md:text-[95%] text-[85%]">
+<html lang="id" class="scroll-smooth lg:text-[98%] md:text-[95%] text-[85%]">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
@@ -622,7 +622,7 @@
 👥 jumlah pesanan ${pax}
 Terima kasih 🙏`
 
-                    let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+                    let url = `https://api.whatsapp.com/send/?phone=${phone}&text=${encodeURIComponent(message)}`
                     window.open(url,"_blank")
                     $("#order-form")[0].reset();
                 })
