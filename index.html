@@ -1,7 +1,7 @@
 <html class="scroll-smooth lg:text-[98%] md:text-[95%] text-[85%]">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -42,22 +42,22 @@
                                 <div class="relative flex flex-col w-[13.90vw] space-y-[0.521vw]">
                                     <label id="pilih-tanggal" class="text-nowrap">Pilih tanggal</label>
                                     <input name="order-date" id="order-date" class="border-[2px] rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10 w-[40vw] lg:w-[16vw] xl:w-full" type="date">
-                                    <img src="images\Chevron.svg" class="absolute right-[-25.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 -z-10 size-fit" alt="">
+                                    <img src="images\Chevron.svg" class="absolute right-[-25.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 xl:top-10 xl:translate-y-1 -z-10 size-fit" alt="">
                                 </div>
                                 <div class="relative flex flex-col w-[13.90vw] space-y-[0.521vw]">
                                     <label id="pilih-tanggal" class="text-nowrap">Pilih waktu</label>
                                     <input name="order-time" id="order-time" class="border-[2px] rounded-[12px] p-[6px] text-navy [&::-webkit-calendar-picker-indicator]:opacity-0 z-10 w-[40vw] lg:w-[16vw] xl:w-full" type="time">
-                                    <img src="images\Icon.svg" class="absolute right-[-25.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 -z-10 size-fit" alt="">
+                                    <img src="images\Icon.svg" class="absolute right-[-25.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 xl:top-10 xl:translate-y-1 -z-10 size-fit" alt="">
                                 </div>
                                 <div class="relative flex flex-col w-[13.90vw] space-y-[0.521vw]">
                                     <label id="pilih-tanggal" class="text-nowrap">Pilih jumlah</label>
                                     <input autocomplete="off" id="number-of-order" name="number-of-order" class="border-[2px] border rounded-[12px] p-[6px] text-navy w-[40vw] lg:w-[16vw] xl:w-full" type="text">
-                                    <p class="absolute right-[-24.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 2xl:top-11 xl:top-10 border-2 border-navy text-navy px-[10px] font-poppins font-bold rounded-[6px] text-sm">Pax</p>
+                                    <p class="absolute right-[-24.246vw] top-9 lg:right-[-18] lg:top-10 xl:right-3 xl:top-10 xl:translate-y-1 border-2 border-navy text-navy px-[10px] font-poppins font-bold rounded-[6px] text-sm">Pax</p>
                                     <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute right-3 top-12">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                                     </svg> -->
                                 </div>
-                                <button type="submit" id="order-now" class="2xl:text-[0.833vw] xl:text-[1.133vw] sm:text-[2.733vw] text-[3.133vw] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 p-2 sm:py-[0.625vw] sm:px-[0.521vw] 2xl:translate-y-5 lg:translate-y-8 size-fit text-white lg:rounded-[12px] rounded-[8px]">Pesan Sekarang</button>
+                                <button type="submit" id="order-now" class="2xl:text-[0.833vw] xl:text-[1.133vw] sm:text-[2.733vw] text-[3.133vw] bg-gradient-to-r from-cbutton1 via-cbutton2 via-50% to-cbutton3 p-2 sm:py-[0.625vw] sm:px-[0.521vw] lg:translate-y-8 size-fit text-white lg:rounded-[12px] rounded-[8px]">Pesan Sekarang</button>
                             </form>
                         </div>
                         
@@ -155,9 +155,9 @@
                                 <img class="mx-auto w-[8.385vw] md:w-[3.385vw]" src="images/Arrow Left.png" alt="">
                             </button> -->
                             <div id="slider" class="flex flex-row gap-[1.667vw] justify-start items-center w-full z-0 transition-transform duration-300 overflow-x-scroll custom-scroll overflow-y-hidden pb-6">
-                                <div id="menu-slide-1" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-1" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto">Paket Menu Olahan Ikan</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-outside list-pt-2 columns-2 translate-x-4 xl:translate-x-0 space-x-6">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-outside list-pt-2 translate-x-4 xl:translate-x-0 space-x-6">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Ikan Bawal Bakar/Goreng</span>
@@ -196,9 +196,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-2" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-2" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Paket Menu Olahan Daging Ayam</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6 overflow-y-scroll custom-scroll h-full">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6 overflow-y-scroll custom-scroll h-full">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Ayam Goreng Serundeng</span>
@@ -253,9 +253,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-3" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-3" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Paket Menu Olahan Telur</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Telur Balado</span>
@@ -278,9 +278,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-4" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-4" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Paket Menu Olahan Daging Sapi</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Daging Semur</span>
@@ -307,9 +307,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-5" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-5" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Olahan Sayur/Tumisan</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Sayur Krecek</span>
@@ -372,9 +372,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-6" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-6" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Menu Paketan Lainnya</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Paket Nasi Kuning</span>
@@ -409,9 +409,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-7" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-7" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Paket Menu Olahan Seafood</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Cumi Cabe Ijo</span>
@@ -430,9 +430,9 @@
                                         </li>
                                     </ol>
                                 </div>
-                                <div id="menu-slide-8" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
+                                <div id="menu-slide-8" class="flex flex-col px-[22px] sm:px-[44px] pt-[1.442vw] sm:pt-[1.042vw] pb-[1.842vw] min-w-120 h-[80.458vw] md:h-[60.458vw] xl:h-[36.458vw] 2xl:h-[33.854vw] font-poppins rounded-[10px] gap-4 sm:gap-6 bg-navy shadow-md">
                                     <h3 class="font-semibold text-[2.846vw] sm:text-[1.146vw] text-cpaklay mx-auto text-nowrap">Aneka Snack Minuman Lainnya</h3>
-                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] columns-2 translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
+                                    <ol class="space-y-[1.302vw] font-medium text-[2.733vw] sm:text-[1.433vw] lg:text-[0.933vw] text-white list-image-[url(/images/Icon.png)] translate-x-4 xl:translate-x-0 space-x-6 overflow-x-auto custom-scroll pb-4">
                                         <li class="flex flex-row gap-2">
                                             <img src="images\Icon.png" class="size-6 pt-2 xl:pt-0" alt="">
                                             <span>Ubi Rebus</span>
@@ -481,7 +481,7 @@
             <div class="w-full p-8 bg-gold">
                 <h1 class="font-poppins font-bold text-navy lg:text-[2.5vw] sm:text-[2.8vw] text-[5.8vw] text-center">Testimoni</h1>
                 <div class="flex flex-row font-poppins mx-auto gap-[25px] sm:gap-[50px] justify-center items-center overflow-x-scroll custom-scroll scroll-hide justify-start pb-6 p-12">
-                    <iframe src="https://drive.google.com/file/d/1qgKbkYfoncZp8Qof2J31Ere5zOfkQFEe/preview" width="480" height="640" class="rounded-sm border-2 border-white"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1qgKbkYfoncZp8Qof2J31Ere5zOfkQFEe/preview" width="640" height="360" class="rounded-sm border-2 border-white aspect-[9/16]" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -503,30 +503,36 @@
                 <div class="lg:flex lg:flex-row mx-auto grid grid-rows-4 grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 sm:justify-center justify-left sm:gap-[3.281vw] text-white">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253802.08535400743!2d106.65026108671874!3d-6.3086373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69936222ebd81f%3A0xfc5f6898991e6189!2sMas%20Blangkon%20House!5e0!3m2!1sid!2sid!4v1764645831296!5m2!1sid!2sid" class="mx-auto lg:w-[20.833vw] lg:h-[15.625vw] sm:w-[30.833vw] sm:h-[23.625vw]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <img class="object-contain w-[40.125vw] sm:w-[18.125vw] sm:h-[12.812vw] h-auto mx-auto translate-y-4 lg:translate-y-0 justify-center" src="images/1_PT Putra Reja Boga 2.png" alt="">
-                    <div class="flex flex-col font-poppins sm:w-[24.479vw] gap-[0.781vw] justify-center">
+                    <div class="flex flex-col font-poppins sm:w-[24.479vw] gap-[0.781vw] justify-center sm:justify-start">
                         <h3 class="font-bold xl:text-[1.146vw] lg:text-[1.346vw] sm:text-[1.546vw]">Alamat</h3>
                         <p class="xl:text-[0.938vw] lg:text-[1.238vw] sm:text-[1.538vw]">Gg. Masjid No.11, RT.002/RW.003, Jatimelati, Kec. Pd. Melati, Kota Bks, Jawa Barat 17415</p>
                     </div>
-                    <div class="flex sm:flex-col flex-row sm:gap-[3.333vw] items-center justify-between sm:mx-auto">
+                    <div class="flex sm:flex-col flex-row sm:gap-[1.333vw] items-center justify-between sm:justify-start sm:mx-auto">
                         <div class="flex flex-col gap-[0.781vw]">
                             <h3 class="font-bold xl:text-[1.146vw] lg:text-[1.346vw] sm:text-[1.546vw]">Follow Us</h3>
                             <div class="flex flex-row sm:gap-[0.625vw] gap-[1.025vw]">
-                                <a href="https://www.instagram.com/putrarejaboga?igsh=OTEyOWYyMmZweWN4"><img class="xl:size-[2.604vw] lg:size-[2.804vw] sm:size-[3.004vw] size-[6.304vw]" src="images\social.png" alt=""></a>
-                                <a href="https://www.facebook.com/share/1Bg7eS9XQ8/"><img class="xl:size-[2.604vw] lg:size-[2.804vw] sm:size-[3.004vw] size-[6.304vw]" src="images\social (1).png" alt=""></a>
-                                <a href="https://www.tiktok.com/@mas_blangkon_catering?_r=1&_t=ZS-91sLxGuLnHD"><img class="xl:size-[2.604vw] lg:size-[2.804vw] sm:size-[3.004vw] size-[6.304vw]" src="images\social (2).png" alt=""></a>
+                                <a href="https://www.instagram.com/putrarejaboga?igsh=OTEyOWYyMmZweWN4" target="_blank"><img class="xl:size-[2.604vw] lg:size-[2.804vw] sm:size-[3.004vw] size-[6.304vw]" src="images\social.png" alt=""></a>
+                                <a href="https://www.facebook.com/share/1Bg7eS9XQ8/" target="_blank"><img class="xl:size-[2.604vw] lg:size-[2.804vw] sm:size-[3.004vw] size-[6.304vw]" src="images\social (1).png" alt=""></a>
+                                <a href="https://www.tiktok.com/@mas_blangkon_catering?_r=1&_t=ZS-91sLxGuLnHD" target="_blank"><img class="xl:size-[2.604vw] lg:size-[2.804vw] sm:size-[3.004vw] size-[6.304vw]" src="images\social (2).png" alt=""></a>
                             </div>
                         </div>
                         <div class="flex flex-col  gap-[0.781vw]">
-                            <h3 class="font-bold xl:text-[1.146vw] lg:text-[1.346vw] sm:text-[1.546vw]">Call Us</h3>
+                            <div class="flex flex-row gap-2">
+                                <h3 class="font-bold xl:text-[1.146vw] lg:text-[1.346vw] sm:text-[1.546vw]">Call Us</h3>
+                                <a href="" target="_blank" class="translate-y-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                                    </svg>
+                                </a>    
+                            </div>
                             <!-- <div class="flex flex-row gap-4"> -->
-                                <p class="xl:text-[0.938vw] lg:text-[1.238vw] sm:text-[1.538vw]">+62 812-8446-3352</p>
+                            <p class="xl:text-[0.938vw] lg:text-[1.238vw] sm:text-[1.538vw]">+62 812-8446-3352</p>
                                 <!-- <a href="">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
                                     </svg>
                                 </a> -->
-                            </div>
-                            
+                            </div>     
                         </div>
                     </div>
                 </div>
@@ -610,11 +616,11 @@
                     let pax = $("#number-of-order").val()
                     
                     const phone = "6281284463352"
-                    let message = `Selamat siang 
-tanggal: ${date}
-waktu: ${time}
-jumlah pesanan ${pax}
-Terima kasih.`
+                    let message = `Halo, saya ingin melakukan reservasi. 
+📅 tanggal: ${date}
+⏰ waktu: ${time}
+👥 jumlah pesanan ${pax}
+Terima kasih 🙏`
 
                     let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
                     window.open(url,"_blank")
