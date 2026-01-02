@@ -1403,6 +1403,11 @@
       gap: 3vw;
     }
   }
+  .xl\:p-25 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 25);
+    }
+  }
   .xl\:px-\[180px\] {
     @media (width >= 80rem) {
       padding-inline: 180px;
@@ -1522,6 +1527,31 @@
     @media (width >= 96rem) {
       --tw-translate-y: calc(var(--spacing) * 1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:p-4 {
+    @media (width >= 96rem) {
+      padding: calc(var(--spacing) * 4);
+    }
+  }
+  .\32 xl\:p-8 {
+    @media (width >= 96rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
+  .\32 xl\:p-12 {
+    @media (width >= 96rem) {
+      padding: calc(var(--spacing) * 12);
+    }
+  }
+  .\32 xl\:p-24 {
+    @media (width >= 96rem) {
+      padding: calc(var(--spacing) * 24);
+    }
+  }
+  .\32 xl\:p-25 {
+    @media (width >= 96rem) {
+      padding: calc(var(--spacing) * 25);
     }
   }
   .\32 xl\:px-\[220px\] {
